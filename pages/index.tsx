@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { DatePicker } from "antd";
-import { Button } from 'antd';
 
 
 const Home: NextPage = () => {
