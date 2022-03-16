@@ -1,5 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { DatePicker } from "antd";
+import { Button } from 'antd';
+
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +13,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Hello World!</h1>
+      <DatePicker />
+      <Button type="dashed">Dashed Button</Button>
     </div>
   )
 }
