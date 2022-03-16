@@ -11,8 +11,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Hello World!</h1>
-      <DatePicker />
-      <Button type="dashed">Dashed Button</Button>
     </div>
   )
 }
