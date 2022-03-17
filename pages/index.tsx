@@ -1,6 +1,6 @@
-import React from 'react';
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import React from 'react'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 const Home: NextPage = () => (
   <div>
@@ -13,4 +13,4 @@ const Home: NextPage = () => (
   </div>
 );
 
-export default Home;
+export default Home
