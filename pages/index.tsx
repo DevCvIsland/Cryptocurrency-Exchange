@@ -1,7 +1,7 @@
 import React from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Layout from '../containers/layout/Layout';
+import Layout from '../containers/layout/Layout'
 
 const Home: NextPage = () => (
   <div>
@@ -14,6 +14,6 @@ const Home: NextPage = () => (
       <h1>Hello World!</h1>
     </Layout>
   </div>
-);
+)
 
 export default Home
