@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-      <div>
+      <div className="logo-section">
         <Image
           src={Logo}
           alt="Picture of the author"
