@@ -19,6 +19,7 @@ const Header = () => {
     <>
       <div className="logo-section">
         <Image src={Logo} alt="Picture of the author" width={150} height={50} />
+        <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
         <div>
           <Button type="primary">Sign In</Button>
           <Button>Sign Up</Button>
