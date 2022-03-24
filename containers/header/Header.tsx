@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu } from 'antd'
+import { Menu, Button } from 'antd'
 import Image from 'next/image'
 import Logo from '../../assets/logo/logo.jpg'
 
@@ -19,7 +19,10 @@ const Header = () => {
     <>
       <div className="logo-section">
         <Image src={Logo} alt="Picture of the author" width={150} height={50} />
-        <div>ssss</div>
+        <div>
+          <Button type="primary">Sign In</Button>
+          <Button>Sign Up</Button>
+        </div>
       </div>
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
         <Menu.Item key="home">Home</Menu.Item>
