@@ -21,9 +21,24 @@ const Header = () => {
   return (
     <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
       <Menu.Item key="mail" icon={<MailOutlined />}>
-        Navigation One
+        Home
       </Menu.Item>
-      <Menu.Item key="app" disabled icon={<AppstoreOutlined />}>
+      <Menu.Item key="mail" icon={<MailOutlined />}>
+        Markets
+      </Menu.Item>
+      <Menu.Item key="mail" icon={<MailOutlined />}>
+        Services
+      </Menu.Item>
+      <Menu.Item key="mail" icon={<MailOutlined />}>
+        Blog
+      </Menu.Item>
+      <Menu.Item key="mail" icon={<MailOutlined />}>
+        About
+      </Menu.Item>
+      <Menu.Item key="mail" icon={<MailOutlined />}>
+        Contact
+      </Menu.Item>
+      <Menu.Item key="app" icon={<AppstoreOutlined />}>
         Navigation Two
       </Menu.Item>
       <SubMenu
@@ -41,7 +56,7 @@ const Header = () => {
         </Menu.ItemGroup>
       </SubMenu>
       <Menu.Item key="alipay">
-        <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+        <a href="#/" rel="noopener noreferrer">
           Navigation Four - Link
         </a>
       </Menu.Item>
