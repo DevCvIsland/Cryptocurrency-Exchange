@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Menu } from 'antd'
+import Image from 'next/image'
+import Logo from '../../assets/logo/logo.png'
 
 // const { SubMenu } = Menu
 
@@ -14,14 +16,24 @@ const Header = () => {
   const { current } = state
 
   return (
-    <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-      <Menu.Item key="home">Home</Menu.Item>
-      <Menu.Item key="market">Markets</Menu.Item>
-      <Menu.Item key="services">Services</Menu.Item>
-      <Menu.Item key="blog">Blog</Menu.Item>
-      <Menu.Item key="about">About</Menu.Item>
-      <Menu.Item key="contact">Contact</Menu.Item>
-      {/* <SubMenu key="SubMenu" title="Navigation Three - Submenu">
+    <>
+      <div>
+        <Image
+          src={Logo}
+          alt="Picture of the author"
+          width={500}
+          height={500}
+        />
+        <div>ssss</div>
+      </div>
+      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+        <Menu.Item key="home">Home</Menu.Item>
+        <Menu.Item key="market">Markets</Menu.Item>
+        <Menu.Item key="services">Services</Menu.Item>
+        <Menu.Item key="blog">Blog</Menu.Item>
+        <Menu.Item key="about">About</Menu.Item>
+        <Menu.Item key="contact">Contact</Menu.Item>
+        {/* <SubMenu key="SubMenu" title="Navigation Three - Submenu">
         <Menu.ItemGroup title="Item 1">
           <Menu.Item key="setting:1">Option 1</Menu.Item>
           <Menu.Item key="setting:2">Option 2</Menu.Item>
@@ -36,7 +48,8 @@ const Header = () => {
           Navigation Four - Link
         </a>
       </Menu.Item> */}
-    </Menu>
+      </Menu>
+    </>
   )
 }
 
