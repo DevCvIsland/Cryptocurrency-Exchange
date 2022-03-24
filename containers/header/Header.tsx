@@ -20,27 +20,13 @@ const Header = () => {
 
   return (
     <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-      <Menu.Item key="mail" icon={<MailOutlined />}>
-        Home
-      </Menu.Item>
-      <Menu.Item key="mail" icon={<MailOutlined />}>
-        Markets
-      </Menu.Item>
-      <Menu.Item key="mail" icon={<MailOutlined />}>
-        Services
-      </Menu.Item>
-      <Menu.Item key="mail" icon={<MailOutlined />}>
-        Blog
-      </Menu.Item>
-      <Menu.Item key="mail" icon={<MailOutlined />}>
-        About
-      </Menu.Item>
-      <Menu.Item key="mail" icon={<MailOutlined />}>
-        Contact
-      </Menu.Item>
-      <Menu.Item key="app" icon={<AppstoreOutlined />}>
-        Navigation Two
-      </Menu.Item>
+      <Menu.Item key="home">Home</Menu.Item>
+      <Menu.Item key="market">Markets</Menu.Item>
+      <Menu.Item key="services">Services</Menu.Item>
+      <Menu.Item key="blog">Blog</Menu.Item>
+      <Menu.Item key="about">About</Menu.Item>
+      <Menu.Item key="contact">Contact</Menu.Item>
+      <Menu.Item key="app">Navigation Two</Menu.Item>
       <SubMenu
         key="SubMenu"
         icon={<SettingOutlined />}
