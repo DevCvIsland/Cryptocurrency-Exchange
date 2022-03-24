@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Menu } from 'antd'
 
-const { SubMenu } = Menu
+// const { SubMenu } = Menu
 
 const Header = () => {
   const [state, setState] = useState({
@@ -21,8 +21,7 @@ const Header = () => {
       <Menu.Item key="blog">Blog</Menu.Item>
       <Menu.Item key="about">About</Menu.Item>
       <Menu.Item key="contact">Contact</Menu.Item>
-      <Menu.Item key="app">Navigation Two</Menu.Item>
-      <SubMenu key="SubMenu" title="Navigation Three - Submenu">
+      {/* <SubMenu key="SubMenu" title="Navigation Three - Submenu">
         <Menu.ItemGroup title="Item 1">
           <Menu.Item key="setting:1">Option 1</Menu.Item>
           <Menu.Item key="setting:2">Option 2</Menu.Item>
@@ -36,13 +35,9 @@ const Header = () => {
         <a href="#/" rel="noopener noreferrer">
           Navigation Four - Link
         </a>
-      </Menu.Item>
+      </Menu.Item> */}
     </Menu>
   )
 }
 
 export default Header
-
-// class App extends React.Component {
-//   state = {
-//     current: 'mail',
