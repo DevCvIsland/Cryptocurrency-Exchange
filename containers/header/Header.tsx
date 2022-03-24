@@ -21,8 +21,8 @@ const Header = () => {
         <Image
           src={Logo}
           alt="Picture of the author"
-          width={500}
-          height={500}
+          width={100}
+          height={100}
         />
         <div>ssss</div>
       </div>
