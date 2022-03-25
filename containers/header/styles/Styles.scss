@@ -1,11 +1,17 @@
 $primary-color: #f3ba2f;
 
 .logo-section {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-between;
-  // align-items: center;
-  padding: 10px 10px;
+  padding: 10px 200px;
+}
+@media screen and (max-width: 900px) {
+  .logo-section {
+    padding: 10px 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logo-section {
+    padding: 10px 0px;
+  }
 }
 
 .menu {
