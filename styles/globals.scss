@@ -1,4 +1,29 @@
+$primary-color: #fd961a;
+$secondary-color: #9b5501;
+
 body {
   background-color: black;
   color: white;
+}
+
+.button {
+  color: #fff;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    color: #fff;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+.button-outline {
+  color: $primary-color;
+  border-color: $primary-color;
+  background: inherit;
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
 }

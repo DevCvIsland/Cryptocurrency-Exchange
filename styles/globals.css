@@ -2,4 +2,28 @@ body {
   background-color: black;
   color: white;
 }
+
+.button {
+  color: #fff;
+  background-color: #fd961a;
+  border-color: #fd961a;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #9b5501;
+  border-color: #9b5501;
+}
+
+.button-outline {
+  color: #fd961a;
+  border-color: #fd961a;
+  background: inherit;
+}
+
+.button-outline:hover {
+  color: #fff;
+  background-color: #fd961a;
+  border-color: #fd961a;
+}
 /*# sourceMappingURL=globals.css.map */

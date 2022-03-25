@@ -31,9 +31,9 @@ const Header = () => {
             <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
           </Col> */}
         {/* </Row> */}
-        <Col xs={3}>
-          <Button>Sign In</Button>
-          <Button>Sign Up</Button>
+        <Col xs={12} sm={3}>
+          <Button className="button">Sign In</Button>
+          <Button className="button-outline">Sign Up</Button>
         </Col>
       </Row>
       {/* <div className="logo-section">
