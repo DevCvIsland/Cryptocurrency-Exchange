@@ -51,7 +51,12 @@ const Header = () => {
           <Button>Sign Up</Button>
         </div>
       </div> */}
-      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+      <Menu
+        onClick={handleClick}
+        selectedKeys={[current]}
+        mode="horizontal"
+        theme="dark"
+      >
         <Menu.Item key="home">Home</Menu.Item>
         <Menu.Item key="market">Markets</Menu.Item>
         <Menu.Item key="services">Services</Menu.Item>
