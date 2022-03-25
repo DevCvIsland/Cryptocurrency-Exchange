@@ -17,9 +17,9 @@ const Header = () => {
 
   return (
     <>
-      <Row justify="space-between" align="middle">
+      <Row justify="space-between" align="middle" className="logo-section">
         <Row justify="space-between" align="middle">
-          <Col xs={8}>
+          <Col xs={24} sm={8}>
             <Image
               src={Logo}
               alt="Picture of the author"
@@ -27,7 +27,7 @@ const Header = () => {
               height={50}
             />
           </Col>
-          <Col xs={16}>
+          <Col xs={24} sm={16}>
             <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
           </Col>
         </Row>
