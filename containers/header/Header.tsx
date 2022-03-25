@@ -19,7 +19,7 @@ const Header = () => {
     <>
       <Row justify="space-between" align="middle" className="logo-section">
         {/* <Row justify="space-between" align="middle"> */}
-        <Col xs={12} sm={3} md={6} lg={6} xl={6}>
+        <Col xs={13} sm={12} md={6} lg={6} xl={6}>
           <Image
             src={Logo}
             alt="Picture of the author"
@@ -31,7 +31,7 @@ const Header = () => {
             <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
           </Col> */}
         {/* </Row> */}
-        <Col xs={12} sm={3} md={6} lg={6} xl={6}>
+        <Col xs={11} sm={12} md={6} lg={6} xl={6}>
           <Button className="button button-style">Sign In</Button>
           <Button className="button-outline">Sign Up</Button>
         </Col>
