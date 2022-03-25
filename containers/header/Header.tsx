@@ -18,20 +18,20 @@ const Header = () => {
   return (
     <>
       <Row justify="space-between" align="middle" className="logo-section">
-        <Row justify="space-between" align="middle">
-          <Col xs={24} sm={8}>
-            <Image
-              src={Logo}
-              alt="Picture of the author"
-              width={200}
-              height={50}
-            />
-          </Col>
-          <Col xs={24} sm={16}>
+        {/* <Row justify="space-between" align="middle"> */}
+        <Col xs={12} sm={8}>
+          <Image
+            src={Logo}
+            alt="Picture of the author"
+            width={200}
+            height={50}
+          />
+        </Col>
+        {/* <Col xs={24} sm={16}>
             <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
-          </Col>
-        </Row>
-        <Col>
+          </Col> */}
+        {/* </Row> */}
+        <Col xs={12} sm={8}>
           <Button type="primary">Sign In</Button>
           <Button>Sign Up</Button>
         </Col>
