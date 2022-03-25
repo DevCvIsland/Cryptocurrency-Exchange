@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu, Button } from 'antd'
+import { Menu, Button, Row, Col } from 'antd'
 import Image from 'next/image'
 import Logo from '../../assets/logo/logo.jpg'
 
@@ -17,7 +17,26 @@ const Header = () => {
 
   return (
     <>
-      <div className="logo-section">
+      <Row justify="space-between" align="middle">
+        <Row justify="space-between" align="middle">
+          <Col xs={8}>
+            <Image
+              src={Logo}
+              alt="Picture of the author"
+              width={200}
+              height={50}
+            />
+          </Col>
+          <Col xs={16}>
+            <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
+          </Col>
+        </Row>
+        <Col>
+          <Button type="primary">Sign In</Button>
+          <Button>Sign Up</Button>
+        </Col>
+      </Row>
+      {/* <div className="logo-section">
         <div>
           <Image
             src={Logo}
@@ -31,7 +50,7 @@ const Header = () => {
           <Button type="primary">Sign In</Button>
           <Button>Sign Up</Button>
         </div>
-      </div>
+      </div> */}
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
         <Menu.Item key="home">Home</Menu.Item>
         <Menu.Item key="market">Markets</Menu.Item>
