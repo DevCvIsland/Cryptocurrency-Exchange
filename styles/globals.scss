@@ -1,4 +1,5 @@
-$primary-color: #fd961a;
+$primary-color: #f3ba2f;
+// $primary-color: #fd961a;EEDE0C
 $secondary-color: #9b5501;
 
 body {
@@ -7,7 +8,7 @@ body {
 }
 
 .button {
-  color: #fff;
+  color: #000;
   background-color: $primary-color;
   border-color: $primary-color;
   &:hover {
@@ -22,7 +23,7 @@ body {
   border-color: $primary-color;
   background: inherit;
   &:hover {
-    color: #fff;
+    color: #000;
     background-color: $primary-color;
     border-color: $primary-color;
   }

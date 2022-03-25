@@ -4,9 +4,9 @@ body {
 }
 
 .button {
-  color: #fff;
-  background-color: #fd961a;
-  border-color: #fd961a;
+  color: #000;
+  background-color: #f3ba2f;
+  border-color: #f3ba2f;
 }
 
 .button:hover {
@@ -16,14 +16,14 @@ body {
 }
 
 .button-outline {
-  color: #fd961a;
-  border-color: #fd961a;
+  color: #f3ba2f;
+  border-color: #f3ba2f;
   background: inherit;
 }
 
 .button-outline:hover {
-  color: #fff;
-  background-color: #fd961a;
-  border-color: #fd961a;
+  color: #000;
+  background-color: #f3ba2f;
+  border-color: #f3ba2f;
 }
 /*# sourceMappingURL=globals.css.map */
