@@ -1,7 +1,21 @@
+$primary-color: #f3ba2f;
+
 .logo-section {
   // display: flex;
   // flex-direction: row;
   // justify-content: space-between;
   // align-items: center;
   padding: 10px 10px;
+}
+
+.menu {
+  background-color: #000 !important;
+
+  .menu-item {
+    color: #fff !important;
+    &:hover {
+      color: #000 !important;
+      background-color: $primary-color !important;
+    }
+  }
 }

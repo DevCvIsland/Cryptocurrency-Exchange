@@ -56,13 +56,26 @@ const Header = () => {
         selectedKeys={[current]}
         mode="horizontal"
         theme="dark"
+        className="menu flex-row"
       >
-        <Menu.Item key="home">Home</Menu.Item>
-        <Menu.Item key="market">Markets</Menu.Item>
-        <Menu.Item key="services">Services</Menu.Item>
-        <Menu.Item key="blog">Blog</Menu.Item>
-        <Menu.Item key="about">About</Menu.Item>
-        <Menu.Item key="contact">Contact</Menu.Item>
+        <Menu.Item className="menu-item" key="home">
+          Home
+        </Menu.Item>
+        <Menu.Item className="menu-item" key="market">
+          Markets
+        </Menu.Item>
+        <Menu.Item className="menu-item" key="services">
+          Services
+        </Menu.Item>
+        <Menu.Item className="menu-item" key="blog">
+          Blog
+        </Menu.Item>
+        <Menu.Item className="menu-item" key="about">
+          About
+        </Menu.Item>
+        <Menu.Item className="menu-item" key="contact">
+          Contact
+        </Menu.Item>
         {/* <SubMenu key="SubMenu" title="Navigation Three - Submenu">
         <Menu.ItemGroup title="Item 1">
           <Menu.Item key="setting:1">Option 1</Menu.Item>
