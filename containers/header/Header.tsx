@@ -22,7 +22,7 @@ const Header = () => {
           <Image
             src={Logo}
             alt="Picture of the author"
-            width={150}
+            width={200}
             height={50}
           />
           <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
