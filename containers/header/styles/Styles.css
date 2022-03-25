@@ -11,7 +11,8 @@
 }
 
 .menu .menu-item:hover {
-  color: #000 !important;
-  background-color: #f3ba2f !important;
+  color: #f3ba2f !important;
+  background-color: #000 !important;
+  border-bottom: 1px solid #f3ba2f;
 }
 /*# sourceMappingURL=Styles.css.map */

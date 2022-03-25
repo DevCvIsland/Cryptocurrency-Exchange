@@ -14,8 +14,9 @@ $primary-color: #f3ba2f;
   .menu-item {
     color: #fff !important;
     &:hover {
-      color: #000 !important;
-      background-color: $primary-color !important;
+      color: $primary-color !important;
+      background-color: #000 !important;
+      border-bottom: 1px solid $primary-color;
     }
   }
 }
