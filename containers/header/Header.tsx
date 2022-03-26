@@ -67,19 +67,15 @@ const Header = () => {
         </Menu.Item>
         <Menu.Item className="menu-item" key="services">
           <Link href="/services">Services</Link>
-          Services
         </Menu.Item>
         <Menu.Item className="menu-item" key="blog">
           <Link href="/blog">Blog</Link>
-          Blog
         </Menu.Item>
         <Menu.Item className="menu-item" key="about">
           <Link href="/about">About</Link>
-          About
         </Menu.Item>
         <Menu.Item className="menu-item" key="contact">
           <Link href="/contact">Contact</Link>
-          Contact
         </Menu.Item>
         {/* <SubMenu key="SubMenu" title="Navigation Three - Submenu">
         <Menu.ItemGroup title="Item 1">
