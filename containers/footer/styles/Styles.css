@@ -11,6 +11,10 @@
   padding-left: 0px;
 }
 
+.footer-items .footer-item {
+  margin: 5px 0px !important;
+}
+
 .footer-items .footer-item:hover {
   cursor: pointer;
   color: #f3ba2f;
@@ -23,6 +27,7 @@
 
 .peyment-methods > * {
   margin: 0px 2px !important;
+  cursor: pointer;
 }
 
 .developer {

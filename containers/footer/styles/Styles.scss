@@ -11,9 +11,12 @@ $primary-color: #f3ba2f;
 .footer-items {
   list-style: none;
   padding-left: 0px;
-  .footer-item:hover {
-    cursor: pointer;
-    color: $primary-color;
+  .footer-item {
+    margin: 5px 0px !important;
+    &:hover {
+      cursor: pointer;
+      color: $primary-color;
+    }
   }
 }
 
@@ -22,6 +25,7 @@ $primary-color: #f3ba2f;
   margin-bottom: 10px;
   & > * {
     margin: 0px 2px !important;
+    cursor: pointer;
   }
 }
 
