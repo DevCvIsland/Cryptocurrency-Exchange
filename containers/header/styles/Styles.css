@@ -34,13 +34,21 @@
   background-color: #1d1d1d !important;
 }
 
-.menu .menu-item {
-  color: #fff !important;
-}
-
 .menu .menu-item:hover {
-  color: #f3ba2f !important;
   background-color: #1d1d1d !important;
   border-bottom: 1px solid #f3ba2f;
+}
+
+.menu .menu-item:hover .menu-item-text {
+  color: #f3ba2f !important;
+}
+
+.menu .menu-item .menu-item-text {
+  color: #fff !important;
+  margin-bottom: 0px;
+}
+
+.menu .menu-item .menu-item-text:hover {
+  color: #f3ba2f !important;
 }
 /*# sourceMappingURL=Styles.css.map */

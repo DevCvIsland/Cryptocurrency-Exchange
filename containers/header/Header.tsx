@@ -37,22 +37,34 @@ const Header = () => {
         className="menu flex-row"
       >
         <Menu.Item className="menu-item" key="home">
-          <Link href="/">Home</Link>
+          <Link href="/">
+            <p className="menu-item-text">Home</p>
+          </Link>
         </Menu.Item>
         <Menu.Item className="menu-item" key="market">
-          <Link href="/market">Markets</Link>
+          <Link href="/market">
+            <p className="menu-item-text">Markets</p>
+          </Link>
         </Menu.Item>
         <Menu.Item className="menu-item" key="services">
-          <Link href="/services">Services</Link>
+          <Link href="/services">
+            <p className="menu-item-text">Services</p>
+          </Link>
         </Menu.Item>
         <Menu.Item className="menu-item" key="blog">
-          <Link href="/blog">Blog</Link>
+          <Link href="/blog">
+            <p className="menu-item-text">Blog</p>
+          </Link>
         </Menu.Item>
         <Menu.Item className="menu-item" key="about">
-          <Link href="/about">About</Link>
+          <Link href="/about">
+            <p className="menu-item-text">About</p>
+          </Link>
         </Menu.Item>
         <Menu.Item className="menu-item" key="contact">
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">
+            <p className="menu-item-text">Contact</p>
+          </Link>
         </Menu.Item>
       </Menu>
     </>

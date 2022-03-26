@@ -30,11 +30,19 @@ $primary-color: #f3ba2f;
   background-color: #1d1d1d !important;
 
   .menu-item {
-    color: #fff !important;
     &:hover {
-      color: $primary-color !important;
       background-color: #1d1d1d !important;
       border-bottom: 1px solid $primary-color;
+      .menu-item-text {
+        color: $primary-color !important;
+      }
+    }
+    .menu-item-text {
+      color: #fff !important;
+      margin-bottom: 0px;
+      &:hover {
+        color: $primary-color !important;
+      }
     }
   }
 }
