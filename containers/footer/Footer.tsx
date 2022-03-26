@@ -1,12 +1,12 @@
 import { Row, Col } from 'antd'
 
-const FooterContainer = ({ items }: any & string[]) => {
+const FooterContainer = ({ title, items }: any & string[]) => {
   return (
     <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-      <h2 className="title">Support</h2>
+      <h2 className="title">{title}</h2>
       <ul className="footer-items">
         {items.map((item: string) => (
-          <li key={item.index}>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </Col>
@@ -16,19 +16,35 @@ const FooterContainer = ({ items }: any & string[]) => {
 const Footer = () => {
   return (
     <>
-      <Row justify="space-between" align="middle" className="logo-section">
-        <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-          <h2 className="title">Support</h2>
-          <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-            <li>four</li>
-          </ul>
-        </Col>
-        <FooterContainer items={['aaa', 'bbb', 'ccc']} />
+      <Row justify="center" align="middle">
+        <FooterContainer
+          title="Products"
+          items={['Exchange', 'Academy', 'NFT', 'Wallet']}
+        />
+        <FooterContainer
+          title="Service"
+          items={['Desktop App', 'Mobile App', 'VIP Services', 'Referral']}
+        />
+        <FooterContainer
+          title="About Us"
+          items={['Community', 'News', 'Terms', 'Privacy']}
+        />
+        <FooterContainer
+          title="Support"
+          items={[
+            'Give Us Feedback',
+            'API Documentation',
+            'Binance Verify',
+            'Trading Rules',
+          ]}
+        />
       </Row>
-      <div>Footer</div>
+      <Row justify="center" align="middle">
+        Copyright ©2022 All rights reserved | Developed By
+        {/* <strong> */}
+        <span className="developer">Amir Sadri</span>
+        {/* </strong> */}
+      </Row>
     </>
   )
 }
