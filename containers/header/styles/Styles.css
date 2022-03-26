@@ -31,7 +31,7 @@
 }
 
 .menu {
-  background-color: #000 !important;
+  background-color: #1d1d1d !important;
 }
 
 .menu .menu-item {
@@ -40,7 +40,7 @@
 
 .menu .menu-item:hover {
   color: #f3ba2f !important;
-  background-color: #000 !important;
+  background-color: #1d1d1d !important;
   border-bottom: 1px solid #f3ba2f;
 }
 /*# sourceMappingURL=Styles.css.map */
