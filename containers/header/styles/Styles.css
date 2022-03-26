@@ -2,9 +2,32 @@
   padding: 10px 200px;
 }
 
+.logo-section .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 10px;
+}
+
+.logo-section .button-style {
+  margin: 0px 10px !important;
+}
+
 @media screen and (max-width: 900px) {
   .logo-section {
     padding: 10px 100px;
+  }
+  .logo-section .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-right: 10px;
   }
 }
 
