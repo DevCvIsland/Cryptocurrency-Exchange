@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Menu, Button, Row, Col } from 'antd'
 import Image from 'next/image'
+import Link from 'next/link'
 import Logo from '../../assets/logo/logo.jpg'
 
 // const { SubMenu } = Menu
@@ -59,21 +60,25 @@ const Header = () => {
         className="menu flex-row"
       >
         <Menu.Item className="menu-item" key="home">
-          Home
+          <Link href="/">Home</Link>
         </Menu.Item>
         <Menu.Item className="menu-item" key="market">
-          Markets
+          <Link href="/market">Markets</Link>
         </Menu.Item>
         <Menu.Item className="menu-item" key="services">
+          <Link href="/market">Markets</Link>
           Services
         </Menu.Item>
         <Menu.Item className="menu-item" key="blog">
+          <Link href="/market">Markets</Link>
           Blog
         </Menu.Item>
         <Menu.Item className="menu-item" key="about">
+          <Link href="/market">Markets</Link>
           About
         </Menu.Item>
         <Menu.Item className="menu-item" key="contact">
+          <Link href="/market">Markets</Link>
           Contact
         </Menu.Item>
         {/* <SubMenu key="SubMenu" title="Navigation Three - Submenu">
