@@ -1,17 +1,38 @@
 $primary-color: #f3ba2f;
 
-.logo-section {
-  padding: 10px 200px;
-  .button-container {
-    display: flex;
-    justify-content: end;
-    margin-right: 10px;
-  }
-  .button-style {
-    margin: 0px 10px !important;
+// .logo-section {
+//   padding: 10px 200px;
+//   .button-container {
+//     display: flex;
+//     justify-content: end;
+//     margin-right: 10px;
+//   }
+//   .button-style {
+//     margin: 0px 10px !important;
+//   }
+// }
+// @media screen and (max-width: 900px) {
+//   .logo-section {
+//     padding: 10px 100px;
+//     .button-container {
+//       display: flex;
+//       justify-content: end;
+//       margin-right: 0px;
+//     }
+//   }
+// }
+// @media screen and (max-width: 576px) {
+//   .logo-section {
+//     padding: 10px 0px;
+//   }
+// }
+@media screen and (min-width: 360px) and (max-width: 576px) {
+  .logo-section {
+    padding: 10px 0px;
   }
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (min-width: 577px) and (max-width: 900px) {
   .logo-section {
     padding: 10px 100px;
     .button-container {
@@ -21,9 +42,18 @@ $primary-color: #f3ba2f;
     }
   }
 }
-@media screen and (max-width: 576px) {
+
+@media screen and (min-width: 901px) {
   .logo-section {
-    padding: 10px 0px;
+    padding: 10px 200px;
+    .button-container {
+      display: flex;
+      justify-content: end;
+      margin-right: 10px;
+    }
+    .button-style {
+      margin: 0px 10px !important;
+    }
   }
 }
 // @media screen and (min-width: 0px) and (max-width: 400px){
