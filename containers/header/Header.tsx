@@ -33,25 +33,14 @@ const Header = () => {
           </Col> */}
         {/* </Row> */}
         <Col xs={12} sm={10} md={8} lg={8} xl={6} className="button-container">
-          <Button className="button button-style">Sign In</Button>
-          <Button className="button-outline">Sign Up</Button>
+          <Button className="button button-style">
+            <Link href="/">Sign In</Link>
+          </Button>
+          <Button className="button-outline">
+            <Link href="/">Sign Up</Link>
+          </Button>
         </Col>
       </Row>
-      {/* <div className="logo-section">
-        <div>
-          <Image
-            src={Logo}
-            alt="Picture of the author"
-            width={200}
-            height={50}
-          />
-          <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
-        </div>
-        <div>
-          <Button type="primary">Sign In</Button>
-          <Button>Sign Up</Button>
-        </div>
-      </div> */}
       <Menu
         onClick={handleClick}
         selectedKeys={[current]}
