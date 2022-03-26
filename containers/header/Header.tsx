@@ -1,19 +1,9 @@
-import { useState } from 'react'
 import { Menu, Button, Row, Col } from 'antd'
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../../assets/logo/logo.jpg'
 
 const Header = () => {
-  const [state, setState] = useState({
-    current: 'mail',
-  })
-  const handleClick = (e: any) => {
-    console.log('click ', e)
-    setState({ current: e.key })
-  }
-  const { current } = state
-
   return (
     <>
       <Row justify="space-between" align="middle" className="logo-section">
@@ -29,13 +19,7 @@ const Header = () => {
           </Button>
         </Col>
       </Row>
-      <Menu
-        onClick={handleClick}
-        selectedKeys={[current]}
-        mode="horizontal"
-        theme="dark"
-        className="menu flex-row"
-      >
+      <Menu mode="horizontal" theme="dark" className="menu flex-row">
         <Menu.Item className="menu-item" key="home">
           <Link href="/">
             <p className="menu-item-text">Home</p>

@@ -6,7 +6,12 @@ import PAYMENT_METHOD_3 from '../../assets/payment/mastercard.png'
 import PAYMENT_METHOD_4 from '../../assets/payment/maestro.png'
 import PAYMENT_METHOD_5 from '../../assets/payment/american-express.png'
 
-const FooterContainer = ({ title, items }: any & string[]) => {
+type FooterContainerProps = {
+  title: string
+  items: string[]
+}
+
+const FooterContainer = ({ title, items }: FooterContainerProps) => {
   return (
     <Col xs={12} sm={6} md={6} lg={6} xl={6} className="footer-container">
       <h2 className="title">{title}</h2>
