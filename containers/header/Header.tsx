@@ -18,12 +18,7 @@ const Header = () => {
     <>
       <Row justify="space-between" align="middle" className="logo-section">
         <Col xs={11} sm={12} md={12} lg={12} xl={12}>
-          <Image
-            src={Logo}
-            alt="Picture of the author"
-            width={200}
-            height={50}
-          />
+          <Image src={Logo} alt="Logo" width={200} height={50} />
         </Col>
         <Col xs={12} sm={10} md={8} lg={8} xl={6} className="button-container">
           <Button className="button button-style">

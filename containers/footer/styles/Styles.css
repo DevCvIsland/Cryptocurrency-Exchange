@@ -1,3 +1,7 @@
+.footer-container {
+  padding-left: 20px;
+}
+
 .title {
   color: #f3ba2f;
 }
@@ -7,7 +11,22 @@
   padding-left: 0px;
 }
 
+.footer-items .footer-item:hover {
+  cursor: pointer;
+  color: #f3ba2f;
+}
+
+.peyment-methods {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.peyment-methods > * {
+  margin: 0px 2px !important;
+}
+
 .developer {
+  cursor: pointer;
   color: #f3ba2f;
   padding: 0px 5px;
 }
