@@ -34,10 +34,10 @@ const Header = () => {
         {/* </Row> */}
         <Col xs={12} sm={10} md={8} lg={8} xl={6} className="button-container">
           <Button className="button button-style">
-            <Link href="/">Sign In</Link>
+            <Link href="/sign-in">Sign In</Link>
           </Button>
           <Button className="button-outline">
-            <Link href="/">Sign Up</Link>
+            <Link href="/sign-up">Sign Up</Link>
           </Button>
         </Col>
       </Row>
