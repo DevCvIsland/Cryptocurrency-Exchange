@@ -118,7 +118,13 @@ const SignUp = () => {
               span: 24,
             }}
           >
-            <Button htmlType="submit" size="large" block className="button">
+            <Button
+              type="primary"
+              htmlType="submit"
+              size="large"
+              block
+              className="button"
+            >
               Create Account
             </Button>
           </Form.Item>
