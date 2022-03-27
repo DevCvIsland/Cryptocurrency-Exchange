@@ -1,6 +1,12 @@
-h2 {
+$primary-color: #f3ba2f;
+
+h2,
+div {
   color: #fff;
 }
+// .title-sign-in {
+//   color: $primary-color;
+// }
 .form-item,
 .ant-form-item-required {
   color: #fff !important;
