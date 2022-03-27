@@ -5,7 +5,6 @@ const SignIn = () => {
   const onFinish = (values: any) => {
     console.log('Success:', values)
   }
-
   const onFinishFailed = (errorInfo: any) => {
     console.log('Failed:', errorInfo)
   }
@@ -13,7 +12,6 @@ const SignIn = () => {
   return (
     <Row justify="center" align="middle" className="sign-in-section">
       <Col>
-        {/* xs={11} sm={12} md={12} lg={12} xl={12} */}
         <h2 className="sign-in-title">
           Member <span className="theme-primary-color">Sign In</span>
         </h2>
