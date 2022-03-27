@@ -107,7 +107,10 @@ const SignUp = () => {
               span: 24,
             }}
           >
-            <Checkbox className="form-item">Remember me</Checkbox>
+            <Checkbox className="form-item">
+              I want to receive inspiration, marketing promotions and updates
+              via email.
+            </Checkbox>
           </Form.Item>
           <Form.Item
             wrapperCol={{
@@ -115,13 +118,7 @@ const SignUp = () => {
               span: 24,
             }}
           >
-            <Button
-              type="primary"
-              htmlType="submit"
-              size="large"
-              block
-              className="button"
-            >
+            <Button htmlType="submit" size="large" block className="button">
               Create Account
             </Button>
           </Form.Item>
