@@ -36,6 +36,36 @@ const SignUp = () => {
           autoComplete="off"
         >
           <Form.Item
+            name="firstname"
+            rules={[
+              {
+                required: true,
+                message: 'Please input your firstname!',
+              },
+            ]}
+            wrapperCol={{
+              offset: 0,
+              span: 24,
+            }}
+          >
+            <Input placeholder="First Name" size="large" className="input" />
+          </Form.Item>
+          <Form.Item
+            name="lastname"
+            rules={[
+              {
+                required: true,
+                message: 'Please input your lastname!',
+              },
+            ]}
+            wrapperCol={{
+              offset: 0,
+              span: 24,
+            }}
+          >
+            <Input placeholder="Last name" size="large" className="input" />
+          </Form.Item>
+          <Form.Item
             name="username"
             rules={[
               {
