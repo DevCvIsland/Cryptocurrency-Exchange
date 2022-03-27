@@ -12,6 +12,11 @@
   margin-bottom: 25px;
 }
 
+.sign-in-text-style .theme-primary-color {
+  padding-left: 5px;
+  margin-bottom: 0px !important;
+}
+
 .form-item,
 .ant-form-item-required {
   color: #fff !important;

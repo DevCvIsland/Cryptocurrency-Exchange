@@ -99,7 +99,7 @@ const SignIn = () => {
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             don't have an account?
             <Link href="/sign-up">
-              <p className="theme-primary-color">Sign Up Now</p>
+              <p className="theme-primary-color">Sign Up</p>
             </Link>
           </div>
         </Form>
