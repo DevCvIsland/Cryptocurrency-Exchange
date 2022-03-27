@@ -16,7 +16,7 @@ const SignUp = () => {
           <p className="responsive-sign-in-title">Get Started -</p>
           <span className="title-keyword theme-primary-color">Sign Up</span>
         </h2>
-        <p className="sign-in-text-style">
+        <p className="flex-row sign-in-text-style">
           Open account for free and start trading Bitcoins now!
         </p>
         <Form
