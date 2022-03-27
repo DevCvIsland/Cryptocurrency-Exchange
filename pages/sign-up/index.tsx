@@ -13,7 +13,7 @@ const SignUp = () => {
     <Row justify="center" align="middle" className="sign-in-section">
       <Col>
         <h2 className="sign-in-title">
-          Member <span className="theme-primary-color">Sign In</span>
+          Start <span className="theme-primary-color">Sign UP</span>
         </h2>
         <p className="sign-in-text-style">
           Send, receive and securely store your coins in your wallet
@@ -96,8 +96,8 @@ const SignUp = () => {
           <div className="flex-row sign-in-text-style">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             don't have an account?
-            <Link href="/sign-up">
-              <p className="theme-primary-color">Sign Up</p>
+            <Link href="/sign-in">
+              <p className="theme-primary-color">Sign In</p>
             </Link>
           </div>
         </Form>
