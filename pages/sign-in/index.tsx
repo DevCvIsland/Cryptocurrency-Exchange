@@ -96,7 +96,7 @@ const SignIn = () => {
           </Form.Item>
           <div className="flex-row sign-in-text-style">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
-            don't have an account?
+            Don't have an account?
             <Link href="/sign-up">
               <p className="theme-primary-color">Sign Up</p>
             </Link>
