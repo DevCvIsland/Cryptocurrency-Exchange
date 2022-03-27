@@ -1,4 +1,9 @@
 h2 {
   color: #fff;
 }
+
+.form-item,
+.ant-form-item-required {
+  color: #fff !important;
+}
 /*# sourceMappingURL=Styles.css.map */
