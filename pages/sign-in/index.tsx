@@ -12,8 +12,9 @@ const SignIn = () => {
   return (
     <Row justify="center" align="middle" className="sign-in-section">
       <Col>
-        <h2 className="sign-in-title">
-          Member <span className="theme-primary-color">Sign In</span>
+        <h2 className="flex-row sign-in-title">
+          Member
+          <span className="title-keyword theme-primary-color">Sign In</span>
         </h2>
         <p className="sign-in-text-style">
           Send, receive and securely store your coins in your wallet
@@ -90,7 +91,7 @@ const SignIn = () => {
               block
               className="button"
             >
-              Submit
+              Sign In
             </Button>
           </Form.Item>
           <div className="flex-row sign-in-text-style">

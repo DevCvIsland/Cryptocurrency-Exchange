@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import '../containers/header/styles/Styles.css'
 import '../containers/footer/styles/Styles.css'
 import './sign-in/styles/Styles.css'
+import './sign-up/styles/Styles.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />
