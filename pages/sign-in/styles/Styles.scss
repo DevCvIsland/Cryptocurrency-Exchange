@@ -13,6 +13,7 @@ $primary-color: #f3ba2f;
   color: #a8a4a4;
   margin-bottom: 25px;
   .theme-primary-color {
+    cursor: pointer;
     padding-left: 5px;
     margin-bottom: 0px !important;
   }
@@ -25,5 +26,5 @@ $primary-color: #f3ba2f;
 
 .input::placeholder,
 .ant-input::placeholder {
-  color: #1d1d1d !important;
+  color: #464545 !important;
 }
