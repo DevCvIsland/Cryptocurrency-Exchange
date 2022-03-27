@@ -1,13 +1,24 @@
 $primary-color: #f3ba2f;
 
-h2,
-div {
-  color: #fff;
+.sign-in-section {
+  height: 100vh;
 }
-// .title-sign-in {
-//   color: $primary-color;
-// }
+
+.sign-in-title {
+  color: #fff;
+  font-size: 50px;
+}
+
+.sign-in-text-style {
+  color: #a8a4a4;
+}
+
 .form-item,
 .ant-form-item-required {
   color: #fff !important;
+}
+
+.input::placeholder,
+.ant-input::placeholder {
+  color: #1d1d1d !important;
 }

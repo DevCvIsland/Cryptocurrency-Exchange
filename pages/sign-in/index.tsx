@@ -11,13 +11,15 @@ const SignIn = () => {
   }
 
   return (
-    <Row justify="center" align="middle">
+    <Row justify="center" align="middle" className="sign-in-section">
       <Col>
         {/* xs={11} sm={12} md={12} lg={12} xl={12} */}
-        <h2>
+        <h2 className="sign-in-title">
           Member <span className="theme-primary-color">Sign In</span>
         </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p className="sign-in-text-style">
+          Send, receive and securely store your coins in your wallet
+        </p>
         <Form
           name="basic"
           labelCol={{
@@ -46,7 +48,7 @@ const SignIn = () => {
               span: 24,
             }}
           >
-            <Input placeholder="Username" size="large" />
+            <Input placeholder="Username" size="large" className="input" />
           </Form.Item>
           <Form.Item
             name="password"
@@ -62,9 +64,9 @@ const SignIn = () => {
             }}
           >
             <Input.Password
-              className="input"
               placeholder="password"
               size="large"
+              className="input"
             />
           </Form.Item>
           <Form.Item
@@ -93,7 +95,7 @@ const SignIn = () => {
               Submit
             </Button>
           </Form.Item>
-          <div>
+          <div className="flex-row sign-in-text-style">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             don't have an account?
             <Link href="/sign-up">
