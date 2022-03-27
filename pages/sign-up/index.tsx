@@ -1,4 +1,5 @@
 import { Row, Col, Form, Input, Button, Checkbox } from 'antd'
+import { HomeOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 
 const SignUp = () => {
@@ -102,6 +103,17 @@ const SignUp = () => {
             </Link>
           </div>
         </Form>
+        <div className="flex-column back-home-section">
+          <Link href="/">
+            <Button
+              size="large"
+              className="button-outline"
+              icon={<HomeOutlined />}
+            >
+              Home
+            </Button>
+          </Link>
+        </div>
       </Col>
     </Row>
   )
