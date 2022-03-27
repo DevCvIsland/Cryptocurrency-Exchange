@@ -102,6 +102,13 @@ const SignIn = () => {
             </Link>
           </div>
         </Form>
+        <div className="flex-column">
+          <Link href="/">
+            <Button size="large" className="button-outline">
+              Home
+            </Button>
+          </Link>
+        </div>
       </Col>
     </Row>
   )
