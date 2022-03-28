@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../containers/layout/Layout'
+import TitleBanner from '../components/title-banner/TitleBanner'
 
 const Home: NextPage = () => (
   <>
@@ -10,7 +11,9 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Layout>
-      <div>Home Page</div>
+      <div>
+        <TitleBanner firstTitle="Home" lastTitle="Page" />
+      </div>
     </Layout>
   </>
 )
