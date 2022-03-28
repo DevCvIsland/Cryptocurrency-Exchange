@@ -14,5 +14,18 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 50px;
+  padding: 30px;
+}
+
+.service-container div {
+  padding-left: 30px;
+}
+
+.service-container div p:first-child {
+  font-size: 20px;
+}
+
+.service-container div p:last-child {
+  color: #999;
 }
 /*# sourceMappingURL=Styles.css.map */

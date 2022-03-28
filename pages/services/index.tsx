@@ -6,8 +6,8 @@ import DownloadBitcoin from '../../assets/icon/download-bitcoin.png'
 
 const ServiceContainer = () => {
   return (
-    <Col xs={24} sm={8} md={8} lg={8} xl={8} className="service-container">
-      <Image src={DownloadBitcoin} alt="Logo" width={50} height={50} />
+    <Col xs={24} sm={15} md={8} lg={8} xl={8} className="service-container">
+      <Image src={DownloadBitcoin} alt="Logo" width={100} height={100} />
       <div>
         <p>Bitcoin Escrow Service</p>
         <p>
