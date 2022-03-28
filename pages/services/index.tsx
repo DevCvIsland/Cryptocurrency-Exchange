@@ -17,13 +17,13 @@ type ServiceContainerProps = {
 const ServiceContainer = ({ icon, title }: ServiceContainerProps) => {
   return (
     <Col xs={24} sm={22} md={18} lg={11} xl={10} className="service-container">
-      <Image src={icon} alt="Logo" width={75} height={75} />
+      <Image src={icon} alt="Logo" width={100} height={100} />
       <div>
         <p>{title}</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem optio
+          aliquam, explicabo corporis, recusandae tempora odit accusamus nostrum
+          neque laudantium illo magnam error fugiat impedit ad maxime dolore!
         </p>
       </div>
     </Col>
@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <Layout>
       <TitleBanner firstTitle="Our" lastTitle="Services" />
-      <Row justify="center" align="middle">
+      <Row justify="center" align="middle" className="service-section">
         <ServiceContainer
           icon={DownloadBitcoin}
           title="Bitcoin Escrow Service"

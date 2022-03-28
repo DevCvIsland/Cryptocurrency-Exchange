@@ -1,3 +1,7 @@
+.service-section {
+  margin: 75px 0px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .service-container {
     background-color: #1d1d1d;
@@ -16,6 +20,10 @@
             align-items: center;
     padding: 30px;
     margin: 10px;
+  }
+  .service-container img {
+    width: 50px !important;
+    height: 50px !important;
   }
   .service-container div p:first-child {
     padding-top: 10px;
