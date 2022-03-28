@@ -1,31 +1,60 @@
-.service-container {
-  background-color: #1d1d1d;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 50px;
-  padding: 30px;
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .service-container {
+    background-color: #1d1d1d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px;
+    margin: 10px;
+  }
+  .service-container div p:first-child {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .service-container div p:last-child {
+    text-align: center;
+    color: #999;
+  }
 }
 
-.service-container div {
-  padding-left: 30px;
-}
-
-.service-container div p:first-child {
-  font-size: 20px;
-}
-
-.service-container div p:last-child {
-  color: #999;
+@media screen and (min-width: 577px) {
+  .service-container {
+    background-color: #1d1d1d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px;
+    margin: 10px;
+  }
+  .service-container div {
+    padding-left: 30px;
+  }
+  .service-container div p:first-child {
+    font-size: 20px;
+  }
+  .service-container div p:last-child {
+    color: #999;
+  }
 }
 /*# sourceMappingURL=Styles.css.map */
