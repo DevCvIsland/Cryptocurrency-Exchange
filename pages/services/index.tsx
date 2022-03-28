@@ -17,7 +17,7 @@ type ServiceContainerProps = {
 const ServiceContainer = ({ icon, title }: ServiceContainerProps) => {
   return (
     <Col xs={24} sm={22} md={18} lg={11} xl={10} className="service-container">
-      <Image src={icon} alt="Logo" width={100} height={100} />
+      <Image src={icon} alt="Services Icon" width={100} height={100} />
       <div>
         <p>{title}</p>
         <p>
