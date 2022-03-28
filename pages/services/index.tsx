@@ -1,14 +1,20 @@
 import { Row, Col } from 'antd'
+import Image from 'next/image'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
+import DownloadBitcoin from '../../assets/icon/download-bitcoin.png'
 
 const ServiceContainer = () => {
   return (
-    <Col xs={24} sm={8} md={12} lg={12} xl={12} className="service-container">
-      <div>hello</div>
+    <Col xs={24} sm={8} md={8} lg={8} xl={8} className="service-container">
+      <Image src={DownloadBitcoin} alt="Logo" width={50} height={50} />
       <div>
-        <p>hhf</p>
-        <p>svbsjvbibv</p>
+        <p>Bitcoin Escrow Service</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam
+        </p>
       </div>
     </Col>
   )
@@ -18,7 +24,7 @@ const Services = () => {
   return (
     <Layout>
       <TitleBanner firstTitle="Our" lastTitle="Services" />
-      <Row>
+      <Row justify="center" align="middle">
         <ServiceContainer />
         <ServiceContainer />
         <ServiceContainer />
