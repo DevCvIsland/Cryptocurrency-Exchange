@@ -3,9 +3,33 @@ h2 {
 }
 
 .title-banner-section {
+  position: relative;
   background-image: url(./../../../assets/root/bg-banner.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  height: 300px;
+}
+
+.title-banner-section::before {
+  right: 50%;
+  border-right: 125px solid transparent;
+}
+
+.title-banner-section::after {
+  left: 50%;
+  border-left: 125px solid transparent;
+}
+
+.title-banner-section::after,
+.title-banner-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  z-index: 1;
+  border-bottom: 30px solid #000;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 /*# sourceMappingURL=Styles.css.map */
