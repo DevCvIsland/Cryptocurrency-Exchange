@@ -1,10 +1,10 @@
 import Layout from '../../containers/layout/Layout'
-import TitleLayout from '../../components/title-layout/TitleLayout'
+import TitleBanner from '../../components/title-banner/TitleBanner'
 
 const Services = () => {
   return (
     <Layout>
-      <TitleLayout title="Services" />
+      <TitleBanner title="Services" />
     </Layout>
   )
 }
