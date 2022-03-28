@@ -5,6 +5,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 250px;
+  opacity: 0.3;
 }
 
 .title-banner-section::before {
@@ -32,11 +33,42 @@
   transform: rotate(0.000001deg);
 }
 
-.title-banner-text {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 600;
-  span {
-    padding-left: 10px;
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .title-banner-text {
+    position: absolute;
+    top: 185px;
+    left: 15%;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    span {
+      padding-left: 10px;
+    }
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 900px) {
+  .title-banner-text {
+    position: absolute;
+    top: 185px;
+    left: 32%;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    span {
+      padding-left: 10px;
+    }
+  }
+}
+@media screen and (min-width: 901px) {
+  .title-banner-text {
+    position: absolute;
+    top: 185px;
+    left: 40%;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    span {
+      padding-left: 10px;
+    }
   }
 }
