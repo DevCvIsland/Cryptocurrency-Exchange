@@ -2,14 +2,18 @@
 // import { Row } from 'antd'
 
 type TitleBannerProps = {
-  title: string
+  firstTitle: string
+  lastTitle: string
 }
 
-const TitleBanner = ({ title }: TitleBannerProps) => {
+const TitleBanner = ({ firstTitle, lastTitle }: TitleBannerProps) => {
   return (
     <div className="flex-row title-banner-section">
       {/* <Image src={Background} alt="Background" width={1550} height={200} /> */}
-      <h2 className="title-banner-text">{title}</h2>
+      <h2 className="title-banner-text">
+        {firstTitle}
+        <span className="theme-primary-color">{lastTitle}</span>
+      </h2>
     </div>
   )
 }

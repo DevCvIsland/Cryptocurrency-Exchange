@@ -4,7 +4,7 @@ import TitleBanner from '../../components/title-banner/TitleBanner'
 const Services = () => {
   return (
     <Layout>
-      <TitleBanner title="Services" />
+      <TitleBanner firstTitle="Our" lastTitle="Services" />
     </Layout>
   )
 }
