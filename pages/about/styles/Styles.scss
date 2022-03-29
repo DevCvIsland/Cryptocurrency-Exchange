@@ -1,3 +1,5 @@
+$primary-color: #f3ba2f;
+
 .description-about-section {
   margin: 75px 0px;
 }
@@ -17,6 +19,33 @@
   button {
     margin: 20px 0px;
   }
+}
+
+.status-section {
+  background-color: #1d1d1d;
+}
+
+.status-item {
+  text-align: center;
+}
+
+.status-item-border::after {
+  content: '';
+  position: absolute;
+  font-weight: 100;
+  top: 0;
+  right: 0;
+  height: 73px;
+  -webkit-transform: translateX(-50%) skew(-21deg);
+  transform: translateX(-50%) skew(-21deg);
+  width: 1px;
+  background: #444;
+}
+
+.status-band {
+  height: 345px;
+  width: 100%;
+  background-color: $primary-color;
 }
 
 .person-section-title {
