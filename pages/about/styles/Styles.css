@@ -21,4 +21,24 @@
 .description-about-text button {
   margin: 20px 0px;
 }
+
+h2,
+h3 {
+  color: #fff;
+}
+
+.person-container {
+  max-width: 265px !important;
+  background-color: #1d1d1d;
+  margin: 0px 20px;
+}
+
+.person-container h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.person-container p {
+  color: #999;
+}
 /*# sourceMappingURL=Styles.css.map */

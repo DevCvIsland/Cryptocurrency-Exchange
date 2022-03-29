@@ -18,3 +18,25 @@
     margin: 20px 0px;
   }
 }
+
+h2,
+h3 {
+  color: #fff;
+}
+
+// .person-section{
+
+// }
+
+.person-container {
+  max-width: 265px !important;
+  background-color: #1d1d1d;
+  margin: 0px 20px;
+  h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  p {
+    color: #999;
+  }
+}
