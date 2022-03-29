@@ -30,7 +30,7 @@ const PersonsSection = () => {
         </h2>
         <p>A talented team of Cryptocurrency experts based in London</p>
       </Row>
-      <Row justify="center" align="middle">
+      <Row justify="center" align="middle" className="person-section">
         <PersonContainer
           image={MemberOne}
           name="Maryana Mori"
