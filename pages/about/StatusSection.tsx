@@ -13,7 +13,7 @@ const StatusSection = () => {
             distribution
           </p>
         </Row>
-        <Row>
+        <Row className="status-items">
           <Col
             xs={24}
             sm={12}
