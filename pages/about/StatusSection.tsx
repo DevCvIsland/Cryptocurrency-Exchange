@@ -4,8 +4,10 @@ const StatusSection = () => {
   return (
     <>
       <div className="status-section">
-        <Row className="flex-column">
-          <h2>Binance Numbers</h2>
+        <Row className="flex-column status-title">
+          <h2>
+            Binance <span className="theme-primary-color">Numbers</span>
+          </h2>
           <p>
             leading cryptocurrency exchange since day one of Bitcoin
             distribution
@@ -51,7 +53,6 @@ const StatusSection = () => {
           </Col>
         </Row>
       </div>
-
       <Row className="status-band" />
     </>
   )

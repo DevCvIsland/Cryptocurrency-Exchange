@@ -24,6 +24,22 @@
 
 .status-section {
   background-color: #1d1d1d;
+  max-width: 1140px !important;
+}
+
+.status-title {
+  padding: 50px 0px !important;
+}
+
+.status-title h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.status-title p {
+  font-size: 20px;
+  color: #999;
 }
 
 .status-item {
