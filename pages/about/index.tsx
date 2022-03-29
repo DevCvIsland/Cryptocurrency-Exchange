@@ -8,7 +8,11 @@ const About = () => {
   return (
     <Layout>
       <TitleBanner firstTitle="About" lastTitle="Us" />
-      <Row justify="center" align="middle">
+      <Row
+        justify="center"
+        align="middle"
+        className="flex-row description-about-us"
+      >
         <Col xs={24} sm={15} md={12} lg={12} xl={12} className="flex-row">
           <Image src={Bitcoin} alt="Bitcoin Image" width={350} height={350} />
         </Col>
