@@ -8,13 +8,13 @@ const About = () => {
   return (
     <Layout>
       <TitleBanner firstTitle="About" lastTitle="Us" />
-      <Row>
-        <Col>
+      <Row justify="center" align="middle">
+        <Col xs={24} sm={15} md={12} lg={12} xl={12} className="flex-row">
           <Image src={Bitcoin} alt="Bitcoin Image" width={350} height={350} />
         </Col>
-        <Col>
+        <Col xs={24} sm={15} md={12} lg={12} xl={12}>
           <div>
-            <h3>WE ARE BAYYA</h3>
+            <h3>We Are Binance</h3>
             <p>
               A place for everyone who wants to simply buy and sell Bitcoins.
               Deposit funds using your Visa/MasterCard or bank transfer. Instant
@@ -24,14 +24,16 @@ const About = () => {
             </p>
           </div>
           <div>
-            <h3>risk warning</h3>
+            <h3>Risk Warning</h3>
             <p>
               Bitcoin is not legal tender and is not backed by any government.
               Accounts and value balances are not subject to any government
               backed deposit insurance or any other government protections.
             </p>
           </div>
-          <Button className="button">Buttton</Button>
+          <Button className="button" size="large">
+            Our Services
+          </Button>
         </Col>
       </Row>
     </Layout>
