@@ -19,20 +19,25 @@
   }
 }
 
-h2,
-h3 {
-  color: #fff;
+.person-section-title {
+  text-align: center;
+  h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 50px;
+  }
+  p {
+    color: #999;
+    font-size: 20px;
+  }
 }
-
-// .person-section{
-
-// }
 
 .person-container {
   max-width: 265px !important;
   background-color: #1d1d1d;
   margin: 20px 20px;
   h3 {
+    color: #fff;
     margin-top: 10px;
     font-size: 20px;
   }

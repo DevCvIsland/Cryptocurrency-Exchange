@@ -13,14 +13,7 @@ type PersonContainerProps = {
 
 const PersonContainer = ({ image, name, direction }: PersonContainerProps) => {
   return (
-    <Col
-      xs={24}
-      sm={15}
-      md={12}
-      lg={12}
-      xl={5}
-      className="flex-column person-container"
-    >
+    <Col className="flex-column person-container">
       <Image src={image} alt="Bitcoin Image" width={265} height={330} />
       <h3>{name}</h3>
       <p>{direction}</p>
@@ -31,11 +24,13 @@ const PersonContainer = ({ image, name, direction }: PersonContainerProps) => {
 const PersonsSection = () => {
   return (
     <>
-      <Row className="flex-column">
-        <h2>Our Experts</h2>
+      <Row className="flex-column person-section-title">
+        <h2>
+          Our <span className="theme-primary-color">Experts</span>
+        </h2>
         <p>A talented team of Cryptocurrency experts based in London</p>
       </Row>
-      <Row justify="center" align="middle" className="person-section">
+      <Row justify="center" align="middle">
         <PersonContainer
           image={MemberOne}
           name="Maryana Mori"
@@ -44,7 +39,7 @@ const PersonsSection = () => {
         <PersonContainer
           image={MemberTwo}
           name="Marco Verratti"
-          direction="CEO"
+          direction="Chief Executive Officer"
         />
         <PersonContainer
           image={MemberThree}
