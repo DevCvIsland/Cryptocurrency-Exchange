@@ -7,6 +7,7 @@ import './sign-in/styles/Styles.css'
 import './sign-up/styles/Styles.css'
 import '../components/title-banner/styles/Styles.css'
 import './services/styles/Styles.css'
+import './about/styles/Styles.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />
