@@ -22,27 +22,16 @@ $primary-color: #f3ba2f;
 }
 
 @media screen and (min-width: 0px) and (max-width: 576px) {
-  .status-band {
-    display: none;
-  }
   .status-section {
     background-color: #1d1d1d;
-    padding: 0px;
-  }
-  .status-item-border::after {
-    display: none;
+    margin-bottom: 75px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 900px) {
-  .status-band {
-    display: none;
-  }
   .status-section {
     background-color: #1d1d1d;
     padding: 75px;
-  }
-  .status-item-border::after {
-    display: none;
+    margin-bottom: 75px;
   }
 }
 @media screen and (min-width: 901px) {
@@ -58,6 +47,7 @@ $primary-color: #f3ba2f;
     background-color: #1d1d1d;
     max-width: 1140px !important;
     padding: 75px;
+    margin-bottom: 75px;
     position: absolute;
     top: 1020px;
     left: 25%;
@@ -96,19 +86,6 @@ $primary-color: #f3ba2f;
     font-size: 35px;
     margin-bottom: 0px;
   }
-}
-
-.status-item-border::after {
-  content: '';
-  position: absolute;
-  font-weight: 100;
-  top: 0;
-  right: 0;
-  height: 73px;
-  -webkit-transform: translateX(-50%) skew(-21deg);
-  transform: translateX(-50%) skew(-21deg);
-  width: 1px;
-  background: #444;
 }
 
 .person-section-title {

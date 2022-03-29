@@ -16,9 +16,9 @@ const StatusSection = () => {
         <Row>
           <Col
             xs={24}
-            sm={24}
-            md={12}
-            lg={12}
+            sm={12}
+            md={6}
+            lg={6}
             xl={6}
             className="status-item status-item-border"
           >
@@ -27,9 +27,9 @@ const StatusSection = () => {
           </Col>
           <Col
             xs={24}
-            sm={24}
-            md={12}
-            lg={12}
+            sm={12}
+            md={6}
+            lg={6}
             xl={6}
             className="status-item status-item-border"
           >
@@ -38,16 +38,16 @@ const StatusSection = () => {
           </Col>
           <Col
             xs={24}
-            sm={24}
-            md={12}
-            lg={12}
+            sm={12}
+            md={6}
+            lg={6}
             xl={6}
             className="status-item status-item-border"
           >
             <p>1726</p>
             <p>Active Accounts</p>
           </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={6} className="status-item">
+          <Col xs={24} sm={12} md={6} lg={6} xl={6} className="status-item">
             <p>17</p>
             <p>Years On The Market</p>
           </Col>
