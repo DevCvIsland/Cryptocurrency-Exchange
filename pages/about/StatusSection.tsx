@@ -12,19 +12,40 @@ const StatusSection = () => {
           </p>
         </Row>
         <Row>
-          <Col className="status-item status-item-border" xs={6}>
+          <Col
+            xs={24}
+            sm={24}
+            md={12}
+            lg={12}
+            xl={6}
+            className="status-item status-item-border"
+          >
             <p>$77.45B</p>
             <p>Market Cap</p>
           </Col>
-          <Col className="status-item status-item-border" xs={6}>
+          <Col
+            xs={24}
+            sm={24}
+            md={12}
+            lg={12}
+            xl={6}
+            className="status-item status-item-border"
+          >
             <p>165k</p>
             <p>Daily Transactions</p>
           </Col>
-          <Col className="status-item status-item-border" xs={6}>
+          <Col
+            xs={24}
+            sm={24}
+            md={12}
+            lg={12}
+            xl={6}
+            className="status-item status-item-border"
+          >
             <p>1726</p>
             <p>Active Accounts</p>
           </Col>
-          <Col className="status-item" xs={6}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={6} className="status-item">
             <p>17</p>
             <p>Years On The Market</p>
           </Col>
