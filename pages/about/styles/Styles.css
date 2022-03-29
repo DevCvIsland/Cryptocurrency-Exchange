@@ -39,7 +39,7 @@
   .status-section {
     padding: 75px;
     position: absolute;
-    top: 1010px;
+    top: 990px;
     left: 19%;
     z-index: 1;
   }
@@ -58,7 +58,7 @@
     content: '';
     position: absolute;
     font-weight: 100;
-    top: 0;
+    top: 30px;
     right: -8%;
     height: 73px;
     -webkit-transform: translateX(-50%) skew(-21deg);
