@@ -16,8 +16,8 @@ const PersonContainer = ({ image, name, direction }: PersonContainerProps) => {
     <Col
       xs={24}
       sm={15}
-      md={20}
-      lg={10}
+      md={12}
+      lg={12}
       xl={5}
       className="flex-column person-container"
     >
