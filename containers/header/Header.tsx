@@ -11,10 +11,10 @@ const Header = () => {
           <Image src={Logo} alt="Logo" width={200} height={50} />
         </Col>
         <Col xs={12} sm={10} md={8} lg={8} xl={6} className="button-container">
-          <Button className="button button-style">
+          <Button size="large" className="button button-style">
             <Link href="/sign-in">Sign In</Link>
           </Button>
-          <Button className="button-outline">
+          <Button size="large" className="button-outline">
             <Link href="/sign-up">Sign Up</Link>
           </Button>
         </Col>

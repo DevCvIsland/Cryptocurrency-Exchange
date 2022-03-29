@@ -1,8 +1,24 @@
-h3 {
-  color: #fff;
+.description-about-section {
+  margin: 75px 0px;
 }
 
-.description-about-us {
-  margin: 75px 0px;
+.description-about-text {
+  margin: 20px 0px;
+  padding: 0px 15px;
+}
+
+.description-about-text h3 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.description-about-text p {
+  color: #999;
+  font-size: 16px;
+  max-width: 550px !important;
+}
+
+.description-about-text button {
+  margin: 20px 0px;
 }
 /*# sourceMappingURL=Styles.css.map */

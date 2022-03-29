@@ -11,12 +11,19 @@ const About = () => {
       <Row
         justify="center"
         align="middle"
-        className="flex-row description-about-us"
+        className="description-about-section"
       >
         <Col xs={24} sm={15} md={12} lg={12} xl={12} className="flex-row">
           <Image src={Bitcoin} alt="Bitcoin Image" width={350} height={350} />
         </Col>
-        <Col xs={24} sm={15} md={12} lg={12} xl={12}>
+        <Col
+          xs={24}
+          sm={15}
+          md={12}
+          lg={12}
+          xl={12}
+          className="description-about-text"
+        >
           <div>
             <h3>We Are Binance</h3>
             <p>
