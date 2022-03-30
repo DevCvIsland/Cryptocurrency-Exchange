@@ -35,8 +35,7 @@
 }
 
 .menu .menu-item {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+  font-size: 18px;
   color: #fff !important;
 }
 

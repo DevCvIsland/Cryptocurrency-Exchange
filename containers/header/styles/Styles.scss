@@ -29,7 +29,7 @@ $primary-color: #f3ba2f;
 .menu {
   background-color: #1d1d1d !important;
   .menu-item {
-    position: sticky !important;
+    font-size: 18px;
     color: #fff !important;
     &:hover {
       color: $primary-color !important;
