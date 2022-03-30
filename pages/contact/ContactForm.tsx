@@ -1,5 +1,30 @@
 import { Row, Col, Form, Input, Button } from 'antd'
 
+type FormItemProps = {
+  type: string
+  children: React.ReactNode
+}
+
+const FormItem = ({ type, children }: FormItemProps) => {
+  return (
+    <Form.Item
+      name={type}
+      rules={[
+        {
+          required: true,
+          message: `Please input your ${type}!`,
+        },
+      ]}
+      wrapperCol={{
+        offset: 0,
+        span: 24,
+      }}
+    >
+      {children}
+    </Form.Item>
+  )
+}
+
 const ContactForm = () => {
   const onFinish = (values: any) => {
     console.log('Success:', values)
@@ -27,89 +52,29 @@ const ContactForm = () => {
     >
       <Row justify="space-between" align="middle">
         <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-          <Form.Item
-            name="subject"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your subject!',
-              },
-            ]}
-            wrapperCol={{
-              offset: 0,
-              span: 24,
-            }}
-          >
+          <FormItem type="Subject">
             <Input placeholder="Subject" size="large" className="input" />
-          </Form.Item>
+          </FormItem>
         </Col>
         <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-          <Form.Item
-            name="Email"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your Email!',
-              },
-            ]}
-            wrapperCol={{
-              offset: 0,
-              span: 24,
-            }}
-          >
+          <FormItem type="Email">
             <Input placeholder="Email" size="large" className="input" />
-          </Form.Item>
+          </FormItem>
         </Col>
         <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-          <Form.Item
-            name="firstname"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your firstname!',
-              },
-            ]}
-            wrapperCol={{
-              offset: 0,
-              span: 24,
-            }}
-          >
+          <FormItem type="First Name">
             <Input placeholder="First Name" size="large" className="input" />
-          </Form.Item>
+          </FormItem>
         </Col>
         <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-          <Form.Item
-            name="lastname"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your lastname!',
-              },
-            ]}
-            wrapperCol={{
-              offset: 0,
-              span: 24,
-            }}
-          >
-            <Input placeholder="Last name" size="large" className="input" />
-          </Form.Item>
+          <FormItem type="Last Name">
+            <Input placeholder="Last Name" size="large" className="input" />
+          </FormItem>
         </Col>
         <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-          <Form.Item
-            name="message"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your message!',
-              },
-            ]}
-            wrapperCol={{
-              offset: 0,
-              span: 24,
-            }}
-          >
+          <FormItem type="Message">
             <Input.TextArea rows={5} placeholder="Message" />
-          </Form.Item>
+          </FormItem>
         </Col>
         <Col xs={24} sm={12} md={12} lg={12} xl={12}>
           <Form.Item
