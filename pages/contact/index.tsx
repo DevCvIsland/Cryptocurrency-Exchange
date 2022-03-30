@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <Layout>
       <TitleBanner firstTitle="Get In" lastTitle="Touch" />
-      <Row justify="center" align="top">
+      <Row justify="center" align="top" className="contact-section">
         <Col xs={23} sm={20} md={20} lg={13} xl={12} className="contact-form">
           <Row justify="center" align="middle">
             <Col

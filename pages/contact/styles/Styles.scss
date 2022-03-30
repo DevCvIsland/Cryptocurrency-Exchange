@@ -1,5 +1,9 @@
 $primary-color: #f3ba2f;
 
+.contact-section {
+  margin: 75px 0px;
+}
+
 .contact-form-title {
   h3 {
     color: #fff;
@@ -9,6 +13,7 @@ $primary-color: #f3ba2f;
   p {
     color: #999;
     font-size: 18px;
+    margin-bottom: 30px;
   }
 }
 

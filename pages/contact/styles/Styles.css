@@ -1,3 +1,7 @@
+.contact-section {
+  margin: 75px 0px;
+}
+
 .contact-form-title h3 {
   color: #fff;
   font-size: 23px;
@@ -7,6 +11,7 @@
 .contact-form-title p {
   color: #999;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 992px) {
