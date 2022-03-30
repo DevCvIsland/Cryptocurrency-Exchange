@@ -1,9 +1,15 @@
 import { Menu, Button, Row, Col } from 'antd'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Logo from '../../assets/logo/logo.jpg'
 
 const Header = () => {
+  const router = useRouter()
+  const handleClick = (event: any) => {
+    router.push(`/${event.key}`)
+  }
+
   return (
     <>
       <Row justify="space-between" align="middle" className="logo-section">
@@ -19,36 +25,29 @@ const Header = () => {
           </Button>
         </Col>
       </Row>
-      <Menu mode="horizontal" theme="dark" className="menu flex-row">
-        <Menu.Item className="menu-item" key="home">
-          <Link href="/">
-            <p className="menu-item-text">Home</p>
-          </Link>
+      <Menu
+        onClick={handleClick}
+        mode="horizontal"
+        theme="dark"
+        className="menu flex-row"
+      >
+        <Menu.Item className="menu-item" key="">
+          <p className="menu-item-text">Home</p>
         </Menu.Item>
         <Menu.Item className="menu-item" key="market">
-          <Link href="/market">
-            <p className="menu-item-text">Markets</p>
-          </Link>
+          <p className="menu-item-text">Markets</p>
         </Menu.Item>
         <Menu.Item className="menu-item" key="services">
-          <Link href="/services">
-            <p className="menu-item-text">Services</p>
-          </Link>
+          <p className="menu-item-text">Services</p>
         </Menu.Item>
         <Menu.Item className="menu-item" key="blog">
-          <Link href="/blog">
-            <p className="menu-item-text">Blog</p>
-          </Link>
+          <p className="menu-item-text">Blog</p>
         </Menu.Item>
         <Menu.Item className="menu-item" key="about">
-          <Link href="/about">
-            <p className="menu-item-text">About</p>
-          </Link>
+          <p className="menu-item-text">About</p>
         </Menu.Item>
         <Menu.Item className="menu-item" key="contact">
-          <Link href="/contact">
-            <p className="menu-item-text">Contact</p>
-          </Link>
+          <p className="menu-item-text">Contact</p>
         </Menu.Item>
       </Menu>
     </>
