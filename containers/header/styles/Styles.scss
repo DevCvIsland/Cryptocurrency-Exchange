@@ -29,31 +29,12 @@ $primary-color: #f3ba2f;
 .menu {
   background-color: #1d1d1d !important;
   .menu-item {
+    position: sticky !important;
+    color: #fff !important;
     &:hover {
+      color: $primary-color !important;
       background-color: #1d1d1d !important;
       border-bottom: 1px solid $primary-color;
-      .menu-item-text {
-        color: $primary-color !important;
-      }
-    }
-    .menu-item-text {
-      color: #fff !important;
-      margin-bottom: 0px;
-      &:hover {
-        color: $primary-color !important;
-      }
     }
   }
 }
-
-// @media screen and (min-width: 0px) and (max-width: 400px){
-// }
-
-// @media screen and (min-width: 401px) and (max-width: 600px){
-// }
-
-// @media screen and (min-width: 601px) and (max-width: 1280px){
-// }
-
-// @media screen and (min-width: 1281px){
-// }

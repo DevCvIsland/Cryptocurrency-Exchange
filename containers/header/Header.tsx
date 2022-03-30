@@ -14,15 +14,21 @@ const Header = () => {
     <>
       <Row justify="space-between" align="middle" className="logo-section">
         <Col xs={11} sm={12} md={12} lg={12} xl={12}>
-          <Image src={Logo} alt="Logo" width={200} height={50} />
+          <Link href="/">
+            <Image src={Logo} alt="Logo" width={200} height={50} />
+          </Link>
         </Col>
         <Col xs={12} sm={10} md={8} lg={8} xl={6} className="button-container">
-          <Button size="large" className="button button-style">
-            <Link href="/sign-in">Sign In</Link>
-          </Button>
-          <Button size="large" className="button-outline">
-            <Link href="/sign-up">Sign Up</Link>
-          </Button>
+          <Link href="/sign-in">
+            <Button size="large" className="button button-style">
+              Sign In
+            </Button>
+          </Link>
+          <Link href="/sign-up">
+            <Button size="large" className="button-outline">
+              Sign Up
+            </Button>
+          </Link>
         </Col>
       </Row>
       <Menu
@@ -32,22 +38,22 @@ const Header = () => {
         className="menu flex-row"
       >
         <Menu.Item className="menu-item" key="">
-          <p className="menu-item-text">Home</p>
+          Home
         </Menu.Item>
         <Menu.Item className="menu-item" key="market">
-          <p className="menu-item-text">Markets</p>
+          Markets
         </Menu.Item>
         <Menu.Item className="menu-item" key="services">
-          <p className="menu-item-text">Services</p>
+          Services
         </Menu.Item>
         <Menu.Item className="menu-item" key="blog">
-          <p className="menu-item-text">Blog</p>
+          Blog
         </Menu.Item>
         <Menu.Item className="menu-item" key="about">
-          <p className="menu-item-text">About</p>
+          About
         </Menu.Item>
         <Menu.Item className="menu-item" key="contact">
-          <p className="menu-item-text">Contact</p>
+          Contact
         </Menu.Item>
       </Menu>
     </>
