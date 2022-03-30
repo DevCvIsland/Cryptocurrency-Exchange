@@ -52,28 +52,28 @@ const ContactForm = () => {
     >
       <Row justify="space-between" align="middle">
         <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-          <FormItem type="Subject">
+          <FormItem type="subject">
             <Input placeholder="Subject" size="large" className="input" />
           </FormItem>
         </Col>
         <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-          <FormItem type="Email">
+          <FormItem type="email">
             <Input placeholder="Email" size="large" className="input" />
           </FormItem>
         </Col>
         <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-          <FormItem type="First Name">
+          <FormItem type="first name">
             <Input placeholder="First Name" size="large" className="input" />
           </FormItem>
         </Col>
         <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-          <FormItem type="Last Name">
+          <FormItem type="last name">
             <Input placeholder="Last Name" size="large" className="input" />
           </FormItem>
         </Col>
         <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-          <FormItem type="Message">
-            <Input.TextArea rows={5} placeholder="Message" />
+          <FormItem type="message">
+            <Input.TextArea rows={5} size="large" placeholder="Message" />
           </FormItem>
         </Col>
         <Col xs={24} sm={12} md={12} lg={12} xl={12}>
