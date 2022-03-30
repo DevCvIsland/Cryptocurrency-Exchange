@@ -1,11 +1,29 @@
 $primary-color: #f3ba2f;
 
-h3 {
-  color: #fff;
+.contact-form-title {
+  h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 550;
+  }
+  p {
+    color: #999;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-info {
+    margin-left: 50px;
+  }
 }
 
 .contact-info {
   background-color: #1d1d1d;
+  padding: 0px 30px;
+  & > div {
+    margin: 30px 0px;
+  }
 }
 
 .contact-info-icon {
@@ -16,22 +34,21 @@ h3 {
 .social-profiles-icon {
   span svg {
     font-size: 30px;
-    // border-radius: 80%;
-    margin: 0px 5px;
+    margin: 10px 5px;
+    &:hover {
+      background-color: #fff !important;
+      cursor: pointer;
+    }
   }
   span:nth-child(1) svg {
     background-color: #1d1d1d;
-    color: #e1306c;
+    color: #3b5998;
   }
   span:nth-child(2) svg {
     background-color: #1d1d1d;
-    color: #3b5998;
-  }
-  span:nth-child(3) svg {
-    background-color: #1d1d1d;
     color: #1da1f2;
   }
-  span:nth-child(4) svg {
+  span:nth-child(3) svg {
     background-color: #1d1d1d;
     color: #dd4b39;
   }

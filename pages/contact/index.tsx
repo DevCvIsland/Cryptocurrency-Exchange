@@ -4,7 +4,6 @@ import {
   PhoneFilled,
   MessageFilled,
   ProfileFilled,
-  InstagramFilled,
   FacebookFilled,
   TwitterSquareFilled,
   GooglePlusSquareFilled,
@@ -24,9 +23,16 @@ const Contact = () => {
     <Layout>
       <TitleBanner firstTitle="Get In" lastTitle="Touch" />
       <Row justify="center" align="top">
-        <Col xs={24} sm={24} md={24} lg={24} xl={12}>
-          <Row>
-            <Col xs={12} sm={10} md={8} lg={8} xl={24}>
+        <Col xs={24} sm={24} md={15} lg={12} xl={12} className="contact-form">
+          <Row justify="center" align="middle">
+            <Col
+              xs={24}
+              sm={24}
+              md={24}
+              lg={24}
+              xl={24}
+              className="contact-form-title"
+            >
               <h3>Feel Free To Drop Us A Message</h3>
               <p>
                 Need to speak to us? Do you have any queries or suggestions?
@@ -52,7 +58,7 @@ const Contact = () => {
             autoComplete="off"
           >
             <Row justify="space-between" align="middle">
-              <Col xs={24} sm={24} md={8} lg={8} xl={11}>
+              <Col xs={24} sm={24} md={24} lg={11} xl={11}>
                 <Form.Item
                   name="subject"
                   rules={[
@@ -69,7 +75,7 @@ const Contact = () => {
                   <Input placeholder="Subject" size="large" className="input" />
                 </Form.Item>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={11}>
+              <Col xs={24} sm={24} md={24} lg={11} xl={11}>
                 <Form.Item
                   name="Email"
                   rules={[
@@ -86,7 +92,7 @@ const Contact = () => {
                   <Input placeholder="Email" size="large" className="input" />
                 </Form.Item>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={11}>
+              <Col xs={24} sm={24} md={24} lg={11} xl={11}>
                 <Form.Item
                   name="firstname"
                   rules={[
@@ -107,7 +113,7 @@ const Contact = () => {
                   />
                 </Form.Item>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={11}>
+              <Col xs={24} sm={24} md={24} lg={11} xl={11}>
                 <Form.Item
                   name="lastname"
                   rules={[
@@ -128,7 +134,7 @@ const Contact = () => {
                   />
                 </Form.Item>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={24}>
+              <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <Form.Item
                   name="message"
                   rules={[
@@ -145,7 +151,7 @@ const Contact = () => {
                   <Input.TextArea rows={5} placeholder="Message" />
                 </Form.Item>
               </Col>
-              <Col xs={24} sm={24} md={8} lg={8} xl={24}>
+              <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <Form.Item
                   wrapperCol={{
                     offset: 0,
@@ -166,44 +172,50 @@ const Contact = () => {
             </Row>
           </Form>
         </Col>
-        <Col xs={24} sm={24} md={24} lg={24} xl={6} className="contact-info">
-          <Row justify="start" align="top">
-            <Col>
+        <Col xs={24} sm={24} md={15} lg={10} xl={6} className="contact-info">
+          <Row justify="space-between" align="top">
+            <Col xs={3} sm={3} md={3} lg={3} xl={2}>
               <HomeFilled className="contact-info-icon" />
             </Col>
-            <Col>
+            <Col xs={21} sm={21} md={21} lg={21} xl={20}>
               <p>Address</p>
               <p>123 Disney Street Slim Av. Brooklyn Bridge, NY, New York</p>
             </Col>
           </Row>
-          <Row justify="start" align="top">
-            <Col xs={12} sm={10} md={8} lg={8} xl={2}>
+          <Row justify="space-between" align="top">
+            <Col xs={3} sm={3} md={3} lg={3} xl={2}>
               <PhoneFilled className="contact-info-icon" />
             </Col>
-            <Col>
+            <Col
+              xs={21}
+              sm={21}
+              md={21}
+              lg={21}
+              xl={20}
+              className="contact-info-text"
+            >
               <p>Phone Numbers</p>
               <p>+88 0123 4567 890</p>
               <p>+88 0231 3421 453</p>
             </Col>
           </Row>
-          <Row justify="start" align="top">
-            <Col>
+          <Row justify="space-between" align="top">
+            <Col xs={3} sm={3} md={3} lg={3} xl={2}>
               <MessageFilled className="contact-info-icon" />
             </Col>
-            <Col>
+            <Col xs={21} sm={21} md={21} lg={21} xl={20}>
               <p>Email Addresses</p>
               <p>contact@example.com</p>
               <p>info@example.com</p>
             </Col>
           </Row>
-          <Row justify="start" align="top">
-            <Col>
+          <Row justify="space-between" align="top">
+            <Col xs={3} sm={3} md={3} lg={3} xl={2}>
               <ProfileFilled className="contact-info-icon" />
             </Col>
-            <Col>
+            <Col xs={21} sm={21} md={21} lg={21} xl={20}>
               <p>Social Profiles</p>
               <Row className="social-profiles-icon">
-                <InstagramFilled />
                 <FacebookFilled />
                 <TwitterSquareFilled />
                 <GooglePlusSquareFilled />
