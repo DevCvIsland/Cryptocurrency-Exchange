@@ -44,4 +44,8 @@
   background-color: #1d1d1d !important;
   border-bottom: 1px solid #f3ba2f;
 }
+
+.ant-menu-item-selected {
+  background-color: #f3ba2f !important;
+}
 /*# sourceMappingURL=Styles.css.map */
