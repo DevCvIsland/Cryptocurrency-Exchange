@@ -21,13 +21,17 @@
 }
 
 .peyment-methods {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 
 .peyment-methods > * {
   margin: 0px 2px !important;
   cursor: pointer;
+}
+
+.copyright-section {
+  padding-bottom: 50px;
 }
 
 .developer {

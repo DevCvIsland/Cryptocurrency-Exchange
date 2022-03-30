@@ -59,7 +59,7 @@ const Footer = () => {
         <Image src={PAYMENT_METHOD_4} alt="peyment" width={40} height={25} />
         <Image src={PAYMENT_METHOD_5} alt="peyment" width={40} height={25} />
       </Row>
-      <Row justify="center" align="middle">
+      <Row justify="center" align="middle" className="copyright-section">
         Copyright ©2022 All rights reserved | Developed By
         <span className="developer">Amir Sadri</span>
       </Row>
