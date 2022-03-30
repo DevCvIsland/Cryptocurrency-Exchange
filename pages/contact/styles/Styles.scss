@@ -3,7 +3,7 @@ $primary-color: #f3ba2f;
 .contact-form-title {
   h3 {
     color: #fff;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 550;
   }
   p {
@@ -51,5 +51,15 @@ $primary-color: #f3ba2f;
   span:nth-child(3) svg {
     background-color: #1d1d1d;
     color: #dd4b39;
+  }
+}
+
+.contact-info-text {
+  & p:first-child {
+    font-size: 18px;
+    font-weight: 550;
+  }
+  & p:not(:first-child) {
+    color: #999;
   }
 }
