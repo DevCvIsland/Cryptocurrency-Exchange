@@ -23,8 +23,8 @@ const Contact = () => {
   return (
     <Layout>
       <TitleBanner firstTitle="Get In" lastTitle="Touch" />
-      <Row>
-        <Col xs={12} sm={10} md={8} lg={8} xl={12}>
+      <Row justify="center" align="top">
+        <Col xs={24} sm={24} md={24} lg={24} xl={12}>
           <Row>
             <Col xs={12} sm={10} md={8} lg={8} xl={24}>
               <h3>Feel Free To Drop Us A Message</h3>
@@ -35,24 +35,24 @@ const Contact = () => {
               </p>
             </Col>
           </Row>
-          <Row>
-            <Form
-              name="basic"
-              style={{ width: '100%' }}
-              // labelCol={{
-              //   span: 8,
-              // }}
-              // wrapperCol={{
-              //   span: 24,
-              // }}
-              initialValues={{
-                remember: true,
-              }}
-              onFinish={onFinish}
-              onFinishFailed={onFinishFailed}
-              autoComplete="off"
-            >
-              <Col xs={12} sm={10} md={8} lg={8} xl={10}>
+          <Form
+            name="basic"
+            style={{ width: '100%' }}
+            labelCol={{
+              span: 8,
+            }}
+            wrapperCol={{
+              span: 24,
+            }}
+            initialValues={{
+              remember: true,
+            }}
+            onFinish={onFinish}
+            onFinishFailed={onFinishFailed}
+            autoComplete="off"
+          >
+            <Row justify="space-between" align="middle">
+              <Col xs={24} sm={24} md={8} lg={8} xl={11}>
                 <Form.Item
                   name="subject"
                   rules={[
@@ -69,7 +69,7 @@ const Contact = () => {
                   <Input placeholder="Subject" size="large" className="input" />
                 </Form.Item>
               </Col>
-              <Col xs={12} sm={10} md={8} lg={8} xl={10}>
+              <Col xs={24} sm={24} md={8} lg={8} xl={11}>
                 <Form.Item
                   name="Email"
                   rules={[
@@ -86,92 +86,99 @@ const Contact = () => {
                   <Input placeholder="Email" size="large" className="input" />
                 </Form.Item>
               </Col>
-
-              <Form.Item
-                name="firstname"
-                rules={[
-                  {
-                    required: true,
-                    message: 'Please input your firstname!',
-                  },
-                ]}
-                wrapperCol={{
-                  offset: 0,
-                  span: 24,
-                }}
-              >
-                <Input
-                  placeholder="First Name"
-                  size="large"
-                  className="input"
-                />
-              </Form.Item>
-              <Form.Item
-                name="lastname"
-                rules={[
-                  {
-                    required: true,
-                    message: 'Please input your lastname!',
-                  },
-                ]}
-                wrapperCol={{
-                  offset: 0,
-                  span: 24,
-                }}
-              >
-                <Input placeholder="Last name" size="large" className="input" />
-              </Form.Item>
-              <Input.TextArea rows={4} placeholder="Message" />
-              <Form.Item
-                wrapperCol={{
-                  offset: 0,
-                  span: 24,
-                }}
-              >
-                <Button
-                  type="primary"
-                  htmlType="submit"
-                  size="large"
-                  block
-                  className="button"
+              <Col xs={24} sm={24} md={8} lg={8} xl={11}>
+                <Form.Item
+                  name="firstname"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your firstname!',
+                    },
+                  ]}
+                  wrapperCol={{
+                    offset: 0,
+                    span: 24,
+                  }}
                 >
-                  Submit
-                </Button>
-              </Form.Item>
-            </Form>
-            {/* <Col xs={12} sm={10} md={8} lg={8} xl={12}>
-              subject
-            </Col>
-            <Col xs={12} sm={10} md={8} lg={8} xl={12}>
-              email
-            </Col>
-            <Col xs={12} sm={10} md={8} lg={8} xl={12}>
-              first
-            </Col>
-            <Col xs={12} sm={10} md={8} lg={8} xl={12}>
-              last
-            </Col>
-            <Col xs={12} sm={10} md={8} lg={8} xl={24}>
-              message
-            </Col>
-            <Col xs={12} sm={10} md={8} lg={8} xl={24}>
-              <Button>Button</Button>
-            </Col> */}
-          </Row>
+                  <Input
+                    placeholder="First Name"
+                    size="large"
+                    className="input"
+                  />
+                </Form.Item>
+              </Col>
+              <Col xs={24} sm={24} md={8} lg={8} xl={11}>
+                <Form.Item
+                  name="lastname"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your lastname!',
+                    },
+                  ]}
+                  wrapperCol={{
+                    offset: 0,
+                    span: 24,
+                  }}
+                >
+                  <Input
+                    placeholder="Last name"
+                    size="large"
+                    className="input"
+                  />
+                </Form.Item>
+              </Col>
+              <Col xs={24} sm={24} md={8} lg={8} xl={24}>
+                <Form.Item
+                  name="message"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your message!',
+                    },
+                  ]}
+                  wrapperCol={{
+                    offset: 0,
+                    span: 24,
+                  }}
+                >
+                  <Input.TextArea rows={5} placeholder="Message" />
+                </Form.Item>
+              </Col>
+              <Col xs={24} sm={24} md={8} lg={8} xl={24}>
+                <Form.Item
+                  wrapperCol={{
+                    offset: 0,
+                    span: 24,
+                  }}
+                >
+                  <Button
+                    type="primary"
+                    htmlType="submit"
+                    size="large"
+                    block
+                    className="button"
+                  >
+                    Submit
+                  </Button>
+                </Form.Item>
+              </Col>
+            </Row>
+          </Form>
         </Col>
-        <Col xs={12} sm={10} md={8} lg={8} xl={6}>
-          <Row>
+        <Col xs={24} sm={24} md={24} lg={24} xl={6} className="contact-info">
+          <Row justify="start" align="top">
             <Col>
-              <HomeFilled />
+              <HomeFilled className="contact-info-icon" />
             </Col>
             <Col>
               <p>Address</p>
               <p>123 Disney Street Slim Av. Brooklyn Bridge, NY, New York</p>
             </Col>
           </Row>
-          <Row>
-            <Col>
-              <PhoneFilled />
+          <Row justify="start" align="top">
+            <Col xs={12} sm={10} md={8} lg={8} xl={2}>
+              <PhoneFilled className="contact-info-icon" />
             </Col>
             <Col>
               <p>Phone Numbers</p>
@@ -179,9 +186,9 @@ const Contact = () => {
               <p>+88 0231 3421 453</p>
             </Col>
           </Row>
-          <Row>
+          <Row justify="start" align="top">
             <Col>
-              <MessageFilled />
+              <MessageFilled className="contact-info-icon" />
             </Col>
             <Col>
               <p>Email Addresses</p>
@@ -189,25 +196,17 @@ const Contact = () => {
               <p>info@example.com</p>
             </Col>
           </Row>
-          <Row>
+          <Row justify="start" align="top">
             <Col>
-              <ProfileFilled />
+              <ProfileFilled className="contact-info-icon" />
             </Col>
             <Col>
-              <p>socail</p>
-              <Row>
-                <p>
-                  <InstagramFilled />
-                </p>
-                <p>
-                  <FacebookFilled />
-                </p>
-                <p>
-                  <TwitterSquareFilled />
-                </p>
-                <p>
-                  <GooglePlusSquareFilled />
-                </p>
+              <p>Social Profiles</p>
+              <Row className="social-profiles-icon">
+                <InstagramFilled />
+                <FacebookFilled />
+                <TwitterSquareFilled />
+                <GooglePlusSquareFilled />
               </Row>
             </Col>
           </Row>
