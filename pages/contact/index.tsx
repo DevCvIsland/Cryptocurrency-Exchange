@@ -1,4 +1,4 @@
-import { Row, Col, Form, Input, Button } from 'antd'
+import { Row, Col } from 'antd'
 import {
   HomeFilled,
   PhoneFilled,
@@ -10,15 +10,44 @@ import {
 } from '@ant-design/icons'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
+import ContactForm from './ContactForm'
+
+type ContactInfoItemProps = {
+  children: React.ReactNode
+  title: string
+  FirstText: string
+  // eslint-disable-next-line react/require-default-props
+  SecondText?: string
+}
+
+const ContactInfoItem = ({
+  children,
+  title,
+  FirstText,
+  SecondText,
+}: ContactInfoItemProps) => {
+  return (
+    <Row justify="space-between" align="top">
+      <Col xs={3} sm={3} md={3} lg={3} xl={2}>
+        {children}
+      </Col>
+      <Col
+        xs={20}
+        sm={21}
+        md={21}
+        lg={21}
+        xl={20}
+        className="contact-info-text"
+      >
+        <p>{title}</p>
+        <p>{FirstText}</p>
+        {SecondText ? <p>{SecondText}</p> : null}
+      </Col>
+    </Row>
+  )
+}
 
 const Contact = () => {
-  const onFinish = (values: any) => {
-    console.log('Success:', values)
-  }
-  const onFinishFailed = (errorInfo: any) => {
-    console.log('Failed:', errorInfo)
-  }
-
   return (
     <Layout>
       <TitleBanner firstTitle="Get In" lastTitle="Touch" />
@@ -41,188 +70,29 @@ const Contact = () => {
               </p>
             </Col>
           </Row>
-          <Form
-            name="basic"
-            style={{ width: '100%' }}
-            labelCol={{
-              span: 8,
-            }}
-            wrapperCol={{
-              span: 24,
-            }}
-            initialValues={{
-              remember: true,
-            }}
-            onFinish={onFinish}
-            onFinishFailed={onFinishFailed}
-            autoComplete="off"
-          >
-            <Row justify="space-between" align="middle">
-              <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-                <Form.Item
-                  name="subject"
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your subject!',
-                    },
-                  ]}
-                  wrapperCol={{
-                    offset: 0,
-                    span: 24,
-                  }}
-                >
-                  <Input placeholder="Subject" size="large" className="input" />
-                </Form.Item>
-              </Col>
-              <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-                <Form.Item
-                  name="Email"
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your Email!',
-                    },
-                  ]}
-                  wrapperCol={{
-                    offset: 0,
-                    span: 24,
-                  }}
-                >
-                  <Input placeholder="Email" size="large" className="input" />
-                </Form.Item>
-              </Col>
-              <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-                <Form.Item
-                  name="firstname"
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your firstname!',
-                    },
-                  ]}
-                  wrapperCol={{
-                    offset: 0,
-                    span: 24,
-                  }}
-                >
-                  <Input
-                    placeholder="First Name"
-                    size="large"
-                    className="input"
-                  />
-                </Form.Item>
-              </Col>
-              <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-                <Form.Item
-                  name="lastname"
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your lastname!',
-                    },
-                  ]}
-                  wrapperCol={{
-                    offset: 0,
-                    span: 24,
-                  }}
-                >
-                  <Input
-                    placeholder="Last name"
-                    size="large"
-                    className="input"
-                  />
-                </Form.Item>
-              </Col>
-              <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-                <Form.Item
-                  name="message"
-                  rules={[
-                    {
-                      required: true,
-                      message: 'Please input your message!',
-                    },
-                  ]}
-                  wrapperCol={{
-                    offset: 0,
-                    span: 24,
-                  }}
-                >
-                  <Input.TextArea rows={5} placeholder="Message" />
-                </Form.Item>
-              </Col>
-              <Col xs={24} sm={12} md={12} lg={12} xl={12}>
-                <Form.Item
-                  wrapperCol={{
-                    offset: 0,
-                    span: 24,
-                  }}
-                >
-                  <Button
-                    type="primary"
-                    htmlType="submit"
-                    size="large"
-                    block
-                    className="button"
-                  >
-                    Submit
-                  </Button>
-                </Form.Item>
-              </Col>
-            </Row>
-          </Form>
+          <ContactForm />
         </Col>
         <Col xs={23} sm={20} md={15} lg={9} xl={6} className="contact-info">
-          <Row justify="space-between" align="top">
-            <Col xs={3} sm={3} md={3} lg={3} xl={2}>
-              <HomeFilled className="contact-info-icon" />
-            </Col>
-            <Col
-              xs={20}
-              sm={21}
-              md={21}
-              lg={21}
-              xl={20}
-              className="contact-info-text"
-            >
-              <p>Address</p>
-              <p>123 Disney Street Slim Av. Brooklyn Bridge, NY, New York</p>
-            </Col>
-          </Row>
-          <Row justify="space-between" align="top">
-            <Col xs={3} sm={3} md={3} lg={3} xl={2}>
-              <PhoneFilled className="contact-info-icon" />
-            </Col>
-            <Col
-              xs={20}
-              sm={21}
-              md={21}
-              lg={21}
-              xl={20}
-              className="contact-info-text"
-            >
-              <p>Phone Numbers</p>
-              <p>+88 0123 4567 890</p>
-              <p>+88 0231 3421 453</p>
-            </Col>
-          </Row>
-          <Row justify="space-between" align="top">
-            <Col xs={3} sm={3} md={3} lg={3} xl={2}>
-              <MessageFilled className="contact-info-icon" />
-            </Col>
-            <Col
-              xs={20}
-              sm={21}
-              md={21}
-              lg={21}
-              xl={20}
-              className="contact-info-text"
-            >
-              <p>Email Addresses</p>
-              <p>contact@example.com</p>
-              <p>info@example.com</p>
-            </Col>
-          </Row>
+          <ContactInfoItem
+            title="Address"
+            FirstText="123 Disney Street Slim Av. Brooklyn Bridge, NY, New York"
+          >
+            <HomeFilled className="contact-info-icon" />
+          </ContactInfoItem>
+          <ContactInfoItem
+            title="Phone Numbers"
+            FirstText="+88 0123 4567 890"
+            SecondText="+88 0231 3421 453"
+          >
+            <PhoneFilled className="contact-info-icon" />
+          </ContactInfoItem>
+          <ContactInfoItem
+            title="Email Addresses"
+            FirstText="contact@example.com"
+            SecondText="info@example.com"
+          >
+            <MessageFilled className="contact-info-icon" />
+          </ContactInfoItem>
           <Row justify="space-between" align="top">
             <Col xs={3} sm={3} md={3} lg={3} xl={2}>
               <ProfileFilled className="contact-info-icon" />
