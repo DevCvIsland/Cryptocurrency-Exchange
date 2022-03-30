@@ -24,7 +24,7 @@ const Contact = () => {
     <Layout>
       <TitleBanner firstTitle="Get In" lastTitle="Touch" />
       <Row>
-        <Col xs={12} sm={10} md={8} lg={8} xl={18}>
+        <Col xs={12} sm={10} md={8} lg={8} xl={12}>
           <Row>
             <Col xs={12} sm={10} md={8} lg={8} xl={24}>
               <h3>Feel Free To Drop Us A Message</h3>
@@ -38,12 +38,13 @@ const Contact = () => {
           <Row>
             <Form
               name="basic"
-              labelCol={{
-                span: 8,
-              }}
-              wrapperCol={{
-                span: 16,
-              }}
+              style={{ width: '100%' }}
+              // labelCol={{
+              //   span: 8,
+              // }}
+              // wrapperCol={{
+              //   span: 24,
+              // }}
               initialValues={{
                 remember: true,
               }}
@@ -51,36 +52,41 @@ const Contact = () => {
               onFinishFailed={onFinishFailed}
               autoComplete="off"
             >
-              <Form.Item
-                name="subject"
-                rules={[
-                  {
-                    required: true,
-                    message: 'Please input your subject!',
-                  },
-                ]}
-                wrapperCol={{
-                  offset: 0,
-                  span: 24,
-                }}
-              >
-                <Input placeholder="Subject" size="large" className="input" />
-              </Form.Item>
-              <Form.Item
-                name="Email"
-                rules={[
-                  {
-                    required: true,
-                    message: 'Please input your Email!',
-                  },
-                ]}
-                wrapperCol={{
-                  offset: 0,
-                  span: 24,
-                }}
-              >
-                <Input placeholder="Email" size="large" className="input" />
-              </Form.Item>
+              <Col xs={12} sm={10} md={8} lg={8} xl={10}>
+                <Form.Item
+                  name="subject"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your subject!',
+                    },
+                  ]}
+                  wrapperCol={{
+                    offset: 0,
+                    span: 24,
+                  }}
+                >
+                  <Input placeholder="Subject" size="large" className="input" />
+                </Form.Item>
+              </Col>
+              <Col xs={12} sm={10} md={8} lg={8} xl={10}>
+                <Form.Item
+                  name="Email"
+                  rules={[
+                    {
+                      required: true,
+                      message: 'Please input your Email!',
+                    },
+                  ]}
+                  wrapperCol={{
+                    offset: 0,
+                    span: 24,
+                  }}
+                >
+                  <Input placeholder="Email" size="large" className="input" />
+                </Form.Item>
+              </Col>
+
               <Form.Item
                 name="firstname"
                 rules={[
@@ -115,6 +121,7 @@ const Contact = () => {
               >
                 <Input placeholder="Last name" size="large" className="input" />
               </Form.Item>
+              <Input.TextArea rows={4} placeholder="Message" />
               <Form.Item
                 wrapperCol={{
                   offset: 0,
