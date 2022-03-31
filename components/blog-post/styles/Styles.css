@@ -1,3 +1,14 @@
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .blog-post h3 {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+}
+
+.blog-post {
+  margin-top: 75px;
+}
+
 .blog-post h3 {
   font-size: 35px;
   font-weight: 600;

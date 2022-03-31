@@ -7,15 +7,17 @@ import {
   LinkOutlined,
 } from '@ant-design/icons'
 import Image from 'next/image'
-import image from '../../assets/blog/blog-post-1.jpg'
 
-const BlogPost = () => {
+type BlogPostProps = {
+  title: string
+  image: StaticImageData
+}
+
+const BlogPost = ({ title, image }: BlogPostProps) => {
   return (
     <Row align="middle" className="blog-post">
       <Col xs={24}>
-        <h3>
-          How Cryptocurrency Begun and Its Impact To Financial Transactions
-        </h3>
+        <h3>{title}</h3>
       </Col>
       <Col xs={24}>
         <Image src={image} alt="Logo" />
