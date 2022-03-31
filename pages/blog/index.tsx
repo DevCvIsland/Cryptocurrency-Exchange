@@ -11,6 +11,7 @@ const Blog = () => {
       <Row justify="center" align="top" className="contact-section">
         <Col xs={23} sm={20} md={20} lg={13} xl={12}>
           <BlogPost />
+          <BlogPost />
         </Col>
         <Col xs={23} sm={20} md={15} lg={9} xl={6}>
           <BlogSidebar />
