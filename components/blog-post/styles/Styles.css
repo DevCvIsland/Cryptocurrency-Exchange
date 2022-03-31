@@ -8,4 +8,39 @@
   font-size: 16px;
   font-weight: 550;
 }
+
+.blog-post-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-post-footer div {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 10px;
+}
+
+.blog-post-footer span {
+  font-size: 20px;
+  color: #f3ba2f;
+}
+
+.blog-post-footer p {
+  color: #999;
+  padding-top: 15px;
+  padding-left: 5px;
+}
 /*# sourceMappingURL=Styles.css.map */

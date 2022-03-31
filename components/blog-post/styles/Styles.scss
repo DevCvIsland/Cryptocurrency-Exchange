@@ -1,3 +1,5 @@
+$primary-color: #f3ba2f;
+
 .blog-post{
   h3{
     font-size: 35px;
@@ -9,4 +11,26 @@
   color: #999;
   font-size: 16px;
   font-weight: 550;
+}
+
+.blog-post-footer{
+  display: flex;
+  div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 10px;
+  }
+  span{
+    font-size: 20px;
+    color: $primary-color ;
+  }
+  p{
+    color: #999;
+    padding-top: 15px;
+    padding-left: 5px;
+
+  }
 }

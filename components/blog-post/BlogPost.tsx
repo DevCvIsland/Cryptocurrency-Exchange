@@ -1,4 +1,11 @@
 import { Row, Col, Button } from 'antd'
+import {
+  UserOutlined,
+  HistoryOutlined,
+  CommentOutlined,
+  TagsOutlined,
+  LinkOutlined,
+} from '@ant-design/icons'
 import Image from 'next/image'
 import image from '../../assets/blog/blog-post-1.jpg'
 
@@ -27,17 +34,21 @@ const BlogPost = () => {
           Read More
         </Button>
       </Col>
-      <Col xs={24}>
+      <Col xs={24} className="blog-post-footer">
         <div>
+          <UserOutlined />
           <p>admin</p>
         </div>
         <div>
+          <HistoryOutlined />
           <p> 9 November 2021</p>
         </div>
         <div>
+          <CommentOutlined />
           <p>18 comments</p>
         </div>
         <div>
+          <TagsOutlined />
           <p>market, cryptocurrency, trading</p>
         </div>
         <div>
