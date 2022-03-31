@@ -15,17 +15,10 @@ import ContactForm from './ContactForm'
 type ContactInfoItemProps = {
   children: React.ReactNode
   title: string
-  FirstText: string
-  // eslint-disable-next-line react/require-default-props
-  SecondText?: string
+  text: string[]
 }
 
-const ContactInfoItem = ({
-  children,
-  title,
-  FirstText,
-  SecondText,
-}: ContactInfoItemProps) => {
+const ContactInfoItem = ({ children, title, text }: ContactInfoItemProps) => {
   return (
     <Row justify="space-between" align="top">
       <Col xs={3} sm={3} md={3} lg={3} xl={2}>
@@ -40,8 +33,9 @@ const ContactInfoItem = ({
         className="contact-info-text"
       >
         <p>{title}</p>
-        <p>{FirstText}</p>
-        {SecondText ? <p>{SecondText}</p> : null}
+        {text.map((txt) => (
+          <p key={txt}>{txt}</p>
+        ))}
       </Col>
     </Row>
   )
@@ -75,21 +69,19 @@ const Contact = () => {
         <Col xs={23} sm={20} md={15} lg={9} xl={6} className="contact-info">
           <ContactInfoItem
             title="Address"
-            FirstText="123 Disney Street Slim Av. Brooklyn Bridge, NY, New York"
+            text={['123 Disney Street Slim Av. Brooklyn Bridge, NY, New York']}
           >
             <HomeFilled className="contact-info-icon" />
           </ContactInfoItem>
           <ContactInfoItem
             title="Phone Numbers"
-            FirstText="+88 0123 4567 890"
-            SecondText="+88 0231 3421 453"
+            text={['+88 0123 4567 890', '+88 0231 3421 453']}
           >
             <PhoneFilled className="contact-info-icon" />
           </ContactInfoItem>
           <ContactInfoItem
             title="Email Addresses"
-            FirstText="contact@example.com"
-            SecondText="info@example.com"
+            text={['contact@example.com', 'info@example.com']}
           >
             <MessageFilled className="contact-info-icon" />
           </ContactInfoItem>
