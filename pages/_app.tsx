@@ -10,6 +10,7 @@ import './services/styles/Styles.css'
 import './about/styles/Styles.css'
 import './contact/styles/Styles.css'
 import './blog/styles/Styles.css'
+import '../components/blog-post/styles/Styles.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />
