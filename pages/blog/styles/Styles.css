@@ -1,3 +1,9 @@
+@media screen and (min-width: 992px) {
+  .blog-sidebar {
+    margin-left: 50px;
+  }
+}
+
 .blog-sidebar {
   margin-top: 75px;
 }

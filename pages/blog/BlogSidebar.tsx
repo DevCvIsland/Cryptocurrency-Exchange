@@ -43,18 +43,22 @@ const SidebarItemContainer = ({
             {posts.map((post) => (
               <>
                 <Divider className="sidebar-item-divider" />
-                <Col xs={24} className="flex-row">
-                  <Image
-                    src={post.image}
-                    alt="blog-post"
-                    width={100}
-                    height={100}
-                  />
-                  <div>
-                    <h3>{post.text}</h3>
-                    <p>{post.time}</p>
-                  </div>
-                </Col>
+                <Row justify="space-between">
+                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
+                    <Image
+                      src={post.image}
+                      alt="blog-post"
+                      width={100}
+                      height={100}
+                    />
+                  </Col>
+                  <Col xs={18} sm={18} md={18} lg={18} xl={17}>
+                    <div>
+                      <h3>{post.text}</h3>
+                      <p>{post.time}</p>
+                    </div>
+                  </Col>
+                </Row>
               </>
             ))}
           </>

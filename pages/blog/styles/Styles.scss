@@ -1,10 +1,16 @@
 $primary-color: #f3ba2f;
 
-.blog-sidebar{
+@media screen and (min-width: 992px) {
+  .blog-sidebar {
+    margin-left: 50px;
+  }
+}
+
+.blog-sidebar {
   margin-top: 75px;
 }
 
-.sidebar-item-container{
+.sidebar-item-container {
   background-color: #1d1d1d;
   margin: 20px 0px;
   padding: 20px;
