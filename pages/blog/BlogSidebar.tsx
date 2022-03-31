@@ -6,20 +6,40 @@ import RecentPost3 from '../../assets/blog/blog-post-small-3.jpg'
 
 type SidebarItemContainerProps = {
   title: string
-  items: string[]
+  // eslint-disable-next-line react/require-default-props
+  items?: string[]
+  // eslint-disable-next-line react/require-default-props
+  buttons?: string[]
 }
 
-const SidebarItemContainer = ({ title, items }: SidebarItemContainerProps) => {
+const SidebarItemContainer = ({
+  title,
+  items,
+  buttons,
+}: SidebarItemContainerProps) => {
   return (
     <Row className="sidebar-item-container">
       <Col xs={24}>
         <h3>{title}</h3>
-        {items.map((item) => (
+        {buttons && (
           <>
-            <Divider className="sidebar-item-divider" />
-            <p>{item}</p>
+            {buttons.map((button) => (
+              <Button key={button} size="large" className="button-outline">
+                {button}
+              </Button>
+            ))}
           </>
-        ))}
+        )}
+        {items && (
+          <>
+            {items.map((item) => (
+              <>
+                <Divider className="sidebar-item-divider" />
+                <p>{item}</p>
+              </>
+            ))}
+          </>
+        )}
       </Col>
     </Row>
   )
@@ -63,35 +83,19 @@ const BlogSidebar = () => {
           </div>
         </Col>
       </Row>
-      <Row className="sidebar-item-container">
-        <Col xs={24}>
-          <h3>Popular Tags</h3>
-          <Button size="large" className="button-outline">
-            Currency
-          </Button>
-          <Button size="large" className="button-outline">
-            Crypto
-          </Button>
-          <Button size="large" className="button-outline">
-            Trading
-          </Button>
-          <Button size="large" className="button-outline">
-            Wallet
-          </Button>
-          <Button size="large" className="button-outline">
-            Mining
-          </Button>
-          <Button size="large" className="button-outline">
-            Transaction
-          </Button>
-          <Button size="large" className="button-outline">
-            Financial
-          </Button>
-          <Button size="large" className="button-outline">
-            Security
-          </Button>
-        </Col>
-      </Row>
+      <SidebarItemContainer
+        title="Popular Tags"
+        buttons={[
+          'Currency',
+          'Crypto',
+          'Trading',
+          'Wallet',
+          'Mining',
+          'Transaction',
+          'Financial',
+          'Security',
+        ]}
+      />
     </>
   )
 }
