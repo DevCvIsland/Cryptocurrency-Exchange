@@ -75,7 +75,7 @@ const SidebarItemContainer = ({
 
 const BlogSidebar = () => {
   return (
-    <>
+    <div className="blog-sidebar">
       <SidebarItemContainer
         title="Categories"
         items={['Insurance', 'Announcement', 'Banking', 'Security', 'Market']}
@@ -117,7 +117,7 @@ const BlogSidebar = () => {
           'Security',
         ]}
       />
-    </>
+    </div>
   )
 }
 
