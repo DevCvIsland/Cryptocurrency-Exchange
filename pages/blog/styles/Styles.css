@@ -2,13 +2,29 @@ h3 {
   color: #fff;
 }
 
-.blog-sidebar-container {
+.sidebar-item-container {
   background-color: #1d1d1d;
   margin: 20px 0px;
   padding: 20px;
 }
 
+.sidebar-item-container h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sidebar-item-container p {
+  color: #999;
+  font-weight: 550;
+}
+
+.sidebar-item-container p:hover {
+  cursor: pointer;
+  color: #f3ba2f;
+}
+
 .sidebar-item-divider {
-  background-color: #fff;
+  background-color: #999;
 }
 /*# sourceMappingURL=Styles.css.map */
