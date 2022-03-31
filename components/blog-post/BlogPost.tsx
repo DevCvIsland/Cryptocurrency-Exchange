@@ -34,28 +34,28 @@ const BlogPost = () => {
           Read More
         </Button>
       </Col>
-      <Col xs={24} className="blog-post-footer">
-        <div>
+      <Row className="blog-post-footer">
+        <Col>
           <UserOutlined />
           <p>admin</p>
-        </div>
-        <div>
+        </Col>
+        <Col>
           <HistoryOutlined />
           <p> 9 November 2021</p>
-        </div>
-        <div>
+        </Col>
+        <Col>
           <CommentOutlined />
           <p>18 comments</p>
-        </div>
-        <div>
+        </Col>
+        <Col>
           <TagsOutlined />
           <p>market, cryptocurrency, trading</p>
-        </div>
-        <div>
+        </Col>
+        <Col>
           <LinkOutlined />
           <p>permalink</p>
-        </div>
-      </Col>
+        </Col>
+      </Row>
     </Row>
   )
 }

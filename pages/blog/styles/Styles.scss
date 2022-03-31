@@ -26,3 +26,42 @@ h3{
 .sidebar-item-divider{
   background-color: #999;
 }
+
+.blog-pagination{
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.ant-pagination-item-link{
+  background-color: #1d1d1d !important;
+  border-color:  #1d1d1d !important;
+  color: $primary-color !important;
+  &:hover{
+    border-color: $primary-color !important;
+  }
+}
+
+.ant-pagination-item{
+  background-color: #1d1d1d !important;
+  border-color:  #1d1d1d !important;
+  a{
+    color: #999 !important;
+    &:hover{
+      color: $primary-color !important;
+    }
+  }
+  &:hover{
+    border-color: $primary-color !important;
+  }
+}
+
+.ant-pagination-item-active{
+  background-color: $primary-color !important;
+  border-color:  $primary-color !important;
+  a{
+    color: #000 !important;
+    &:hover{
+      color: #000 !important;
+    }
+  }
+}

@@ -9,12 +9,6 @@
   font-weight: 550;
 }
 
-.blog-post-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .blog-post-footer div {
   cursor: pointer;
   display: -webkit-box;
