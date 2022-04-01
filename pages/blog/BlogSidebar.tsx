@@ -54,7 +54,7 @@ const SidebarItemContainer = ({
                   </Col>
                   <Col xs={18} sm={18} md={18} lg={18} xl={17}>
                     <div>
-                      <h3>{post.text}</h3>
+                      <h4>{post.text}</h4>
                       <p>{post.time}</p>
                     </div>
                   </Col>
@@ -66,7 +66,11 @@ const SidebarItemContainer = ({
         {buttons && (
           <>
             {buttons.map((button) => (
-              <Button key={button} size="large" className="button-outline">
+              <Button
+                key={button}
+                size="large"
+                className="button-outline tag-button"
+              >
                 {button}
               </Button>
             ))}

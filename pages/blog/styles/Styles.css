@@ -20,6 +20,12 @@
   font-weight: 600;
 }
 
+.sidebar-item-container h4 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .sidebar-item-container p {
   color: #999;
   font-weight: 550;
@@ -32,6 +38,10 @@
 
 .sidebar-item-divider {
   background-color: #999;
+}
+
+.tag-button {
+  margin: 3px;
 }
 
 .blog-pagination {
