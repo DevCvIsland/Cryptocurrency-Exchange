@@ -2,8 +2,8 @@ import { Row, Col } from 'antd'
 
 const StatusSection = () => {
   return (
-    <>
-      <div className="status-section">
+    <div className="status-section">
+      <div className="status">
         <Row className="flex-column status-title">
           <h2>
             Binance <span className="theme-primary-color">Numbers</span>
@@ -54,7 +54,7 @@ const StatusSection = () => {
         </Row>
       </div>
       <Row className="status-band" />
-    </>
+    </div>
   )
 }
 

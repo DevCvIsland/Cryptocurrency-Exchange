@@ -22,6 +22,10 @@
   margin: 20px 0px;
 }
 
+.status-section {
+  position: relative;
+}
+
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .status-title h2 {
     padding: 20px 0px;
@@ -30,16 +34,16 @@
 }
 
 @media screen and (min-width: 577px) and (max-width: 900px) {
-  .status-section {
+  .status {
     padding: 75px;
   }
 }
 
 @media screen and (min-width: 901px) {
-  .status-section {
+  .status {
     padding: 75px;
     position: absolute;
-    top: 990px;
+    top: -60px;
     left: 19%;
     z-index: 1;
   }
@@ -68,7 +72,7 @@
   }
 }
 
-.status-section {
+.status {
   background-color: #1d1d1d;
   margin-bottom: 75px;
 }
