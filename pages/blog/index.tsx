@@ -14,14 +14,17 @@ const Blog = () => {
       <Row justify="center" align="top">
         <Col xs={23} sm={20} md={20} lg={13} xl={12}>
           <BlogPost
+            id="first-post"
             title="How Cryptocurrency Begun and Its Impact To Financial Transactions"
             image={PostImage1}
           />
           <BlogPost
+            id="second-post"
             title="Cryptocurrency - Who Are Involved With It? Words about members"
             image={PostImage2}
           />
           <BlogPost
+            id="third-post"
             title="Risks & Rewards Of Investing In Bitcoin. Pros and Cons"
             image={PostImage3}
           />

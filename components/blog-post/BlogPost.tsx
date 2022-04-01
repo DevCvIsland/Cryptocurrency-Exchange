@@ -7,13 +7,15 @@ import {
   LinkOutlined,
 } from '@ant-design/icons'
 import Image from 'next/image'
+import Link from 'next/link'
 
 type BlogPostProps = {
+  id: string
   title: string
   image: StaticImageData
 }
 
-const BlogPost = ({ title, image }: BlogPostProps) => {
+const BlogPost = ({ id, title, image }: BlogPostProps) => {
   return (
     <Row align="middle" className="blog-post">
       <Col xs={24}>
@@ -32,9 +34,11 @@ const BlogPost = ({ title, image }: BlogPostProps) => {
         </p>
       </Col>
       <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-        <Button size="large" className="button" block>
-          Read More
-        </Button>
+        <Link href={`./blog/${id}`}>
+          <Button size="large" className="button" block>
+            Read More
+          </Button>
+        </Link>
       </Col>
       <Row className="blog-post-footer">
         <Col>
