@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
-
 import Posts from './BlogPostsData'
 import BlogSidebar from './BlogSidebar'
 
@@ -23,7 +22,7 @@ const SinglePost = () => {
             eaque quasi asperiores dicta! Excepturi, exercitationem! Quas,
             adipisci est facilis quam culpa doloremque dolore nemo iste
             reprehenderit harum maiores magni. Provident?
-            <br style={{ marginBottom: '20px' }} />
+            <br />
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
             eaque quasi asperiores dicta! Excepturi, exercitationem! Quas,
             adipisci est facilis quam culpa doloremque dolore nemo iste
@@ -31,7 +30,7 @@ const SinglePost = () => {
             consectetur, adipisicing elit. Facere eaque quasi asperiores dicta!
             Excepturi, exercitationem! Quas, adipisci est facilis quam culpa
             doloremque dolore nemo iste reprehenderit harum maiores magni.
-            <br style={{ marginBottom: '20px' }} />
+            <br />
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
             eaque quasi asperiores dicta! Excepturi, exercitationem! Quas,
             adipisci est facilis quam culpa doloremque dolore nemo iste

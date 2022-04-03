@@ -21,6 +21,10 @@
   font-weight: 550;
 }
 
+.blog-post-description br {
+  margin-bottom: 30px;
+}
+
 .blog-post-footer div {
   cursor: pointer;
   display: -webkit-box;
