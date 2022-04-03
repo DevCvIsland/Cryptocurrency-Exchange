@@ -22,7 +22,7 @@ const BlogPost = ({ id, title, image }: BlogPostProps) => {
         <h3>{title}</h3>
       </Col>
       <Col xs={24}>
-        <Image src={image} alt="Logo" />
+        <Image src={image} alt="Blog Image" />
       </Col>
       <Col xs={24}>
         <p className="blog-post-description">
