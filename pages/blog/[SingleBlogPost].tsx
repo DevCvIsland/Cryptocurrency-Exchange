@@ -17,8 +17,7 @@ const SingleBlogPost = () => {
             eaque quasi asperiores dicta! Excepturi, exercitationem! Quas,
             adipisci est facilis quam culpa doloremque dolore nemo iste
             reprehenderit harum maiores magni. Provident?
-          </p>
-          <p className="blog-post-description">
+            <br style={{ marginBottom: '20px' }} />
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
             eaque quasi asperiores dicta! Excepturi, exercitationem! Quas,
             adipisci est facilis quam culpa doloremque dolore nemo iste
@@ -26,8 +25,7 @@ const SingleBlogPost = () => {
             consectetur, adipisicing elit. Facere eaque quasi asperiores dicta!
             Excepturi, exercitationem! Quas, adipisci est facilis quam culpa
             doloremque dolore nemo iste reprehenderit harum maiores magni.
-          </p>
-          <p className="blog-post-description">
+            <br style={{ marginBottom: '20px' }} />
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
             eaque quasi asperiores dicta! Excepturi, exercitationem! Quas,
             adipisci est facilis quam culpa doloremque dolore nemo iste
