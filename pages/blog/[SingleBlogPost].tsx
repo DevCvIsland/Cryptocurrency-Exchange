@@ -3,21 +3,21 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
-import BlogSidebar from './BlogSidebar'
+
 import Posts from './BlogPostsData'
+import BlogSidebar from './BlogSidebar'
 
 const SinglePost = () => {
   const router = useRouter()
   const { SingleBlogPost } = router.query
-  console.log(SingleBlogPost)
-  const post = Posts.find((obj) => obj.id === SingleBlogPost)
+  const post = Posts.find((obj) => obj.id === SingleBlogPost) || Posts[0]
 
   return (
     <Layout>
-      <TitleBanner firstTitle="Blog" lastTitle="Posts" />
+      <TitleBanner firstTitle={post.mark} lastTitle="Post" />
       <Row justify="center" align="top">
         <Col xs={23} sm={20} md={20} lg={13} xl={12}>
-          <Image src={post.id} alt="Blog Image" />
+          <Image src={post.img} alt="Blog Image" />
           <p className="blog-post-description">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
             eaque quasi asperiores dicta! Excepturi, exercitationem! Quas,
