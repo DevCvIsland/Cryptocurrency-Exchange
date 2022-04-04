@@ -88,4 +88,8 @@
 .ant-pagination-item-active a:hover {
   color: #000 !important;
 }
+
+.single-post {
+  margin-top: 75px;
+}
 /*# sourceMappingURL=Styles.css.map */
