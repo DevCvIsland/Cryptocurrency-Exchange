@@ -1,4 +1,11 @@
 import { Row, Col } from 'antd'
+import {
+  UserOutlined,
+  HistoryOutlined,
+  CommentOutlined,
+  TagsOutlined,
+  LinkOutlined,
+} from '@ant-design/icons'
 
 const BlogPostFooter = () => {
   return (
