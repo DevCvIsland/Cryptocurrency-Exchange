@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import Posts from './BlogPostsData'
+import BlogPostFooter from '../../components/blog-post/BlogPostFooter'
 import BlogSidebar from './BlogSidebar'
 
 const SinglePost = () => {
