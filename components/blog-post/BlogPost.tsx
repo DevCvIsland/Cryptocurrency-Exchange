@@ -1,11 +1,4 @@
 import { Row, Col, Button } from 'antd'
-import {
-  UserOutlined,
-  HistoryOutlined,
-  CommentOutlined,
-  TagsOutlined,
-  LinkOutlined,
-} from '@ant-design/icons'
 import Image from 'next/image'
 import Link from 'next/link'
 
