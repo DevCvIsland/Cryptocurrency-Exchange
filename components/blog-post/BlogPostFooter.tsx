@@ -1,5 +1,3 @@
-import React from 'react'
-
 const BlogPostFooter = () => {
   return (
     <Row className="blog-post-footer">
