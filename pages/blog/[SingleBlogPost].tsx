@@ -37,6 +37,7 @@ const SinglePost = () => {
             adipisci est facilis quam culpa doloremque dolore nemo iste
             reprehenderit harum maiores magni.
           </p>
+          <BlogPostFooter />
         </Col>
         <Col xs={23} sm={20} md={15} lg={9} xl={6}>
           <BlogSidebar />
