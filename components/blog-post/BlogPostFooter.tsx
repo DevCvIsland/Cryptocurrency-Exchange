@@ -1,3 +1,5 @@
+import { Row, Col } from 'antd'
+
 const BlogPostFooter = () => {
   return (
     <Row className="blog-post-footer">
