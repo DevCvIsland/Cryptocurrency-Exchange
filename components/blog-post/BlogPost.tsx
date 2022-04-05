@@ -1,6 +1,7 @@
 import { Row, Col, Button } from 'antd'
 import Image from 'next/image'
 import Link from 'next/link'
+import BlogPostFooter from './BlogPostFooter'
 
 type BlogPostProps = {
   id: string
@@ -27,6 +28,7 @@ const BlogPost = ({ id, title, image }: BlogPostProps) => {
           </Button>
         </Link>
       </Col>
+      <BlogPostFooter />
     </Row>
   )
 }
