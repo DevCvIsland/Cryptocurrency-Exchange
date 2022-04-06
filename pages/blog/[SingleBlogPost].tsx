@@ -39,6 +39,7 @@ const SinglePost = () => {
             reprehenderit harum maiores magni.
           </p>
           <BlogPostFooter />
+          <PostComments />
         </Col>
         <Col xs={23} sm={20} md={15} lg={9} xl={6}>
           <BlogSidebar />
