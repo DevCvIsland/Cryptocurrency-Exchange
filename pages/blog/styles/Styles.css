@@ -98,6 +98,7 @@
 }
 
 .comment-container {
+  border-radius: 10px;
   background-color: #1d1d1d;
   margin: 25px 0px;
   padding: 25px;

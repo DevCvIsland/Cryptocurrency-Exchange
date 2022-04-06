@@ -21,7 +21,7 @@ const CommentContainer = ({ img, name, date }: CommentContainerProps) => {
       <Col xs={4} className="comment-image">
         <Image src={img} alt="User Image" height={105} />
       </Col>
-      <Col xs={18}>
+      <Col xs={19}>
         <Row>
           <Col xs={24} className="comment-header">
             <h4>{name}</h4>
