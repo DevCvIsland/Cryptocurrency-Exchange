@@ -1,4 +1,4 @@
-import { Row, Col } from 'antd'
+import { Row, Col, Button } from 'antd'
 
 const CommentContainer = () => {
   return (
@@ -6,12 +6,18 @@ const CommentContainer = () => {
       <Col>image</Col>
       <Col>
         <Row>
+          {/* <Col> */}
           <Row justify="space-between" align="middle">
-            <Col>name</Col>
-            <Col>date</Col>
+            <Col xs={10}>name</Col>
+            <Col xs={10}>date</Col>
           </Row>
+          {/* </Col> */}
           <Col xs={24}>text</Col>
-          <Col xs={24}>button</Col>
+          <Col xs={24}>
+            <Button type="link" className="theme-primary-color">
+              Link Button
+            </Button>
+          </Col>
         </Row>
       </Col>
     </Row>
