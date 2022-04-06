@@ -97,6 +97,10 @@
   margin-bottom: 20px !important;
 }
 
+.comment-container {
+  background-color: #1d1d1d;
+}
+
 h3 {
   color: #fff;
 }
