@@ -5,6 +5,7 @@ import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import Posts from './BlogPostsData'
 import BlogPostFooter from '../../components/blog-post/BlogPostFooter'
+import PostComments from './PostComments'
 import BlogSidebar from './BlogSidebar'
 
 const SinglePost = () => {
