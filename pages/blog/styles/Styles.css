@@ -108,6 +108,32 @@
   margin: 0px !important;
 }
 
+.comment-container .comment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comment-container h4 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.comment-container p {
+  color: #999;
+}
+
+.comment-container button {
+  padding: 0px;
+}
+
+.admin-comment {
+  margin-left: 100px;
+}
+
 h3 {
   color: #fff;
 }

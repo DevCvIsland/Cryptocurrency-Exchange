@@ -96,6 +96,24 @@ $primary-color: #f3ba2f;
     border-radius: 50%;
     margin: 0px !important;
   }
+  .comment-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  h4{
+    color: #fff;
+    font-size: 18px;
+  }
+  p{
+    color: #999
+  }
+  button{
+    padding: 0px;
+  }
+}
+
+.admin-comment{
+  margin-left: 100px
 }
 
 h3{
