@@ -1,9 +1,18 @@
 import { Row, Col, Button } from 'antd'
+import Image from 'next/image'
+import user1 from '../../assets/person/user1.jpg'
+import user2 from '../../assets/person/user2.jpg'
 
-const CommentContainer = () => {
+type CommentContainerProps = {
+  img: StaticImageData
+}
+
+const CommentContainer = ({ img }: CommentContainerProps) => {
   return (
     <Row className="comment-container">
-      <Col>image</Col>
+      <Col>
+        <Image src={img} alt="Blog Image" />
+      </Col>
       <Col>
         <Row>
           {/* <Col> */}
@@ -28,8 +37,8 @@ const PostComments = () => {
   return (
     <>
       <h3>18 Comments</h3>
-      <CommentContainer />
-      <CommentContainer />
+      <CommentContainer img={user1} />
+      <CommentContainer img={user2} />
       <p>load More...</p>
     </>
   )
