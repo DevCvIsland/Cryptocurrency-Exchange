@@ -5,8 +5,19 @@ const PostComments = () => {
     <>
       <h3>18 Comments</h3>
       <Row>
-        <Col>ss</Col>
+        <Col>image</Col>
+        <Col>
+          <Row>
+            <Row>
+              <Col>name</Col>
+              <Col>date</Col>
+            </Row>
+            <Col>text</Col>
+            <Col>button</Col>
+          </Row>
+        </Col>
       </Row>
+      <p>load More...</p>
     </>
   )
 }
