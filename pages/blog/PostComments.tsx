@@ -36,8 +36,8 @@ const CommentContainer = ({ img, name, date }: CommentContainerProps) => {
             </p>
           </Col>
           <Col xs={24}>
-            <Button type="link" className="theme-primary-color">
-              Link Button
+            <Button type="link" size="large" className="theme-primary-color">
+              Reply
             </Button>
           </Col>
         </Row>
@@ -48,13 +48,13 @@ const CommentContainer = ({ img, name, date }: CommentContainerProps) => {
 
 const PostComments = () => {
   return (
-    <>
+    <div className="comments-section">
       <h3>18 Comments</h3>
       <CommentContainer img={user1} name="Lina Marzouki" date="July 17, 2017" />
       <CommentContainer img={admin} name="Slim Hamdi" date="July 18, 2017" />
       <CommentContainer img={user2} name="Rawia Chniti" date="March 29, 2017" />
-      <p>load More...</p>
-    </>
+      <Button type="link">Load More...</Button>
+    </div>
   )
 }
 

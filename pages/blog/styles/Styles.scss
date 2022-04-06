@@ -11,6 +11,7 @@ $primary-color: #f3ba2f;
 }
 
 .sidebar-item-container {
+  border-radius: 10px;
   background-color: #1d1d1d;
   margin: 20px 0px;
   padding: 20px;
@@ -93,10 +94,6 @@ $primary-color: #f3ba2f;
   background-color: #1d1d1d;
   margin: 25px 0px;
   padding: 25px;
-  // .comment-image{
-  //   border-radius: 50%;
-  //   margin: 0px !important;
-  // }
   .comment-image{
     margin-right: 15px !important;
     img{
@@ -124,6 +121,14 @@ $primary-color: #f3ba2f;
   margin-left: 100px
 }
 
-h3{
-  color: #fff;
+.comments-section{
+  margin: 50px 0px;
+  & > h3{
+    font-size: 30px;
+    font-weight: 550;
+    color: #fff;
+  }
+  & > button{
+    font-size: 20px;
+  }
 }
