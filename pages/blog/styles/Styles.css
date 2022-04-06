@@ -104,6 +104,10 @@
 }
 
 .comment-container .comment-image {
+  margin-right: 15px !important;
+}
+
+.comment-container .comment-image img {
   border-radius: 50%;
   margin: 0px !important;
 }
