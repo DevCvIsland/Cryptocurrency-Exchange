@@ -18,6 +18,7 @@ const SinglePost = () => {
       <TitleBanner firstTitle={post.mark} lastTitle="Post" />
       <Row justify="center" align="top">
         <Col xs={23} sm={20} md={20} lg={13} xl={12} className="single-post">
+          <h2>post.img</h2>
           <Image src={post.img} alt="Blog Image" />
           <p className="blog-post-description">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
