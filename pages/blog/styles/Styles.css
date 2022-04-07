@@ -94,6 +94,10 @@
   margin-top: 75px;
 }
 
+.single-post h2 {
+  color: #fff;
+}
+
 .single-post img {
   margin-bottom: 20px !important;
 }
