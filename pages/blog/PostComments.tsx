@@ -53,7 +53,9 @@ const PostComments = () => {
       <CommentContainer img={user1} name="Lina Marzouki" date="July 17, 2017" />
       <CommentContainer img={admin} name="Slim Hamdi" date="July 18, 2017" />
       <CommentContainer img={user2} name="Rawia Chniti" date="March 29, 2017" />
-      <Button type="link">Load More...</Button>
+      <Button type="link" className="theme-primary-color">
+        Load More...
+      </Button>
     </div>
   )
 }
