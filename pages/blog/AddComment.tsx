@@ -1,5 +1,4 @@
 import { Form, Input, Button } from 'antd'
-import Link from 'next/link'
 
 const AddComment = () => {
   const onFinish = (values: any) => {
@@ -73,13 +72,6 @@ const AddComment = () => {
             Post
           </Button>
         </Form.Item>
-        <div className="flex-row sign-in-text-style">
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          Already have an account ?
-          <Link href="/sign-in">
-            <p className="theme-primary-color">Sign In</p>
-          </Link>
-        </div>
       </Form>
     </>
   )
