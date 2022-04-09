@@ -1,5 +1,3 @@
-import React from 'react'
-
 const AddComment = () => {
   return <div>AddComment</div>
 }
