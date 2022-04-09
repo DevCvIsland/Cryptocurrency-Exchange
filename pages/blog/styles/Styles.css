@@ -159,4 +159,8 @@
 .comments-section > button {
   font-size: 20px;
 }
+
+.submit-comment {
+  max-width: 360px;
+}
 /*# sourceMappingURL=Styles.css.map */
