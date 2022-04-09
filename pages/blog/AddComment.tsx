@@ -41,7 +41,7 @@ const AddComment = () => {
         >
           <Input placeholder="Full Name" size="large" className="input" />
         </Form.Item>
-        <Form.Item
+        {/* <Form.Item
           name="comment"
           rules={[
             {
@@ -55,6 +55,21 @@ const AddComment = () => {
           }}
         >
           <Input placeholder="Comment" size="large" className="input" />
+        </Form.Item> */}
+        <Form.Item
+          name="comment"
+          rules={[
+            {
+              required: true,
+              message: 'Please input your comment!',
+            },
+          ]}
+          wrapperCol={{
+            offset: 0,
+            span: 24,
+          }}
+        >
+          <Input.TextArea rows={5} size="large" placeholder="Comment" />
         </Form.Item>
         <Form.Item
           wrapperCol={{
