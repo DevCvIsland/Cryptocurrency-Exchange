@@ -42,6 +42,7 @@ const SinglePost = () => {
           </p>
           <BlogPostFooter />
           <PostComments />
+          <AddComment />
         </Col>
         <Col xs={23} sm={20} md={15} lg={9} xl={6}>
           <BlogSidebar />
