@@ -69,7 +69,7 @@ const AddComment = () => {
             block
             className="button submit-comment"
           >
-            Post
+            Post Comment
           </Button>
         </Form.Item>
       </Form>
