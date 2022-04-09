@@ -52,7 +52,7 @@ const SidebarItemContainer = ({
                       height={100}
                     />
                   </Col>
-                  <Col xs={18} sm={18} md={18} lg={18} xl={17}>
+                  <Col xs={17} sm={18} md={18} lg={18} xl={17}>
                     <div>
                       <h4>{post.text}</h4>
                       <p>{post.time}</p>
