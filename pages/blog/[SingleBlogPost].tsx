@@ -6,6 +6,7 @@ import TitleBanner from '../../components/title-banner/TitleBanner'
 import Posts from './BlogPostsData'
 import BlogPostFooter from '../../components/blog-post/BlogPostFooter'
 import PostComments from './PostComments'
+import AddComment from './AddComment'
 import BlogSidebar from './BlogSidebar'
 
 const SinglePost = () => {
