@@ -6,6 +6,7 @@
 }
 
 .blog-post {
+  cursor: pointer !important;
   margin-top: 75px;
 }
 
