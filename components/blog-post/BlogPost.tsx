@@ -28,7 +28,9 @@ const BlogPost = ({ id, title, image }: BlogPostProps) => {
           </Button>
         </Link>
       </Col>
-      <BlogPostFooter />
+      <Link href={`./blog/${id}`}>
+        <BlogPostFooter />
+      </Link>
     </Row>
   )
 }
