@@ -22,15 +22,11 @@ const BlogPost = ({ id, title, image }: BlogPostProps) => {
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum ...
         </p>
-      </Link>
-      <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-        <Link href={`./blog/${id}`}>
+        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
           <Button size="large" className="button" block>
             Read More
           </Button>
-        </Link>
-      </Col>
-      <Link href={`./blog/${id}`}>
+        </Col>
         <BlogPostFooter />
       </Link>
     </Row>
