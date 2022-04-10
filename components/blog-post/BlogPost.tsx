@@ -12,15 +12,17 @@ type BlogPostProps = {
 const BlogPost = ({ id, title, image }: BlogPostProps) => {
   return (
     <Row align="middle" className="blog-post">
-      <h3>{title}</h3>
-      <Image src={image} alt="Blog Image" />
-      <p className="blog-post-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum ...
-      </p>
+      <Link href={`./blog/${id}`}>
+        <h3>{title}</h3>
+        <Image src={image} alt="Blog Image" />
+        <p className="blog-post-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum ...
+        </p>
+      </Link>
       <Col xs={24} sm={24} md={12} lg={12} xl={12}>
         <Link href={`./blog/${id}`}>
           <Button size="large" className="button" block>
