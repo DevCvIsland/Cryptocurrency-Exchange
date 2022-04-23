@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../containers/layout/Layout'
-import TitleBanner from '../components/title-banner/TitleBanner'
 
 const Home: NextPage = () => (
   <>
