@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../containers/layout/Layout'
+import LandingPage from './home/LandingPage'
 
 const Home: NextPage = () => (
   <>
@@ -11,6 +12,7 @@ const Home: NextPage = () => (
     </Head>
     <Layout>
       <p>Home</p>
+      <LandingPage />
     </Layout>
   </>
 )
