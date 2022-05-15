@@ -10,7 +10,7 @@ type InfoItemProps = {
 const InfoItem = ({ title, description }: InfoItemProps) => {
   return (
     <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-      <p>{title}</p>
+      <p className="landing-info-item-title">{title}</p>
       <p>{description}</p>
     </Col>
   )
@@ -26,8 +26,15 @@ const LandingPage = () => {
 
   return (
     <Row>
-      <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-        <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
+      <Col
+        xs={24}
+        sm={24}
+        md={24}
+        lg={12}
+        xl={12}
+        className="get-started-landing"
+      >
+        <h2>Buy, trade, and hold 600+ cryptocurrencies on Binance</h2>
         <Form
           name="basic"
           initialValues={{
@@ -68,18 +75,20 @@ const LandingPage = () => {
       <Col xs={24} sm={24} md={24} lg={12} xl={12}>
         <Image src={Landing} alt="started img" />
       </Col>
-      <Row>
-        <InfoItem
-          title="$76 billion"
-          description="24h trading volume on Binance exchange"
-        />
-        <InfoItem title="600+" description="Cryptocurrencies listed" />
-        <InfoItem
-          title="90 million"
-          description="Registered users who trust Binance"
-        />
-        <InfoItem title="<0.10%" description="Lowest transaction fees" />
-      </Row>
+      <Col xs={24}>
+        <Row>
+          <InfoItem
+            title="$76 billion"
+            description="24h trading volume on Binance exchange"
+          />
+          <InfoItem title="600+" description="Cryptocurrencies listed" />
+          <InfoItem
+            title="90 million"
+            description="Registered users who trust Binance"
+          />
+          <InfoItem title="<0.10%" description="Lowest transaction fees" />
+        </Row>
+      </Col>
     </Row>
   )
 }
