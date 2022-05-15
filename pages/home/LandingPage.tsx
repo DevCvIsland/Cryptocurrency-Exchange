@@ -9,7 +9,7 @@ type InfoItemProps = {
 
 const InfoItem = ({ title, description }: InfoItemProps) => {
   return (
-    <Col xs={6}>
+    <Col xs={12} sm={12} md={12} lg={6} xl={6}>
       <p>{title}</p>
       <p>{description}</p>
     </Col>
@@ -26,57 +26,46 @@ const LandingPage = () => {
 
   return (
     <Row>
-      <Col xs={12}>
+      <Col xs={24} sm={24} md={24} lg={12} xl={12}>
         <p>Buy, trade, and hold 600+ cryptocurrencies on Binance</p>
         <Form
           name="basic"
-          labelCol={{
-            span: 8,
-          }}
-          wrapperCol={{
-            span: 16,
-          }}
           initialValues={{
             remember: true,
           }}
+          layout="inline"
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
           autoComplete="off"
         >
           <Form.Item
-            name="fullname"
+            name="email-phone"
             rules={[
               {
                 required: true,
-                message: 'Please input your fullname!',
+                message: 'Please input your email or phone number!',
               },
             ]}
-            wrapperCol={{
-              offset: 0,
-              span: 24,
-            }}
           >
-            <Input placeholder="Full Name" size="large" className="input" />
+            <Input
+              placeholder="Email / Phone number"
+              size="large"
+              className="input"
+            />
           </Form.Item>
-          <Form.Item
-            wrapperCol={{
-              offset: 0,
-              span: 24,
-            }}
-          >
+          <Form.Item>
             <Button
               type="primary"
               htmlType="submit"
               size="large"
-              block
-              className="button submit-comment"
+              className="button"
             >
-              Post Comment
+              Get Started
             </Button>
           </Form.Item>
         </Form>
       </Col>
-      <Col xs={12}>
+      <Col xs={24} sm={24} md={24} lg={12} xl={12}>
         <Image src={Landing} alt="started img" />
       </Col>
       <Row>
