@@ -20,11 +20,35 @@
   line-height: 64px;
 }
 
+@media screen and (min-width: 1200px) {
+  .info-item-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 100px;
+  }
+}
+
 .landing-info-item-title {
   color: #EAECEF;
   font-weight: 600;
   font-size: 40px;
   line-height: 64px;
   margin-bottom: 0px;
+}
+
+.landing-info-item-description {
+  color: #EAECEF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 100px;
 }
 /*# sourceMappingURL=Styles.css.map */

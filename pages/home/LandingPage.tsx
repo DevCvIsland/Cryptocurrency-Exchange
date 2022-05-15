@@ -9,9 +9,9 @@ type InfoItemProps = {
 
 const InfoItem = ({ title, description }: InfoItemProps) => {
   return (
-    <Col xs={12} sm={12} md={12} lg={6} xl={6}>
+    <Col xs={12} sm={12} md={12} lg={6} xl={5}>
       <p className="landing-info-item-title">{title}</p>
-      <p>{description}</p>
+      <p className="landing-info-item-description">{description}</p>
     </Col>
   )
 }
@@ -76,7 +76,7 @@ const LandingPage = () => {
         <Image src={Landing} alt="started img" />
       </Col>
       <Col xs={24}>
-        <Row>
+        <Row className="info-item-section">
           <InfoItem
             title="$76 billion"
             description="24h trading volume on Binance exchange"
