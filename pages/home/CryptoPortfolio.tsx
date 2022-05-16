@@ -36,7 +36,14 @@ const CryptoPortfolio = () => {
         <h3>Build your crypto portfolio</h3>
         <p>Start your first trade with these easy steps.</p>
       </Col>
-      <Col xs={24} sm={24} md={12} lg={10} xl={12}>
+      <Col
+        xs={24}
+        sm={24}
+        md={12}
+        lg={10}
+        xl={12}
+        className="crypto-portfolio-item-section"
+      >
         <CryptoPortfolioItem
           title="Fund your account"
           description="Add funds to your crypto account to start trading crypto. You can add funds with a variety of payment methods."
@@ -59,6 +66,7 @@ const CryptoPortfolio = () => {
           type="primary"
           htmlType="submit"
           size="large"
+          block
           className="button"
         >
           Get Started

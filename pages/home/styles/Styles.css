@@ -30,7 +30,7 @@
 }
 
 .landing-info-item-title {
-  color: #EAECEF;
+  color: #f3ba2f;
   font-weight: 600;
   font-size: 30px;
   line-height: 64px;
@@ -60,6 +60,15 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+
+.crypto-portfolio-item-section {
+  padding: 0px 20px;
+  margin-bottom: 100px;
+}
+
+.crypto-portfolio-item-section button {
+  max-width: 320px;
 }
 
 .crypto-portfolio-item {
@@ -102,6 +111,12 @@
     font-weight: 600;
     font-size: 40px;
     line-height: 64px;
+  }
+  .crypto-portfolio-title-section h3 {
+    font-size: 35px;
+  }
+  .crypto-portfolio-title-section p {
+    font-size: 18px;
   }
   .crypto-portfolio-image {
     display: none;
@@ -168,6 +183,7 @@
   .crypto-portfolio-image {
     position: relative;
     bottom: 150px;
+    right: 100px;
   }
 }
 /*# sourceMappingURL=Styles.css.map */
