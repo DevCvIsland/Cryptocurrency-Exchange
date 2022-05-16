@@ -32,11 +32,11 @@ const CryptoPortfolioItem = ({
 const CryptoPortfolio = () => {
   return (
     <Row justify="space-around">
-      <Col xs={24} className="crypto-portfolio-title-section">
+      <Col xs={20} className="crypto-portfolio-title-section">
         <h3>Build your crypto portfolio</h3>
         <p>Start your first trade with these easy steps.</p>
       </Col>
-      <Col xs={24} sm={24} md={24} lg={12} xl={12}>
+      <Col xs={24} sm={24} md={12} lg={10} xl={12}>
         <CryptoPortfolioItem
           title="Fund your account"
           description="Add funds to your crypto account to start trading crypto. You can add funds with a variety of payment methods."
@@ -64,10 +64,15 @@ const CryptoPortfolio = () => {
           Get Started
         </Button>
       </Col>
-      <Col xs={20} sm={6} md={6} lg={6} xl={6} className="flex-row">
-        <div className="crypto-portfolio-image-wrapper">
-          <Image src={Mobile} alt="started img" />
-        </div>
+      <Col
+        xs={12}
+        sm={6}
+        md={8}
+        lg={6}
+        xl={5}
+        className="crypto-portfolio-image"
+      >
+        <Image src={Mobile} alt="crypto portfolio image" />
       </Col>
     </Row>
   )

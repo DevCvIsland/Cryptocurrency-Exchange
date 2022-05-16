@@ -35,9 +35,9 @@ $primary-color: #f3ba2f;
   padding-right: 10px;
 }
 .crypto-portfolio-title-section{
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   h3{
-    color: #EAECEF;
+    color: $primary-color;
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
@@ -71,9 +71,6 @@ $primary-color: #f3ba2f;
   color: $primary-color;
   margin-right: 20px;
 }
-.crypto-portfolio-image-wrapper{
-  display: inline;
-}
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .get-started-landing{
     margin-top: 10px;
@@ -83,6 +80,9 @@ $primary-color: #f3ba2f;
       font-size: 40px;
       line-height: 64px;
     }
+  }
+  .crypto-portfolio-image{
+    display: none;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -94,6 +94,9 @@ $primary-color: #f3ba2f;
       font-size: 45px;
       line-height: 64px;
     }
+  }
+  .crypto-portfolio-image{
+    display: none;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 900px) {
@@ -111,6 +114,10 @@ $primary-color: #f3ba2f;
   .get-started-landing{
     margin-top: 10px;
   }
+  .crypto-portfolio-image{
+    position: relative;
+    bottom: 100px;
+  }
 }
 @media screen and (min-width: 1200px){
   .info-item-section{
@@ -124,5 +131,9 @@ $primary-color: #f3ba2f;
   }
   .landing-info-item-description{
     padding-right: 100px;
+  }
+  .crypto-portfolio-image{
+    position: relative;
+    bottom: 150px;
   }
 }

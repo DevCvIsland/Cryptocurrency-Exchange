@@ -46,11 +46,11 @@
 }
 
 .crypto-portfolio-title-section {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .crypto-portfolio-title-section h3 {
-  color: #EAECEF;
+  color: #f3ba2f;
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
@@ -93,10 +93,6 @@
   margin-right: 20px;
 }
 
-.crypto-portfolio-image-wrapper {
-  display: inline;
-}
-
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .get-started-landing {
     margin-top: 10px;
@@ -106,6 +102,9 @@
     font-weight: 600;
     font-size: 40px;
     line-height: 64px;
+  }
+  .crypto-portfolio-image {
+    display: none;
   }
 }
 
@@ -118,6 +117,9 @@
     font-weight: 600;
     font-size: 45px;
     line-height: 64px;
+  }
+  .crypto-portfolio-image {
+    display: none;
   }
 }
 
@@ -136,6 +138,10 @@
 @media screen and (min-width: 901px) and (max-width: 1199px) {
   .get-started-landing {
     margin-top: 10px;
+  }
+  .crypto-portfolio-image {
+    position: relative;
+    bottom: 100px;
   }
 }
 
@@ -158,6 +164,10 @@
   }
   .landing-info-item-description {
     padding-right: 100px;
+  }
+  .crypto-portfolio-image {
+    position: relative;
+    bottom: 150px;
   }
 }
 /*# sourceMappingURL=Styles.css.map */
