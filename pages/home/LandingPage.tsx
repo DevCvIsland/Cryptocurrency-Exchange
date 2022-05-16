@@ -18,9 +18,11 @@ const InfoItem = ({ title, description }: InfoItemProps) => {
 
 const LandingPage = () => {
   const onFinish = (values: any) => {
+    // eslint-disable-next-line no-console
     console.log('Success:', values)
   }
   const onFinishFailed = (errorInfo: any) => {
+    // eslint-disable-next-line no-console
     console.log('Failed:', errorInfo)
   }
 
