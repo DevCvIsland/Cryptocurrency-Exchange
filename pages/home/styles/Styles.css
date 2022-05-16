@@ -20,20 +20,8 @@
   line-height: 64px;
 }
 
-@media screen and (min-width: 1200px) {
-  .info-item-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 100px;
-  }
+.landing-input {
+  margin-bottom: 10px !important;
 }
 
 .landing-info-item-title {
@@ -50,5 +38,111 @@
   font-size: 16px;
   line-height: 24px;
   padding-right: 100px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .get-started-landing {
+    margin-top: 10px;
+    padding: 20px;
+  }
+  .get-started-landing h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 64px;
+  }
+  .info-item-section {
+    margin-left: 20px;
+  }
+  .landing-info-item-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 64px;
+    margin-bottom: 0px;
+  }
+  .landing-info-item-description {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .get-started-landing {
+    margin-top: 10px;
+    padding: 50px;
+  }
+  .get-started-landing h2 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 64px;
+  }
+  .info-item-section {
+    margin-left: 20px;
+  }
+  .landing-info-item-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 64px;
+    margin-bottom: 0px;
+  }
+  .landing-info-item-description {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .get-started-landing {
+    margin-top: 10px;
+    padding: 50px;
+  }
+  .get-started-landing h2 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 64px;
+  }
+  .info-item-section {
+    margin-left: 20px;
+  }
+  .landing-info-item-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 64px;
+    margin-bottom: 0px;
+  }
+  .landing-info-item-description {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1199px) {
+  .get-started-landing {
+    margin-top: 10px;
+  }
+  .info-item-section {
+    margin-left: 20px;
+  }
+  .landing-info-item-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 64px;
+    margin-bottom: 0px;
+  }
+  .landing-info-item-description {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-item-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 100px;
+  }
 }
 /*# sourceMappingURL=Styles.css.map */

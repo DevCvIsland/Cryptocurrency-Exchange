@@ -53,6 +53,7 @@ const LandingPage = () => {
                 message: 'Please input your email or phone number!',
               },
             ]}
+            className="landing-input"
           >
             <Input
               placeholder="Email / Phone number"
