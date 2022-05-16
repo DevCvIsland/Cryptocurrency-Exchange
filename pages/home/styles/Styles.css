@@ -26,6 +26,7 @@
 
 .info-item-section {
   margin-left: 20px;
+  margin-bottom: 100px;
 }
 
 .landing-info-item-title {
@@ -42,6 +43,58 @@
   font-size: 16px;
   line-height: 24px;
   padding-right: 10px;
+}
+
+.crypto-portfolio-title-section {
+  margin-bottom: 80px;
+}
+
+.crypto-portfolio-title-section h3 {
+  color: #EAECEF;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.crypto-portfolio-title-section p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.crypto-portfolio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 64px;
+}
+
+.crypto-portfolio-item h4 {
+  color: #EAECEF;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.crypto-portfolio-item p {
+  color: #999;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.crypto-portfolio-icon {
+  font-size: 75px;
+  color: #f3ba2f;
+  margin-right: 20px;
+}
+
+.crypto-portfolio-image-wrapper {
+  display: inline;
 }
 
 @media screen and (min-width: 0px) and (max-width: 480px) {

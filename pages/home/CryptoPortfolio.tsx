@@ -19,10 +19,10 @@ const CryptoPortfolioItem = ({
   children,
 }: CryptoPortfolioItemProps) => {
   return (
-    <div>
+    <div className="crypto-portfolio-item">
       {children}
       <div>
-        <p>{title}</p>
+        <h4>{title}</h4>
         <p>{description}</p>
       </div>
     </div>
@@ -31,8 +31,8 @@ const CryptoPortfolioItem = ({
 
 const CryptoPortfolio = () => {
   return (
-    <Row>
-      <Col xs={24}>
+    <Row justify="space-around">
+      <Col xs={24} className="crypto-portfolio-title-section">
         <h3>Build your crypto portfolio</h3>
         <p>Start your first trade with these easy steps.</p>
       </Col>
@@ -41,19 +41,19 @@ const CryptoPortfolio = () => {
           title="Fund your account"
           description="Add funds to your crypto account to start trading crypto. You can add funds with a variety of payment methods."
         >
-          <UserOutlined />
+          <UserOutlined className="crypto-portfolio-icon" />
         </CryptoPortfolioItem>
         <CryptoPortfolioItem
           title="Verify your identity"
           description="Complete the identity verification process to secure your account and transactions."
         >
-          <SecurityScanOutlined />
+          <SecurityScanOutlined className="crypto-portfolio-icon" />
         </CryptoPortfolioItem>
         <CryptoPortfolioItem
           title="Start trading"
           description="You're good to go! Buy/sell crypto, set up recurring buys for your investments, and discover what Binance has to offer."
         >
-          <LineChartOutlined />
+          <LineChartOutlined className="crypto-portfolio-icon" />
         </CryptoPortfolioItem>
         <Button
           type="primary"
@@ -64,8 +64,10 @@ const CryptoPortfolio = () => {
           Get Started
         </Button>
       </Col>
-      <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-        <Image src={Mobile} alt="started img" />
+      <Col xs={20} sm={6} md={6} lg={6} xl={6} className="flex-row">
+        <div className="crypto-portfolio-image-wrapper">
+          <Image src={Mobile} alt="started img" />
+        </div>
       </Col>
     </Row>
   )
