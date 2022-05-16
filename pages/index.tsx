@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../containers/layout/Layout'
 import LandingPage from './home/LandingPage'
+import CryptoPortfolio from './home/CryptoPortfolio'
 
 const Home: NextPage = () => (
   <>
@@ -12,6 +13,7 @@ const Home: NextPage = () => (
     </Head>
     <Layout>
       <LandingPage />
+      <CryptoPortfolio />
     </Layout>
   </>
 )
