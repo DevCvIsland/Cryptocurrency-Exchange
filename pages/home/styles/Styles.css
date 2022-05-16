@@ -26,7 +26,7 @@
 
 .info-item-section {
   margin-left: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .landing-info-item-title {
@@ -45,7 +45,12 @@
   padding-right: 10px;
 }
 
+.crypto-portfolio-section {
+  background-color: #181A20;
+}
+
 .crypto-portfolio-title-section {
+  padding-top: 50px;
   margin-bottom: 50px;
 }
 

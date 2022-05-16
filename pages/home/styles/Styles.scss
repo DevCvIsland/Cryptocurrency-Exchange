@@ -18,7 +18,7 @@ $primary-color: #f3ba2f;
 }
 .info-item-section{
   margin-left: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .landing-info-item-title{
   color: $primary-color;
@@ -34,7 +34,11 @@ $primary-color: #f3ba2f;
   line-height: 24px;
   padding-right: 10px;
 }
+.crypto-portfolio-section{
+  background-color: #181A20;
+}
 .crypto-portfolio-title-section{
+  padding-top: 50px;
   margin-bottom: 50px;
   h3{
     color: $primary-color;

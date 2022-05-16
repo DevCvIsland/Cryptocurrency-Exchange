@@ -31,7 +31,7 @@ const CryptoPortfolioItem = ({
 
 const CryptoPortfolio = () => {
   return (
-    <Row justify="space-around">
+    <Row justify="space-around" className="crypto-portfolio-section">
       <Col xs={20} className="crypto-portfolio-title-section">
         <h3>Build your crypto portfolio</h3>
         <p>Start your first trade with these easy steps.</p>
