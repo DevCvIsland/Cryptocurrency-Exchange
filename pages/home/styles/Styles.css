@@ -24,10 +24,14 @@
   margin-bottom: 10px !important;
 }
 
+.info-item-section {
+  margin-left: 20px;
+}
+
 .landing-info-item-title {
   color: #EAECEF;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 64px;
   margin-bottom: 0px;
 }
@@ -37,7 +41,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding-right: 100px;
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
@@ -49,18 +53,6 @@
     font-weight: 600;
     font-size: 40px;
     line-height: 64px;
-  }
-  .info-item-section {
-    margin-left: 20px;
-  }
-  .landing-info-item-title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 64px;
-    margin-bottom: 0px;
-  }
-  .landing-info-item-description {
-    padding-right: 10px;
   }
 }
 
@@ -74,18 +66,6 @@
     font-size: 45px;
     line-height: 64px;
   }
-  .info-item-section {
-    margin-left: 20px;
-  }
-  .landing-info-item-title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 64px;
-    margin-bottom: 0px;
-  }
-  .landing-info-item-description {
-    padding-right: 10px;
-  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 900px) {
@@ -98,35 +78,11 @@
     font-size: 50px;
     line-height: 64px;
   }
-  .info-item-section {
-    margin-left: 20px;
-  }
-  .landing-info-item-title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 64px;
-    margin-bottom: 0px;
-  }
-  .landing-info-item-description {
-    padding-right: 10px;
-  }
 }
 
 @media screen and (min-width: 901px) and (max-width: 1199px) {
   .get-started-landing {
     margin-top: 10px;
-  }
-  .info-item-section {
-    margin-left: 20px;
-  }
-  .landing-info-item-title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 64px;
-    margin-bottom: 0px;
-  }
-  .landing-info-item-description {
-    padding-right: 10px;
   }
 }
 
@@ -143,6 +99,12 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 100px;
+  }
+  .landing-info-item-title {
+    font-size: 40px;
+  }
+  .landing-info-item-description {
+    padding-right: 100px;
   }
 }
 /*# sourceMappingURL=Styles.css.map */
