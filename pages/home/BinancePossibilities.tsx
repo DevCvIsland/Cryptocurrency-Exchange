@@ -1,4 +1,5 @@
-import { Row, Col } from 'antd'
+import { Row, Col, Button } from 'antd'
+import { RightOutlined } from '@ant-design/icons'
 import Image from 'next/image'
 import Card1 from '../../assets/possibility-card/possibility-card-1.png'
 import Card2 from '../../assets/possibility-card/possibility-card-2.png'
@@ -16,19 +17,26 @@ const BinancePossibilitiesCards = ({
   img,
 }: BinancePossibilitiesCardsProps) => {
   return (
-    <Col>
-      <h4>{title}</h4>
-      <p>{description}</p>
-      <p>button</p>
-      <Image src={img} alt="started img" />
+    <Col xs={6} className="binance-possibilities-cards">
+      {img !== Card2 && <Image src={img} alt="binance possibilities image" />}
+      <div>
+        <h4 className={img !== Card2 ? 'binance-possibilities-title' : ''}>
+          {title}
+        </h4>
+        <p>{description}</p>
+        <Button type="link">
+          Learn more <RightOutlined />
+        </Button>
+      </div>
+      {img === Card2 && <Image src={img} alt="binance possibilities image" />}
     </Col>
   )
 }
 
 const BinancePossibilities = () => {
   return (
-    <Row>
-      <Col xs={24}>
+    <Row justify="center" className="binance-possibilities">
+      <Col xs={18}>
         <h3>Explore endless possibilities with Binance</h3>
       </Col>
       <BinancePossibilitiesCards

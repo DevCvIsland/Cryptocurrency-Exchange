@@ -107,6 +107,56 @@
   margin-right: 20px;
 }
 
+.binance-possibilities {
+  background-color: #181A20;
+  padding-bottom: 50px;
+}
+
+.binance-possibilities h3 {
+  color: #EAECEF;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.binance-possibilities-cards {
+  background-color: #0b0e11;
+  padding: 40px;
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.binance-possibilities-cards .binance-possibilities-title {
+  margin-top: 100px;
+}
+
+.binance-possibilities-cards h4 {
+  color: #EAECEF;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.binance-possibilities-cards p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.binance-possibilities-cards button {
+  padding-left: 0px;
+  color: #f3ba2f;
+}
+
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .get-started-landing {
     margin-top: 10px;
