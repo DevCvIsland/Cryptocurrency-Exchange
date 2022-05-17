@@ -36,7 +36,7 @@ const BinancePossibilitiesCards = ({
 const BinancePossibilities = () => {
   return (
     <Row justify="center" className="binance-possibilities">
-      <Col xs={18}>
+      <Col xs={20}>
         <h3>Explore endless possibilities with Binance</h3>
       </Col>
       <BinancePossibilitiesCards
