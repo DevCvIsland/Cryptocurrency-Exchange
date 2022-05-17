@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Layout from '../containers/layout/Layout'
 import LandingPage from './home/LandingPage'
 import CryptoPortfolio from './home/CryptoPortfolio'
+import BinancePossibilities from './home/BinancePossibilities'
 
 const Home: NextPage = () => (
   <>
@@ -14,6 +15,7 @@ const Home: NextPage = () => (
     <Layout>
       <LandingPage />
       <CryptoPortfolio />
+      <BinancePossibilities />
     </Layout>
   </>
 )
