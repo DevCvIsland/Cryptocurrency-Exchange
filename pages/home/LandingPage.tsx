@@ -36,7 +36,9 @@ const LandingPage = () => {
         xl={12}
         className="get-started-landing"
       >
-        <h2>Buy, trade, and hold 600+ cryptocurrencies on Binance</h2>
+        <h2>
+          Buy, trade, and hold 600+ cryptocurrencies on <span>Binance</span>
+        </h2>
         <Form
           name="basic"
           initialValues={{

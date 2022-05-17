@@ -11,6 +11,9 @@ $primary-color: #f3ba2f;
     font-weight: 600;
     font-size: 56px;
     line-height: 64px;
+    span{
+      color: $primary-color;
+    }
   }
 }
 .landing-input{

@@ -20,6 +20,10 @@
   line-height: 64px;
 }
 
+.get-started-landing h2 span {
+  color: #f3ba2f;
+}
+
 .landing-input {
   margin-bottom: 10px !important;
 }
