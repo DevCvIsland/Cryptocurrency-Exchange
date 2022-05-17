@@ -4,6 +4,7 @@ import Layout from '../containers/layout/Layout'
 import LandingPage from './home/LandingPage'
 import CryptoPortfolio from './home/CryptoPortfolio'
 import BinancePossibilities from './home/BinancePossibilities'
+import NeedHelp from './home/NeedHelp'
 
 const Home: NextPage = () => (
   <>
@@ -16,6 +17,7 @@ const Home: NextPage = () => (
       <LandingPage />
       <CryptoPortfolio />
       <BinancePossibilities />
+      <NeedHelp />
     </Layout>
   </>
 )
