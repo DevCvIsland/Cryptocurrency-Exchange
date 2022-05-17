@@ -160,6 +160,44 @@
   color: #f3ba2f;
 }
 
+.need-help-section {
+  background-color: #181A20;
+}
+
+.need-help-section h3 {
+  color: #f3ba2f;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.need-help-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 30px;
+}
+
+.need-help-item h4 {
+  color: #EAECEF;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.need-help-item p {
+  color: #999;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.need-help-icon {
+  font-size: 75px;
+  color: #f3ba2f;
+  padding-right: 10px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .get-started-landing {
     margin-top: 10px;

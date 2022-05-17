@@ -121,6 +121,36 @@ $primary-color: #f3ba2f;
     color: $primary-color;
   }
 }
+.need-help-section{
+  background-color: #181A20;
+  h3{
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.need-help-item{
+  display: flex;
+  margin: 0px 30px;
+  h4{
+    color: #EAECEF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  p{
+    color: #999;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.need-help-icon{
+  font-size: 75px;
+  color: $primary-color;
+  padding-right: 10px;
+}
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .get-started-landing{
     margin-top: 10px;
