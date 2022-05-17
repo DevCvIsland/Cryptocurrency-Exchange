@@ -1,8 +1,9 @@
-import { Row, Col } from 'antd'
+import { Row, Col, Button } from 'antd'
 import {
   WechatOutlined,
   QuestionCircleOutlined,
   FileTextOutlined,
+  RightOutlined,
 } from '@ant-design/icons'
 
 type HelpItemsProps = {
@@ -13,12 +14,15 @@ type HelpItemsProps = {
 
 const HelpItems = ({ children, title, description }: HelpItemsProps) => {
   return (
-    <Col xs={6} className="need-help-item">
+    <Col xs={22} sm={20} md={10} lg={10} xl={6} className="need-help-item">
       {children}
       <div>
         <h4>{title}</h4>
         <p>{description}</p>
-        <p>button</p>
+        <Button type="link">
+          {title === '24/7 Chat Support' ? 'Chat now' : 'Learn more'}
+          <RightOutlined />
+        </Button>
       </div>
     </Col>
   )
