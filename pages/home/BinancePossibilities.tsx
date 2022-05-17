@@ -17,7 +17,14 @@ const BinancePossibilitiesCards = ({
   img,
 }: BinancePossibilitiesCardsProps) => {
   return (
-    <Col xs={6} className="binance-possibilities-cards">
+    <Col
+      xs={22}
+      sm={15}
+      md={10}
+      lg={10}
+      xl={6}
+      className="binance-possibilities-cards"
+    >
       {img !== Card2 && <Image src={img} alt="binance possibilities image" />}
       <div>
         <h4 className={img !== Card2 ? 'binance-possibilities-title' : ''}>
