@@ -1,5 +1,6 @@
 import { Row, Col, Button, Table } from 'antd'
 import { RightOutlined } from '@ant-design/icons'
+import { useGetCryptosQuery } from '../../services/CryptoApi'
 
 const columns = [
   {
@@ -63,6 +64,9 @@ const dataSource = [
 ]
 
 const PopularCryptocurrencies = () => {
+  const { data } = useGetCryptosQuery({})
+  console.log('data', data)
+
   return (
     <Row justify="center" className="popular-cryptocurrencies-section">
       <Col xs={20} className="popular-cryptocurrencies-title-section">
