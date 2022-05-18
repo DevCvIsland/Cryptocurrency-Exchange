@@ -49,6 +49,27 @@
   padding-right: 10px;
 }
 
+.popular-cryptocurrencies-section {
+  background-color: #181A20;
+  padding: 80px 0px;
+}
+
+.popular-cryptocurrencies-section h3 {
+  color: #f3ba2f;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+
+.popular-cryptocurrencies-section p {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 32px;
+  margin-bottom: 24px;
+  margin-top: 50px;
+}
+
 .crypto-portfolio-section {
   background-color: #181A20;
 }

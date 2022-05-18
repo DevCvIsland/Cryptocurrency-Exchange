@@ -62,4 +62,20 @@ body {
 .theme-primary-color {
   color: #f3ba2f;
 }
+
+.ant-table-thead > tr > th {
+  background-color: #0b0e11;
+  border-color: #999;
+  color: #fff;
+}
+
+.ant-table-tbody > tr > td {
+  background-color: #181A20;
+  border-color: #282828;
+  color: #fff;
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td {
+  background-color: #0b0e11;
+}
 /*# sourceMappingURL=globals.css.map */
