@@ -65,8 +65,10 @@ body {
 
 .ant-table-thead > tr > th {
   background-color: #0b0e11;
-  border-color: #999;
-  color: #fff;
+  border-color: #282828;
+  color: #999;
+  font-size: 16px;
+  font-weight: 550;
 }
 
 .ant-table-tbody > tr > td {

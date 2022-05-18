@@ -70,6 +70,21 @@
   margin-top: 50px;
 }
 
+.popular-cryptocurrencies-title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular-cryptocurrencies-title-section button {
+  margin-top: 15px;
+  font-weight: 525;
+  color: #848e9c;
+}
+
 .crypto-portfolio-section {
   background-color: #181A20;
 }

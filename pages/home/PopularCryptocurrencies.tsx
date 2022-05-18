@@ -1,4 +1,5 @@
 import { Row, Col, Button, Table } from 'antd'
+import { RightOutlined } from '@ant-design/icons'
 
 const columns = [
   {
@@ -64,8 +65,11 @@ const dataSource = [
 const PopularCryptocurrencies = () => {
   return (
     <Row justify="center" className="popular-cryptocurrencies-section">
-      <Col xs={20}>
+      <Col xs={20} className="popular-cryptocurrencies-title-section">
         <h3>Popular cryptocurrencies</h3>
+        <Button type="link">
+          View more markets <RightOutlined />
+        </Button>
       </Col>
       <Col xs={20}>
         <Table

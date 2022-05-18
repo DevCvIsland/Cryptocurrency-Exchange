@@ -47,22 +47,19 @@ body {
 }
 
 .ant-table-thead > tr > th{
-  background-color: rgb(11, 14, 17);;
-  border-color: #999;
-  color: #fff;
+  background-color: rgb(11, 14, 17);
+  border-color: #282828;
+  color: #999;
+  font-size: 16px;
+  font-weight: 550;
 }
 
 .ant-table-tbody > tr > td{
   background-color: #181A20;
   border-color: #282828;
   color: #fff;
-  // &:hover{
-  //   background-color: #181A20 !important;
-  //   border-color: #282828 !important;
-  //   color: #fff !important;
-  // }
 }
 
 .ant-table-tbody > tr.ant-table-row:hover > td {
-  background-color: rgb(11, 14, 17);;
+  background-color: rgb(11, 14, 17);
 }
