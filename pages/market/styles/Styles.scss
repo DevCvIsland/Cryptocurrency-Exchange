@@ -1,8 +1,14 @@
+$primary-color: #f3ba2f;
+
 .Markets-section{
-  background-color: #181A20;
+  // background-color: #181A20;
   margin: 50px 0px;
   padding: 50px 0px;
   h2{
     color: #fff;
   }
+}
+.market-table-button{
+  color: $primary-color;
+  padding-left: 0px;
 }

@@ -1,10 +1,14 @@
 .Markets-section {
-  background-color: #181A20;
   margin: 50px 0px;
   padding: 50px 0px;
 }
 
 .Markets-section h2 {
   color: #fff;
+}
+
+.market-table-button {
+  color: #f3ba2f;
+  padding-left: 0px;
 }
 /*# sourceMappingURL=Styles.css.map */

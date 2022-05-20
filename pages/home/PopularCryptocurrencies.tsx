@@ -65,6 +65,7 @@ const dataSource = [
 
 const PopularCryptocurrencies = () => {
   const { data } = useGetCryptosQuery({})
+  // eslint-disable-next-line no-console
   console.log('data', data)
 
   return (
