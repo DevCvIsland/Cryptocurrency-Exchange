@@ -6,8 +6,10 @@ const Market = () => {
   return (
     <Layout>
       <TitleBanner firstTitle="Market" lastTitle="Crypto" />
-      <Row>
-        <Col>header</Col>
+      <Row className="Markets-section">
+        <Col>
+          <h2>All Cryptos</h2>
+        </Col>
         <Col>table</Col>
       </Row>
     </Layout>
