@@ -9,7 +9,7 @@ const Market = () => {
     <Layout>
       <TitleBanner firstTitle="Market" lastTitle="Crypto" />
       <Row justify="space-around" className="Markets-section">
-        <Col xs={11}>
+        <Col xs={22} xl={11}>
           <Button size="large" className="button">
             All
           </Button>{' '}
@@ -23,7 +23,7 @@ const Market = () => {
             Gaming
           </Button>
         </Col>
-        <Col xs={5}>
+        <Col xs={22} xl={5}>
           <Form
             name="search"
             // form={form}
@@ -43,7 +43,7 @@ const Market = () => {
             </Form.Item>
           </Form>
         </Col>
-        <Col xs={20}>
+        <Col xs={22} xl={20}>
           <MarketTable />
         </Col>
       </Row>

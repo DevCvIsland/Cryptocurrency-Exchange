@@ -109,6 +109,7 @@ const MarketTable = () => {
       pagination={{
         position: ['bottomCenter'],
       }}
+      scroll={{ x: '100vw' }}
     />
   )
 }
