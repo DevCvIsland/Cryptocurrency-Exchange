@@ -9,19 +9,6 @@ const Market = () => {
       <TitleBanner firstTitle="Market" lastTitle="Crypto" />
       <Row justify="space-around" className="Markets-section">
         <Col xs={10}>
-          {/* <h2>All Cryptos</h2> */}
-          {/* <Button type="link" size="large" className="market-table-button">
-            All
-          </Button>{' '}
-          <Button type="link" size="large" className="market-table-button">
-            Metaverse
-          </Button>{' '}
-          <Button type="link" size="large" className="market-table-button">
-            NFT
-          </Button>
-          <Button type="link" size="large" className="market-table-button">
-            Gaming
-          </Button> */}
           <Button size="large" className="button">
             All
           </Button>{' '}
