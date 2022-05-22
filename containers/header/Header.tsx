@@ -14,16 +14,19 @@ const Header = () => {
     <>
       <Row justify="space-between" align="middle" className="logo-section">
         <Col xs={11} sm={12} md={12} lg={12} xl={12}>
+          {/* eslint-disable-next-line @next/next/link-passhref */}
           <Link href="/">
             <Image src={Logo} alt="Logo" width={200} height={50} />
           </Link>
         </Col>
         <Col xs={12} sm={10} md={8} lg={8} xl={6} className="button-container">
+          {/* eslint-disable-next-line @next/next/link-passhref */}
           <Link href="/sign-in">
             <Button size="large" className="button button-style">
               Sign In
             </Button>
           </Link>
+          {/* eslint-disable-next-line @next/next/link-passhref */}
           <Link href="/sign-up">
             <Button size="large" className="button-outline">
               Sign Up
