@@ -42,7 +42,7 @@ const dataSource = [
     volumeOf24h: '30.545322M',
     marketCap: '$50,404M',
     action: (
-      <Button type="link" className="market-table-button">
+      <Button type="link" size="large" className="market-table-button">
         Detail / Trade
       </Button>
     ),
@@ -55,7 +55,7 @@ const dataSource = [
     volumeOf24h: '30.545322M',
     marketCap: '$50,404M',
     action: (
-      <Button type="link" className="market-table-button">
+      <Button type="link" size="large" className="market-table-button">
         Detail / Trade
       </Button>
     ),
@@ -68,7 +68,7 @@ const dataSource = [
     volumeOf24h: '30.545322M',
     marketCap: '$50,404M',
     action: (
-      <Button type="link" className="market-table-button">
+      <Button type="link" size="large" className="market-table-button">
         Detail / Trade
       </Button>
     ),
@@ -81,7 +81,7 @@ const dataSource = [
     volumeOf24h: '30.545322M',
     marketCap: '$50,404M',
     action: (
-      <Button type="link" className="market-table-button">
+      <Button type="link" size="large" className="market-table-button">
         Detail / Trade
       </Button>
     ),
@@ -94,7 +94,7 @@ const dataSource = [
     volumeOf24h: '30.545322M',
     marketCap: '$50,404M',
     action: (
-      <Button type="link" className="market-table-button">
+      <Button type="link" size="large" className="market-table-button">
         Detail / Trade
       </Button>
     ),

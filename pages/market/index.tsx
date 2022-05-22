@@ -1,4 +1,5 @@
-import { Row, Col, Button } from 'antd'
+import { Row, Col, Button, Form, Input } from 'antd'
+import { SearchOutlined } from '@ant-design/icons'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import MarketTable from './MarketTable'
@@ -8,7 +9,7 @@ const Market = () => {
     <Layout>
       <TitleBanner firstTitle="Market" lastTitle="Crypto" />
       <Row justify="space-around" className="Markets-section">
-        <Col xs={10}>
+        <Col xs={11}>
           <Button size="large" className="button">
             All
           </Button>{' '}
@@ -23,7 +24,24 @@ const Market = () => {
           </Button>
         </Col>
         <Col xs={5}>
-          <h2>search box</h2>
+          <Form
+            name="search"
+            // form={form}
+            // onFinish={onFinish}
+          >
+            <Form.Item
+              name="search"
+              rules={[
+                { required: true, message: 'Please input your coin name!' },
+              ]}
+            >
+              <Input
+                prefix={<SearchOutlined />}
+                placeholder="Search Coin Name"
+                size="large"
+              />
+            </Form.Item>
+          </Form>
         </Col>
         <Col xs={20}>
           <MarketTable />
