@@ -84,13 +84,14 @@ const PopularCryptocurrencies = () => {
           scroll={{ x: 'max-content' }}
         />
       </Col>
-      <Col xs={20}>
+      <Col xs={20} className="popular-cryptocurrencies-footer-section">
         <p>Sign up now to build your own portfolio for free!</p>
         <Button
           type="primary"
           htmlType="submit"
           size="large"
           className="button"
+          block
         >
           Get Started
         </Button>

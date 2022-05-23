@@ -64,6 +64,11 @@ $primary-color: #f3ba2f;
     color: rgb(132, 142, 156);
   }
 }
+.popular-cryptocurrencies-footer-section{
+  button{
+    max-width: 320px;
+  }
+}
 .crypto-portfolio-section{
   background-color: #181A20;
 }
@@ -202,6 +207,11 @@ $primary-color: #f3ba2f;
   .popular-cryptocurrencies-title-section button{
     display: none;
   }
+  .popular-cryptocurrencies-footer-section{
+    p{
+      font-size: 20px;
+    }
+  }
   .crypto-portfolio-title-section{
     margin-bottom: 25px;
     h3{
@@ -238,6 +248,11 @@ $primary-color: #f3ba2f;
   }
   .popular-cryptocurrencies-title-section button{
     display: none;
+  }
+  .popular-cryptocurrencies-footer-section{
+    p{
+      font-size: 25px;
+    }
   }
   .crypto-portfolio-image{
     display: none;
