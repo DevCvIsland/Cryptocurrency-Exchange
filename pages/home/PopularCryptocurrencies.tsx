@@ -81,9 +81,7 @@ const PopularCryptocurrencies = () => {
           dataSource={dataSource}
           columns={columns}
           pagination={false}
-          // pagination={{
-          //   position: ['bottomCenter'],
-          // }}
+          scroll={{ x: 'max-content' }}
         />
       </Col>
       <Col xs={20}>

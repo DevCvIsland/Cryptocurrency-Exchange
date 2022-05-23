@@ -257,6 +257,9 @@
     font-size: 40px;
     line-height: 64px;
   }
+  .popular-cryptocurrencies-title-section button {
+    display: none;
+  }
   .crypto-portfolio-title-section {
     margin-bottom: 25px;
   }
@@ -287,6 +290,9 @@
     font-weight: 600;
     font-size: 45px;
     line-height: 64px;
+  }
+  .popular-cryptocurrencies-title-section button {
+    display: none;
   }
   .crypto-portfolio-image {
     display: none;

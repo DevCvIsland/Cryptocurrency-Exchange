@@ -199,6 +199,9 @@ $primary-color: #f3ba2f;
       line-height: 64px;
     }
   }
+  .popular-cryptocurrencies-title-section button{
+    display: none;
+  }
   .crypto-portfolio-title-section{
     margin-bottom: 25px;
     h3{
@@ -232,6 +235,9 @@ $primary-color: #f3ba2f;
       font-size: 45px;
       line-height: 64px;
     }
+  }
+  .popular-cryptocurrencies-title-section button{
+    display: none;
   }
   .crypto-portfolio-image{
     display: none;
