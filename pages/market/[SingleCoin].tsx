@@ -1,5 +1,12 @@
+import { Row, Col } from 'antd'
+
 const SingleCoin = () => {
-  return <div>SingleCoin</div>
+  return (
+    <Row>
+      <Col>Chart</Col>
+      <Col>Detail</Col>
+    </Row>
+  )
 }
 
 export default SingleCoin
