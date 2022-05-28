@@ -11,6 +11,7 @@ type BlogPostProps = {
 
 const BlogPost = ({ id, title, image }: BlogPostProps) => {
   return (
+    // eslint-disable-next-line @next/next/link-passhref
     <Link href={`./blog/${id}`}>
       <Row align="middle" className="blog-post">
         <h3>{title}</h3>
