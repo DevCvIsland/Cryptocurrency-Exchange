@@ -1,4 +1,5 @@
 import { Table, Button } from 'antd'
+import Link from 'next/link'
 
 const columns = [
   {
@@ -55,9 +56,11 @@ const dataSource = [
     volumeOf24h: '30.545322M',
     marketCap: '$50,404M',
     action: (
-      <Button type="link" size="large" className="market-table-button">
-        Detail / Trade
-      </Button>
+      <Link href="/market/bitcoin">
+        <Button type="link" size="large" className="market-table-button">
+          Detail / Trade
+        </Button>
+      </Link>
     ),
   },
   {
