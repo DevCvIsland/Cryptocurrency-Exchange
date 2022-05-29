@@ -1,5 +1,6 @@
 type TitleBannerProps = {
-  firstTitle: string
+  // eslint-disable-next-line react/require-default-props
+  firstTitle?: string
   lastTitle: string
 }
 

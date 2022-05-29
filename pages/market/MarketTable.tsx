@@ -43,63 +43,11 @@ const dataSource = [
     volumeOf24h: '30.545322M',
     marketCap: '$50,404M',
     action: (
-      <Button type="link" size="large" className="market-table-button">
-        Detail / Trade
-      </Button>
-    ),
-  },
-  {
-    key: '1',
-    name: 'Bitcoin',
-    price: '$308',
-    changeOf24h: '+2.25%',
-    volumeOf24h: '30.545322M',
-    marketCap: '$50,404M',
-    action: (
       <Link href="/market/bitcoin">
         <Button type="link" size="large" className="market-table-button">
           Detail / Trade
         </Button>
       </Link>
-    ),
-  },
-  {
-    key: '1',
-    name: 'Bitcoin',
-    price: '$308',
-    changeOf24h: '+2.25%',
-    volumeOf24h: '30.545322M',
-    marketCap: '$50,404M',
-    action: (
-      <Button type="link" size="large" className="market-table-button">
-        Detail / Trade
-      </Button>
-    ),
-  },
-  {
-    key: '1',
-    name: 'Bitcoin',
-    price: '$308',
-    changeOf24h: '+2.25%',
-    volumeOf24h: '30.545322M',
-    marketCap: '$50,404M',
-    action: (
-      <Button type="link" size="large" className="market-table-button">
-        Detail / Trade
-      </Button>
-    ),
-  },
-  {
-    key: '1',
-    name: 'Bitcoin',
-    price: '$308',
-    changeOf24h: '+2.25%',
-    volumeOf24h: '30.545322M',
-    marketCap: '$50,404M',
-    action: (
-      <Button type="link" size="large" className="market-table-button">
-        Detail / Trade
-      </Button>
     ),
   },
 ]
