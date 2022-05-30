@@ -9,6 +9,7 @@ const SingleCoin = () => {
       <Row justify="center">
         <Col xs={20}>
           <div>title</div>
+          <div>price</div>
         </Col>
         <Col xs={10}>Chart</Col>
         <Col xs={10}>
