@@ -7,8 +7,14 @@ const SingleCoin = () => {
     <Layout>
       <TitleBanner lastTitle="Bitcoin" />
       <Row justify="center">
+        <Col xs={20}>header</Col>
         <Col xs={10}>Chart</Col>
-        <Col xs={10}>Detail</Col>
+        <Col xs={10}>
+          <p>header</p>
+          <div>aa</div>
+          <div>bau button</div>
+          <div>sell button</div>
+        </Col>
       </Row>
     </Layout>
   )
