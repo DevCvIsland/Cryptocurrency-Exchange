@@ -10,4 +10,12 @@
   color: #f3ba2f;
   padding-left: 0px;
 }
+
+.detail-single-coin h4 {
+  color: #fff;
+}
+
+.detail-single-coin div {
+  background-color: #999;
+}
 /*# sourceMappingURL=Styles.css.map */
