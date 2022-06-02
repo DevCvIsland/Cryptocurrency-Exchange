@@ -14,8 +14,8 @@ const SingleCoin = () => {
         <Col xs={10}>Chart</Col>
         <Col xs={10}>
           <p>header</p>
-          <div>aa</div>
-          <div>bau button</div>
+          <div> coin sply and money</div>
+          <div>bay button</div>
           <div>sell button</div>
         </Col>
       </Row>
