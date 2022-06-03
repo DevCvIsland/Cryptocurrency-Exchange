@@ -30,8 +30,8 @@ const SingleCoin = () => {
       <TitleBanner lastTitle="Bitcoin" />
       <Row justify="center">
         <Col xs={20}>
-          <div>title</div>
-          <div>price</div>
+          <div>Bitcoin Price:</div>
+          <div>$ 40 000.241</div>
         </Col>
         <Col xs={10}>
           <Stock {...config} />
