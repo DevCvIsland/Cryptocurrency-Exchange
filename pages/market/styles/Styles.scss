@@ -16,7 +16,42 @@ $primary-color: #f3ba2f;
   h4{
     color: #fff;
   }
-  div{
-    background-color: #999;
+  &> div{
+    background-color: #272727;
+    padding: 10px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .buy-button.ant-btn:focus{
+    color: #000;
+    border-color: #256127;
+    background-color: #256127;
+  }
+  .sell-button.ant-btn:focus{
+    color: #000;
+    border-color: #701b1b;
+    background-color: #701b1b;
   }
 }
+
+.buy-button{
+  background-color: #009900;
+  border-color: #009900;
+  &:hover{
+    color: #000;
+    border-color: #256127;
+    background-color: #256127;
+  }
+}
+.sell-button{
+  background-color: red;
+  border-color: red;
+  &:hover{
+    color: #000;
+    border-color: #701b1b;
+    background-color: #701b1b;
+  }
+}
+
+

@@ -15,7 +15,49 @@
   color: #fff;
 }
 
-.detail-single-coin div {
-  background-color: #999;
+.detail-single-coin > div {
+  background-color: #272727;
+  padding: 10px;
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.detail-single-coin .buy-button.ant-btn:focus {
+  color: #000;
+  border-color: #256127;
+  background-color: #256127;
+}
+
+.detail-single-coin .sell-button.ant-btn:focus {
+  color: #000;
+  border-color: #701b1b;
+  background-color: #701b1b;
+}
+
+.buy-button {
+  background-color: #009900;
+  border-color: #009900;
+}
+
+.buy-button:hover {
+  color: #000;
+  border-color: #256127;
+  background-color: #256127;
+}
+
+.sell-button {
+  background-color: red;
+  border-color: red;
+}
+
+.sell-button:hover {
+  color: #000;
+  border-color: #701b1b;
+  background-color: #701b1b;
 }
 /*# sourceMappingURL=Styles.css.map */
