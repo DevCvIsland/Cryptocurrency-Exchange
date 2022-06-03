@@ -15,9 +15,13 @@ $primary-color: #f3ba2f;
 .detail-single-coin{
   h4{
     color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 48px;
   }
   &> div{
     background-color: #272727;
+    color: rgb(188, 187, 187);
     padding: 10px;
     margin: 20px 0px;
     display: flex;
@@ -38,6 +42,7 @@ $primary-color: #f3ba2f;
 .buy-button{
   background-color: #009900;
   border-color: #009900;
+  margin-bottom: 5px;
   &:hover{
     color: #000;
     border-color: #256127;

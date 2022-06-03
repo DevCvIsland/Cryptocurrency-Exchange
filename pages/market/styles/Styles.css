@@ -13,10 +13,14 @@
 
 .detail-single-coin h4 {
   color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 48px;
 }
 
 .detail-single-coin > div {
   background-color: #272727;
+  color: #bcbbbb;
   padding: 10px;
   margin: 20px 0px;
   display: -webkit-box;
@@ -42,6 +46,7 @@
 .buy-button {
   background-color: #009900;
   border-color: #009900;
+  margin-bottom: 5px;
 }
 
 .buy-button:hover {
