@@ -80,8 +80,4 @@ body {
 .ant-table-tbody > tr.ant-table-row:hover > td {
   background-color: #0b0e11;
 }
-
-.ant-drawer-close {
-  display: none;
-}
 /*# sourceMappingURL=globals.css.map */
