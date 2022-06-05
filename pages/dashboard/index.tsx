@@ -97,7 +97,7 @@ const Dashboard = () => (
     </Col>
     <Col xs={24} md={20}>
       <Row className="dashboard-container">
-        <Col xs={11}>
+        <Col xs={12}>
           <RingProgress />
         </Col>
         <Col xs={11}>
@@ -106,7 +106,7 @@ const Dashboard = () => (
         <Col xs={11}>
           <DashboardChart />
         </Col>
-        <Col xs={11}>
+        <Col xs={12}>
           <DashboardTable />
         </Col>
       </Row>

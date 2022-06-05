@@ -1,6 +1,6 @@
 .dashboard-container > div {
   margin: 10px;
-  height: 340px;
+  height: 100%;
   background-color: #272727;
 }
 
@@ -11,6 +11,33 @@
 .dashboard-menu-item svg {
   font-size: 18px;
   margin-right: 5px;
+}
+
+.ring-progress-section, .gauge-progress-section {
+  padding: 20px;
+}
+
+.ring-progress-section h3, .gauge-progress-section h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.ring-progress-section p, .gauge-progress-section p {
+  color: #999;
+  font-weight: 550;
+}
+
+.ring-progress-section p {
+  margin-bottom: 50px;
+}
+
+.ring-progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .g2-html-annotation {
