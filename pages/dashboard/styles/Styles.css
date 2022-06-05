@@ -1,15 +1,19 @@
 .dashboard-container > div {
   margin: 10px;
-  height: 47vh;
+  height: 340px;
   background-color: #272727;
 }
 
 .dashboard-menu-item {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .dashboard-menu-item svg {
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 5px;
+}
+
+.g2-html-annotation {
+  color: #fff !important;
 }
 /*# sourceMappingURL=Styles.css.map */
