@@ -29,7 +29,11 @@ const DashboardChart = () => {
     smooth: true,
   }
 
-  return <Line {...config} />
+  return (
+    <div className="dashboard-chart-section">
+      <Line {...config} />
+    </div>
+  )
 }
 
 export default DashboardChart
