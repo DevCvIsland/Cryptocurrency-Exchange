@@ -26,37 +26,57 @@ const Dashboard = () => (
         <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
           <Menu.Item>
             <UserOutlined />
-            sssss
+            Summary
           </Menu.Item>
           <Menu.Item>
             <UserOutlined />
-            sssss
-          </Menu.Item>
-          <Divider>Text</Divider>
-          <Menu.Item>
-            <UserOutlined />
-            sssss
+            Profile
           </Menu.Item>
           <Menu.Item>
             <UserOutlined />
-            sssss
+            Reports
           </Menu.Item>
           <Menu.Item>
             <UserOutlined />
-            sssss
+            News
+          </Menu.Item>
+          <Divider>Settings</Divider>
+          <Menu.Item>
+            <UserOutlined />
+            Notifications
           </Menu.Item>
           <Menu.Item>
             <UserOutlined />
-            sssss
-          </Menu.Item>
-          <Divider>Text</Divider>
-          <Menu.Item>
-            <UserOutlined />
-            sssss
+            Conversations
           </Menu.Item>
           <Menu.Item>
             <UserOutlined />
-            sssss
+            Privacy
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            Security
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            Financial
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            Devices
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            Language
+          </Menu.Item>
+          <Divider>Help</Divider>
+          <Menu.Item>
+            <UserOutlined />
+            Ask a Question
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            FAQ
           </Menu.Item>
         </Menu>
       </Sider>
