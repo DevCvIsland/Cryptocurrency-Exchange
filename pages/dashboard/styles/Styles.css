@@ -3,4 +3,13 @@
   height: 43vh;
   background-color: #272727;
 }
+
+.dashboard-menu-item {
+  font-size: 18px;
+}
+
+.dashboard-menu-item svg {
+  font-size: 20px;
+  margin-right: 5px;
+}
 /*# sourceMappingURL=Styles.css.map */

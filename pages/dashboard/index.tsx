@@ -1,9 +1,19 @@
 import React from 'react'
 import { Layout, Menu, Row, Col, Divider } from 'antd'
 import {
-  // UploadOutlined,
   UserOutlined,
-  // VideoCameraOutlined,
+  FileDoneOutlined,
+  IdcardOutlined,
+  QuestionCircleOutlined,
+  SafetyCertificateOutlined,
+  SecurityScanOutlined,
+  NotificationOutlined,
+  WechatOutlined,
+  DollarCircleOutlined,
+  DesktopOutlined,
+  GlobalOutlined,
+  MonitorOutlined,
+  InfoCircleOutlined,
 } from '@ant-design/icons'
 
 const { Sider } = Layout
@@ -24,58 +34,58 @@ const Dashboard = () => (
         }}
       >
         <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <IdcardOutlined />
             Summary
           </Menu.Item>
-          <Menu.Item>
+          <Menu.Item className="dashboard-menu-item">
             <UserOutlined />
             Profile
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <FileDoneOutlined />
             Reports
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <MonitorOutlined />
             News
           </Menu.Item>
           <Divider>Settings</Divider>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <NotificationOutlined />
             Notifications
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <WechatOutlined />
             Conversations
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <SecurityScanOutlined />
             Privacy
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <SafetyCertificateOutlined />
             Security
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <DollarCircleOutlined />
             Financial
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <DesktopOutlined />
             Devices
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <GlobalOutlined />
             Language
           </Menu.Item>
           <Divider>Help</Divider>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <QuestionCircleOutlined />
             Ask a Question
           </Menu.Item>
-          <Menu.Item>
-            <UserOutlined />
+          <Menu.Item className="dashboard-menu-item">
+            <InfoCircleOutlined />
             FAQ
           </Menu.Item>
         </Menu>
