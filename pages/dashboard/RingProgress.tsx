@@ -3,8 +3,8 @@ import { RingProgress } from '@ant-design/plots'
 
 const RingProgressComponent = () => {
   const config1 = {
-    height: 150,
-    width: 150,
+    height: 140,
+    width: 140,
     autoFit: false,
     percent: 0.2,
     color: ['#f3ba2f', '#fff'],
@@ -22,8 +22,8 @@ const RingProgressComponent = () => {
     },
   }
   const config2 = {
-    height: 150,
-    width: 150,
+    height: 140,
+    width: 140,
     autoFit: false,
     percent: 0.4,
     color: ['#f3ba2f', '#fff'],
@@ -41,8 +41,8 @@ const RingProgressComponent = () => {
     },
   }
   const config3 = {
-    height: 150,
-    width: 150,
+    height: 140,
+    width: 140,
     autoFit: false,
     percent: 0.9,
     color: ['#f3ba2f', '#fff'],
@@ -60,8 +60,8 @@ const RingProgressComponent = () => {
     },
   }
   const config4 = {
-    height: 150,
-    width: 150,
+    height: 140,
+    width: 140,
     autoFit: false,
     percent: 0.6,
     color: ['#f3ba2f', '#fff'],
@@ -78,25 +78,6 @@ const RingProgressComponent = () => {
       },
     },
   }
-  // const config5 = {
-  //   height: 100,
-  //   width: 100,
-  //   autoFit: false,
-  //   percent: 0.6,
-  //   color: ['#f3ba2f', '#E8EDF3'],
-  //   innerRadius: 0.85,
-  //   radius: 0.98,
-  //   statistic: {
-  //     title: {
-  //       style: {
-  //         color: '#363636',
-  //         fontSize: '12px',
-  //         lineHeight: '14px',
-  //       },
-  //       formatter: () => 'Trade',
-  //     },
-  //   },
-  // }
   return (
     <div className="ring-progress-section">
       <h3>Final Report</h3>

@@ -19,7 +19,7 @@ const DashboardChart = () => {
   }, [])
   const config = {
     data,
-    padding: 'auto',
+    // padding: 'auto',
     xField: 'Date',
     yField: 'scales',
     xAxis: {

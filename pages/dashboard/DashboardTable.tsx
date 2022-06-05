@@ -53,13 +53,6 @@ const dataSource = [
     changeOf24h: '+2.25%',
     marketCap: '$50,404M',
   },
-  {
-    key: '5',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
-  },
 ]
 
 const DashboardTable = () => {
