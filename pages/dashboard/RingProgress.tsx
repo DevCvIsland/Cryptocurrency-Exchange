@@ -99,7 +99,7 @@ const RingProgressComponent = () => {
   }
   return (
     <div className="flex-row">
-      <RingProgress {...config} />
+      <RingProgress {...config1} />
       <RingProgress {...config2} />
       <RingProgress {...config3} />
       <RingProgress {...config4} />
