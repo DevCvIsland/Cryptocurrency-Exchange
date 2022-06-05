@@ -98,15 +98,15 @@ const Dashboard = () => (
     <Col xs={24} md={20}>
       <Row className="dashboard-container">
         <Col xs={12}>
-          <RingProgress />
+          <DashboardChart />
         </Col>
         <Col xs={11}>
           <GaugeProgress />
         </Col>
-        <Col xs={11}>
-          <DashboardChart />
-        </Col>
         <Col xs={12}>
+          <RingProgress />
+        </Col>
+        <Col xs={11}>
           <DashboardTable />
         </Col>
       </Row>

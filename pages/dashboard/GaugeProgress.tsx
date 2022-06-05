@@ -3,8 +3,8 @@ import { Gauge } from '@ant-design/plots'
 
 const GaugeProgress = () => {
   const config = {
-    height: 200,
-    width: 200,
+    height: 250,
+    width: 250,
     percent: 0.75,
     range: {
       ticks: [0, 1 / 3, 2 / 3, 1],

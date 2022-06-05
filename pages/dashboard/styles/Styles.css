@@ -32,6 +32,10 @@
   margin-bottom: 62px;
 }
 
+.gauge-progress-section p {
+  margin-bottom: 50px;
+}
+
 .ring-progress-container {
   display: -webkit-box;
   display: -ms-flexbox;
