@@ -11,3 +11,10 @@
 // .site-layout-background {
 //   background: #fff;
 // }
+.dashboard-container{
+  &> div{
+    margin: 10px;
+    height: 43vh;
+    background-color: #272727;
+  }
+}

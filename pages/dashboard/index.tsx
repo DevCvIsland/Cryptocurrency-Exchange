@@ -1,15 +1,12 @@
 import React from 'react'
-import { Layout, Menu, Row, Col } from 'antd'
-// import {
-//   UploadOutlined,
-//   UserOutlined,
-//   VideoCameraOutlined,
-// } from '@ant-design/icons'
+import { Layout, Menu, Row, Col, Divider } from 'antd'
+import {
+  // UploadOutlined,
+  UserOutlined,
+  // VideoCameraOutlined,
+} from '@ant-design/icons'
 
-const {
-  // Header, Content, Footer,
-  Sider,
-} = Layout
+const { Sider } = Layout
 
 const Dashboard = () => (
   <Row>
@@ -27,21 +24,49 @@ const Dashboard = () => (
         }}
       >
         <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
-          <Menu.Item>sssss</Menu.Item>
-          <Menu.Item>sssss</Menu.Item>
-          <Menu.Item>sssss</Menu.Item>
-          <Menu.Item>sssss</Menu.Item>
-          <Menu.Item>sssss</Menu.Item>
-          <Menu.Item>sssss</Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            sssss
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            sssss
+          </Menu.Item>
+          <Divider>Text</Divider>
+          <Menu.Item>
+            <UserOutlined />
+            sssss
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            sssss
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            sssss
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            sssss
+          </Menu.Item>
+          <Divider>Text</Divider>
+          <Menu.Item>
+            <UserOutlined />
+            sssss
+          </Menu.Item>
+          <Menu.Item>
+            <UserOutlined />
+            sssss
+          </Menu.Item>
         </Menu>
       </Sider>
     </Col>
-    <Col xs={20}>
-      <Row>
-        <Col xs={10}>a</Col>
-        <Col xs={10}>a</Col>
-        <Col xs={10}>a</Col>
-        <Col xs={10}>a</Col>
+    <Col xs={24} md={20}>
+      <Row className="dashboard-container">
+        <Col xs={11}>Circles</Col>
+        <Col xs={11}>Monitor</Col>
+        <Col xs={11}>Chart</Col>
+        <Col xs={11}>Table</Col>
       </Row>
     </Col>
   </Row>

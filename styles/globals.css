@@ -80,4 +80,20 @@ body {
 .ant-table-tbody > tr.ant-table-row:hover > td {
   background-color: #0b0e11;
 }
+
+.ant-menu-dark .ant-menu-sub {
+  background-color: #272727;
+}
+
+.ant-menu.ant-menu-dark {
+  background-color: #282828;
+}
+
+.ant-divider-horizontal.ant-divider-with-text::after, .ant-divider-horizontal.ant-divider-with-text::before {
+  border-color: #fff !important;
+}
+
+.ant-divider-horizontal.ant-divider-with-text {
+  color: #fff;
+}
 /*# sourceMappingURL=globals.css.map */

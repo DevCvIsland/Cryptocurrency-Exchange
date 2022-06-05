@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=Styles.css.map */
+.dashboard-container > div {
+  margin: 10px;
+  height: 43vh;
+  background-color: #272727;
+}
+/*# sourceMappingURL=Styles.css.map */
