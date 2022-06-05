@@ -15,6 +15,10 @@ import {
   MonitorOutlined,
   InfoCircleOutlined,
 } from '@ant-design/icons'
+import RingProgress from './RingProgress'
+import GaugeProgress from './GaugeProgress'
+import DashboardChart from './DashboardChart'
+import DashboardTable from './DashboardTable'
 
 const { Sider } = Layout
 
@@ -93,10 +97,18 @@ const Dashboard = () => (
     </Col>
     <Col xs={24} md={20}>
       <Row className="dashboard-container">
-        <Col xs={11}>Circles</Col>
-        <Col xs={11}>Monitor</Col>
-        <Col xs={11}>Chart</Col>
-        <Col xs={11}>Table</Col>
+        <Col xs={11}>
+          <RingProgress />
+        </Col>
+        <Col xs={11}>
+          <GaugeProgress />
+        </Col>
+        <Col xs={11}>
+          <DashboardChart />
+        </Col>
+        <Col xs={11}>
+          <DashboardTable />
+        </Col>
       </Row>
     </Col>
   </Row>
