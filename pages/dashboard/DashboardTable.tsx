@@ -3,66 +3,71 @@ import { Table } from 'antd'
 
 const columns = [
   {
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
+    title: 'Coin',
+    dataIndex: 'coin',
+    key: 'coin',
   },
   {
-    title: 'Last Price',
-    dataIndex: 'lastPrice',
-    key: 'lastPrice',
+    title: 'Amount',
+    dataIndex: 'amount',
+    key: 'amount',
   },
   {
-    title: '24h Change',
-    dataIndex: 'changeOf24h',
-    key: 'changeOf24h',
+    title: 'Price',
+    dataIndex: 'price',
+    key: 'price',
   },
   {
-    title: 'Market Cap',
-    dataIndex: 'marketCap',
-    key: 'marketCap',
+    title: 'Date',
+    dataIndex: 'date',
+    key: 'date',
   },
 ]
 
 const dataSource = [
   {
     key: '1',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
+    coin: 'Bitcoin',
+    amount: '2.844',
+    price: '$30000.49',
+    date: '6/6/2022 - 21:46',
   },
   {
-    key: '2',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
+    key: '1',
+    coin: 'Bitcoin',
+    amount: '2.844',
+    price: '$30000.49',
+    date: '6/6/2022 - 21:46',
   },
   {
-    key: '3',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
+    key: '1',
+    coin: 'Bitcoin',
+    amount: '2.844',
+    price: '$30000.49',
+    date: '6/6/2022 - 21:46',
   },
   {
-    key: '4',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
+    key: '1',
+    coin: 'Bitcoin',
+    amount: '2.844',
+    price: '$30000.49',
+    date: '6/6/2022 - 21:46',
   },
 ]
 
 const DashboardTable = () => {
   return (
-    <Table
-      dataSource={dataSource}
-      columns={columns}
-      pagination={false}
-      scroll={{ x: 'max-content' }}
-    />
+    <>
+      <h3>Last Trades</h3>
+      <Table
+        dataSource={dataSource}
+        columns={columns}
+        pagination={{
+          position: ['bottomCenter'],
+        }}
+        scroll={{ x: 'max-content' }}
+      />
+    </>
   )
 }
 
