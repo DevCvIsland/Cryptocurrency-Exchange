@@ -1,6 +1,10 @@
+.dashboard-sider{
+  margin: 7px 0px 0px 15px;
+  width: 500px !important;
+}
 .dashboard-container{
   &> div{
-    margin: 5px;
+    margin: 6px;
     // height: 340px;
     height: 100%;
     background-color: #272727;
@@ -44,7 +48,7 @@
     color: #fff;
     font-size: 18px;
     font-weight: 550;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
 }
 .dashboard-table-section{
@@ -53,6 +57,6 @@
     color: #fff;
     font-size: 18px;
     font-weight: 550;
-    margin-bottom: 29px;
+    margin-bottom: 40px;
   }
 }
