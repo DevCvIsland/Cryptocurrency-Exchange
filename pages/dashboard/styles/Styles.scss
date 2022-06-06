@@ -1,6 +1,6 @@
 .dashboard-container{
   &> div{
-    margin: 10px;
+    margin: 5px;
     // height: 340px;
     height: 100%;
     background-color: #272727;
@@ -13,7 +13,7 @@
     margin-right: 5px;
   }
 }
-.ring-progress-section,.gauge-progress-section{
+.ring-progress-section,.gauge-progress-section, .dashboard-table-section{
   padding: 20px;
   h3{
     color: #fff;
@@ -25,12 +25,12 @@
     font-weight: 550;
   }
 }
-// .ring-progress-section p{
-//   margin-bottom: 62px;
-// }
-.gauge-progress-section p{
-  margin-bottom: 50px;
+.ring-progress-section p{
+  margin-bottom: 75px;
 }
+// .gauge-progress-section p{
+//   margin-bottom: 50px;
+// }
 .ring-progress-container{
   display: flex;
   justify-content: space-around;
@@ -39,5 +39,20 @@
   color: #fff !important;
 }
 .dashboard-chart-section{
-  padding: 10px;
+  padding: 20px;
+  h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 20px;
+  }
+}
+.dashboard-table-section{
+  padding: 20px 20px 0px 20px;
+  h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 29px;
+  }
 }

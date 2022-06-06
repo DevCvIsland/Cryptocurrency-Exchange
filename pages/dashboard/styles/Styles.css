@@ -1,5 +1,5 @@
 .dashboard-container > div {
-  margin: 10px;
+  margin: 5px;
   height: 100%;
   background-color: #272727;
 }
@@ -13,23 +13,23 @@
   margin-right: 5px;
 }
 
-.ring-progress-section, .gauge-progress-section {
+.ring-progress-section, .gauge-progress-section, .dashboard-table-section {
   padding: 20px;
 }
 
-.ring-progress-section h3, .gauge-progress-section h3 {
+.ring-progress-section h3, .gauge-progress-section h3, .dashboard-table-section h3 {
   color: #fff;
   font-size: 18px;
   font-weight: 550;
 }
 
-.ring-progress-section p, .gauge-progress-section p {
+.ring-progress-section p, .gauge-progress-section p, .dashboard-table-section p {
   color: #999;
   font-weight: 550;
 }
 
-.gauge-progress-section p {
-  margin-bottom: 50px;
+.ring-progress-section p {
+  margin-bottom: 75px;
 }
 
 .ring-progress-container {
@@ -45,6 +45,24 @@
 }
 
 .dashboard-chart-section {
-  padding: 10px;
+  padding: 20px;
+}
+
+.dashboard-chart-section h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 550;
+  margin-bottom: 20px;
+}
+
+.dashboard-table-section {
+  padding: 20px 20px 0px 20px;
+}
+
+.dashboard-table-section h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 550;
+  margin-bottom: 29px;
 }
 /*# sourceMappingURL=Styles.css.map */

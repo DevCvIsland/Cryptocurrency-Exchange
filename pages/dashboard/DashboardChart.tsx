@@ -19,11 +19,11 @@ const DashboardChart = () => {
   }, [])
   const config = {
     data,
-    // padding: 'auto',
+    height: 275,
+    width: 275,
     xField: 'Date',
     yField: 'scales',
     xAxis: {
-      // type: 'timeCat',
       tickCount: 5,
     },
     smooth: true,
@@ -31,6 +31,7 @@ const DashboardChart = () => {
 
   return (
     <div className="dashboard-chart-section">
+      <h3>Profitability</h3>
       <Line {...config} />
     </div>
   )

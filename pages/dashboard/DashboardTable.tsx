@@ -46,18 +46,18 @@ const dataSource = [
     price: '$30000.49',
     date: '6/6/2022 - 21:46',
   },
-  {
-    key: '1',
-    coin: 'Bitcoin',
-    amount: '2.844',
-    price: '$30000.49',
-    date: '6/6/2022 - 21:46',
-  },
+  // {
+  //   key: '1',
+  //   coin: 'Bitcoin',
+  //   amount: '2.844',
+  //   price: '$30000.49',
+  //   date: '6/6/2022 - 21:46',
+  // },
 ]
 
 const DashboardTable = () => {
   return (
-    <>
+    <div className="dashboard-table-section">
       <h3>Last Trades</h3>
       <Table
         dataSource={dataSource}
@@ -67,7 +67,7 @@ const DashboardTable = () => {
         }}
         scroll={{ x: 'max-content' }}
       />
-    </>
+    </div>
   )
 }
 
