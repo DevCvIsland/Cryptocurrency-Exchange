@@ -1,6 +1,5 @@
 .dashboard-sider{
-  margin: 7px 0px 0px 15px;
-  width: 500px !important;
+  z-index: 10000;
 }
 .dashboard-container{
   &> div{
@@ -33,30 +32,55 @@
   margin-bottom: 75px;
 }
 // .gauge-progress-section p{
-//   margin-bottom: 50px;
-// }
-.ring-progress-container{
-  display: flex;
-  justify-content: space-around;
+  //   margin-bottom: 50px;
+  // }
+  .g2-html-annotation{
+    color: #fff !important;
+  }
+  .dashboard-chart-section{
+    padding: 20px;
+    h3{
+      color: #fff;
+      font-size: 18px;
+      font-weight: 550;
+      margin-bottom: 32px;
+    }
+  }
+  .dashboard-table-section{
+    padding: 20px 20px 0px 20px;
+    h3{
+      color: #fff;
+      font-size: 18px;
+      font-weight: 550;
+      margin-bottom: 40px;
+    }
 }
-.g2-html-annotation{
-  color: #fff !important;
-}
-.dashboard-chart-section{
-  padding: 20px;
-  h3{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 550;
-    margin-bottom: 32px;
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .dashboard-container{
+    display: flex;
+    justify-content: center;
+    &> div{
+      margin-right: 20px;
+    }
   }
 }
-.dashboard-table-section{
-  padding: 20px 20px 0px 20px;
-  h3{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 550;
-    margin-bottom: 40px;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  
+}
+@media screen and (min-width: 901px) and (max-width: 1199px) {
+  
+}
+@media screen and (min-width: 1200px){
+  .dashboard-container{
+    display: flex;
+    justify-content: end;
+  }
+  .dashboard-sider{
+    margin: 7px 0px 0px 15px;
+    width: 500px !important;
   }
 }
+

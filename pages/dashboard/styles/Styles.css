@@ -1,6 +1,5 @@
 .dashboard-sider {
-  margin: 7px 0px 0px 15px;
-  width: 500px !important;
+  z-index: 10000;
 }
 
 .dashboard-container > div {
@@ -37,14 +36,6 @@
   margin-bottom: 75px;
 }
 
-.ring-progress-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .g2-html-annotation {
   color: #fff !important;
 }
@@ -69,5 +60,34 @@
   font-size: 18px;
   font-weight: 550;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .dashboard-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dashboard-container > div {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .dashboard-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .dashboard-sider {
+    margin: 7px 0px 0px 15px;
+    width: 500px !important;
+  }
 }
 /*# sourceMappingURL=Styles.css.map */

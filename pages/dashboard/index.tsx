@@ -24,9 +24,9 @@ const { Sider } = Layout
 
 const Dashboard = () => (
   <Row justify="space-between">
-    <Col xs={3} sm={3} md={3} lg={3} xl={3}>
+    <Col xs={1} sm={1} md={1} lg={3} xl={3}>
       <Sider
-        breakpoint="sm"
+        breakpoint="lg"
         collapsedWidth="0"
         onBreakpoint={(broken) => {
           // eslint-disable-next-line no-console
@@ -96,18 +96,18 @@ const Dashboard = () => (
         </Menu>
       </Sider>
     </Col>
-    <Col xs={24} sm={21} md={21} lg={21} xl={21}>
-      <Row justify="end" className="dashboard-container">
-        <Col xs={11} sm={11} md={11} lg={11} xl={11}>
+    <Col xs={23} sm={23} md={23} lg={21} xl={21}>
+      <Row className="dashboard-container">
+        <Col xs={24} sm={24} md={11} lg={11} xl={11}>
           <GaugeProgress />
         </Col>
-        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
           <RingProgress />
         </Col>
-        <Col xs={11} sm={11} md={11} lg={11} xl={11}>
+        <Col xs={24} sm={24} md={11} lg={11} xl={11}>
           <DashboardChart />
         </Col>
-        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
           <DashboardTable />
         </Col>
       </Row>

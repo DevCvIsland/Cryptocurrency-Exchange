@@ -1,4 +1,5 @@
 import React from 'react'
+import { Row, Col } from 'antd'
 import { RingProgress } from '@ant-design/plots'
 
 const RingProgressComponent = () => {
@@ -86,12 +87,20 @@ const RingProgressComponent = () => {
         hic placeat ea possimus, nihil distinctio suscipit, deleniti eos,
         nostrum incidunt sit quis.
       </p>
-      <div className="ring-progress-container">
-        <RingProgress {...config1} />
-        <RingProgress {...config2} />
-        <RingProgress {...config3} />
-        <RingProgress {...config4} />
-      </div>
+      <Row justify="space-around">
+        <Col xs={11} sm={11} md={11} lg={11} xl={4}>
+          <RingProgress {...config1} />
+        </Col>
+        <Col xs={11} sm={11} md={11} lg={11} xl={4}>
+          <RingProgress {...config2} />
+        </Col>
+        <Col xs={11} sm={11} md={11} lg={11} xl={4}>
+          <RingProgress {...config3} />
+        </Col>
+        <Col xs={11} sm={11} md={11} lg={11} xl={4}>
+          <RingProgress {...config4} />
+        </Col>
+      </Row>
     </div>
   )
 }
