@@ -87,17 +87,17 @@ const RingProgressComponent = () => {
         hic placeat ea possimus, nihil distinctio suscipit, deleniti eos,
         nostrum incidunt sit quis.
       </p>
-      <Row justify="space-around">
-        <Col xs={11} sm={11} md={11} lg={11} xl={4}>
+      <Row className="ring-progress-container">
+        <Col xs={12} sm={6} md={6} lg={6} xl={6}>
           <RingProgress {...config1} />
         </Col>
-        <Col xs={11} sm={11} md={11} lg={11} xl={4}>
+        <Col xs={12} sm={6} md={6} lg={6} xl={6}>
           <RingProgress {...config2} />
         </Col>
-        <Col xs={11} sm={11} md={11} lg={11} xl={4}>
+        <Col xs={12} sm={6} md={6} lg={6} xl={6}>
           <RingProgress {...config3} />
         </Col>
-        <Col xs={11} sm={11} md={11} lg={11} xl={4}>
+        <Col xs={12} sm={6} md={6} lg={6} xl={6}>
           <RingProgress {...config4} />
         </Col>
       </Row>

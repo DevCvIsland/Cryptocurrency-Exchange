@@ -31,9 +31,14 @@
 .ring-progress-section p{
   margin-bottom: 75px;
 }
-// .gauge-progress-section p{
-  //   margin-bottom: 50px;
-  // }
+.ring-progress-container{
+  display: flex;
+  justify-content: center;
+  &> div{
+    display: flex;
+    justify-content: center;
+  }
+}
   .g2-html-annotation{
     color: #fff !important;
   }
@@ -65,22 +70,51 @@
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  
+  .dashboard-container{
+    display: flex;
+    justify-content: center;
+    &> div{
+      margin-right: 35px;
+    }
+  }
 }
-@media screen and (min-width: 769px) and (max-width: 900px) {
-  
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .dashboard-container{
+    display: flex;
+    justify-content: center;
+    &> div{
+      margin-right: 40px;
+    }
+  }
 }
-@media screen and (min-width: 901px) and (max-width: 1199px) {
-  
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .dashboard-container{
+    display: flex;
+    justify-content: start;
+
+  }
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) and (max-width: 1335px) {
   .dashboard-container{
     display: flex;
     justify-content: end;
+    &> div{
+      margin: 6px;
+    }
+
+  }
+}
+@media screen and (min-width: 1336px){
+  .dashboard-container{
+    display: flex;
+    justify-content: end;
+    &> div{
+      margin: 6px;
+    }
+
   }
   .dashboard-sider{
     margin: 7px 0px 0px 15px;
-    width: 500px !important;
   }
 }
 
