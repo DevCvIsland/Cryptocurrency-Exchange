@@ -75,7 +75,7 @@ const RingProgressComponent = () => {
           fontSize: '12px',
           lineHeight: '14px',
         },
-        formatter: () => 'Trade',
+        formatter: () => 'Investment',
       },
     },
   }
