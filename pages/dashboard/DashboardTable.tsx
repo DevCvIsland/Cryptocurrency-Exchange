@@ -41,7 +41,7 @@ const dataSource = [
   },
   {
     key: '3',
-    coin: 'Bitcoin',
+    coin: 'ETH',
     amount: '2.844',
     price: '$30000.49',
     date: '6/6/2022 - 21:46',
