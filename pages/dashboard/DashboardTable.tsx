@@ -30,21 +30,21 @@ const dataSource = [
     coin: 'Bitcoin',
     amount: '2.844',
     price: '$30000.49',
-    date: '6/6/2022 - 21:46',
+    date: '2022/06/10 - 13:55',
   },
   {
     key: '2',
     coin: 'Etherium',
     amount: '7.214',
     price: '$1800.37',
-    date: '6/6/2022 - 21:46',
+    date: '2022/05/18 - 17:38',
   },
   {
     key: '3',
     coin: 'Cardano',
     amount: '10.670',
     price: '$0.750',
-    date: '6/6/2022 - 21:46',
+    date: '2022/04/15 - 21:46',
   },
 ]
 
