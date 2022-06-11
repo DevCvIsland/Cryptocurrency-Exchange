@@ -1,5 +1,6 @@
 import { Row, Col, Button, Table } from 'antd'
 import { RightOutlined } from '@ant-design/icons'
+import Link from 'next/link'
 import { useGetCryptosQuery } from '../../services/CryptoApi'
 
 const columns = [
@@ -72,9 +73,11 @@ const PopularCryptocurrencies = () => {
     <Row justify="center" className="popular-cryptocurrencies-section">
       <Col xs={20} className="popular-cryptocurrencies-title-section">
         <h3>Popular cryptocurrencies</h3>
-        <Button type="link">
-          View more markets <RightOutlined />
-        </Button>
+        <Link href="./market">
+          <Button type="link">
+            View more markets <RightOutlined />
+          </Button>
+        </Link>
       </Col>
       <Col xs={20}>
         <Table
