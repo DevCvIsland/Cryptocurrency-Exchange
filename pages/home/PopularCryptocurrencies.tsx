@@ -73,6 +73,7 @@ const PopularCryptocurrencies = () => {
     <Row justify="center" className="popular-cryptocurrencies-section">
       <Col xs={20} className="popular-cryptocurrencies-title-section">
         <h3>Popular cryptocurrencies</h3>
+        {/* eslint-disable-next-line @next/next/link-passhref */}
         <Link href="./market">
           <Button type="link">
             View more markets <RightOutlined />
