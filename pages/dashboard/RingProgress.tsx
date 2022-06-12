@@ -45,7 +45,7 @@ const RingProgressComponent = () => {
     height: 140,
     width: 140,
     autoFit: false,
-    percent: 0.9,
+    percent: 0.2,
     color: ['#f3ba2f', '#fff'],
     innerRadius: 0.85,
     radius: 0.98,
