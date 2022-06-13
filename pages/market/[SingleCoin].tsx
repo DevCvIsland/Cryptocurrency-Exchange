@@ -13,6 +13,7 @@ const SingleCoin = () => {
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => {
+        // eslint-disable-next-line no-console
         console.log('fetch data failed', error)
       })
   }
