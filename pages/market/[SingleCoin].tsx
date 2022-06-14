@@ -32,7 +32,7 @@ const SingleCoin = () => {
       <Row justify="center">
         <Col xs={20}>
           <div>Bitcoin Price:</div>
-          <div>$ 40 000.241</div>
+          <div>$ 30000.41</div>
         </Col>
         <Col xs={10}>
           <Stock {...config} />
