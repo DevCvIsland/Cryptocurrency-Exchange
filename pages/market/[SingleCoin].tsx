@@ -42,7 +42,7 @@ const SingleCoin = () => {
           <div>
             <div>
               <p>Inventory:</p>
-              <p>Qty:</p>
+              <p>Amount:</p>
               <p>Price:</p>
             </div>
             <div>
