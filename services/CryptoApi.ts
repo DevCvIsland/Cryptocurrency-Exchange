@@ -12,7 +12,7 @@ export const cryptoApi = createApi({
       query: () => createRequest('/v1/cryptocurrency/listings/latest'),
     }),
     getCryptosInfo: builder.query({
-      query: () => createRequest('/v1/exchange/info'),
+      query: () => createRequest('/v2/cryptocurrency/info'),
     }),
     // getCryptos: builder.query({
     //   query: (count) => createRequest(`/coins?limit=${count}`),

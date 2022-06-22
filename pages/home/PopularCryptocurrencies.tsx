@@ -72,7 +72,6 @@ const PopularCryptocurrencies = () => {
   const { data } = useGetCryptosInfoQuery({})
   // eslint-disable-next-line no-console
   console.log('data', data)
-  // console.log('dataI', datai)
 
   return (
     <Row justify="center" className="popular-cryptocurrencies-section">
