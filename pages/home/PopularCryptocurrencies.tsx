@@ -1,7 +1,10 @@
 import { Row, Col, Button, Table } from 'antd'
 import { RightOutlined } from '@ant-design/icons'
 import Link from 'next/link'
-import { useGetCryptosQuery } from '../../services/CryptoApi'
+import {
+  // useGetCryptosQuery,
+  useGetCryptosInfoQuery,
+} from '../../services/CryptoApi'
 
 const columns = [
   {
@@ -65,9 +68,11 @@ const dataSource = [
 ]
 
 const PopularCryptocurrencies = () => {
-  const { data } = useGetCryptosQuery({})
+  // const { data } = useGetCryptosQuery({})
+  const { data } = useGetCryptosInfoQuery({})
   // eslint-disable-next-line no-console
   console.log('data', data)
+  // console.log('dataI', datai)
 
   return (
     <Row justify="center" className="popular-cryptocurrencies-section">
