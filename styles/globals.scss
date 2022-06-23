@@ -78,3 +78,9 @@ body {
 .ant-divider-horizontal.ant-divider-with-text{
   color: #fff;
 }
+
+.ant-pagination-item-ellipsis,
+.anticon-double-left,
+.anticon-double-right{
+  color: $primary-color !important;
+}
