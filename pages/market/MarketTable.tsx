@@ -47,11 +47,12 @@ const MarketTable = () => {
             <span className="table-coin-symbol">/ {coin.symbol}</span>
           </>
         ),
-        // name: `${coin.name} / ${coin.symbol}`,
-        price: `${coin.quote.USD.price}`,
-        changeOf24h: `${coin.quote.USD.percent_change_24h}`,
-        volumeOf24h: `${coin.quote.USD.volume_24h}`,
-        marketCap: `${coin.quote.USD.market_cap}`,
+        price: `$${coin.quote.USD.price.toFixed(5)}`,
+        changeOf24h: `${coin.quote.USD.percent_change_24h.toFixed(2)}`,
+        volumeOf24h: `$${coin.quote.USD.volume_24h.toFixed(0)}`,
+        marketCap: `$${coin.quote.USD.market_cap.toFixed(0)}`,
+        // volumeOf24h: `${`${coin.quote.USD.volume_24h}`.substring(0, 3)}M`,
+        // marketCap: `${`${coin.quote.USD.market_cap}`.substring(0, 3)}M`,
         action: (
           // eslint-disable-next-line @next/next/link-passhref
           <Link href={`/market/${coin.slug}`}>
