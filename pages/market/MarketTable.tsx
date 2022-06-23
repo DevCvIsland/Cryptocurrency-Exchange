@@ -54,7 +54,7 @@ const MarketTable = () => {
         marketCap: `${coin.quote.USD.market_cap}`,
         action: (
           // eslint-disable-next-line @next/next/link-passhref
-          <Link href="/market/bitcoin">
+          <Link href={`/market/${coin.slug}`}>
             <Button type="link" size="large" className="market-table-button">
               Detail / Trade
             </Button>
