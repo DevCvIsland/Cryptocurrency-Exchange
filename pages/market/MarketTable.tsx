@@ -37,10 +37,6 @@ const columns = [
 
 const MarketTable = () => {
   const { data } = useGetCryptosQuery({})
-  // eslint-disable-next-line no-console
-  // console.log('data', data.data)
-  // console.log('data name', data.data[0].name)
-  // console.log('data price', data.data[0].quote.USD.price)
 
   const dataSource = data
     ? data.data.map((coin: any) => ({
@@ -59,34 +55,24 @@ const MarketTable = () => {
           </Link>
         ),
       }))
-    : [
-        {
-          key: '1',
-          name: 'Bitcoin',
-          price: '$308',
-          changeOf24h: '+2.25%',
-          volumeOf24h: '30.545322M',
-          marketCap: '$50,404M',
-          action: (
-            // eslint-disable-next-line @next/next/link-passhref
-            <Link href="/market/bitcoin">
-              <Button type="link" size="large" className="market-table-button">
-                Detail / Trade
-              </Button>
-            </Link>
-          ),
-        },
-      ]
+    : null
 
   return (
-    <Table
-      dataSource={dataSource}
-      columns={columns}
-      pagination={{
-        position: ['bottomCenter'],
-      }}
-      scroll={{ x: 'max-content' }}
-    />
+    // eslint-disable-next-line react/jsx-no-useless-fragment
+    <>
+      {data ? (
+        <Table
+          dataSource={dataSource}
+          columns={columns}
+          pagination={{
+            position: ['bottomCenter'],
+          }}
+          scroll={{ x: 'max-content' }}
+        />
+      ) : (
+        'Loading...'
+      )}
+    </>
   )
 }
 
