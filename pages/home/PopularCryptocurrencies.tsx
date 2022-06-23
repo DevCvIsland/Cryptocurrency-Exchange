@@ -1,10 +1,7 @@
 import { Row, Col, Button, Table } from 'antd'
 import { RightOutlined } from '@ant-design/icons'
 import Link from 'next/link'
-import {
-  // useGetCryptosQuery,
-  useGetCryptosInfoQuery,
-} from '../../services/CryptoApi'
+import { useGetCryptosQuery } from '../../services/CryptoApi'
 
 const columns = [
   {
@@ -37,39 +34,10 @@ const dataSource = [
     changeOf24h: '+2.25%',
     marketCap: '$50,404M',
   },
-  {
-    key: '2',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
-  },
-  {
-    key: '3',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
-  },
-  {
-    key: '4',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
-  },
-  {
-    key: '5',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
-  },
 ]
 
 const PopularCryptocurrencies = () => {
-  // const { data } = useGetCryptosQuery({})
-  const { data } = useGetCryptosInfoQuery({})
+  const { data } = useGetCryptosQuery({})
   // eslint-disable-next-line no-console
   console.log('data', data)
 
