@@ -81,6 +81,25 @@ body {
 
 .ant-pagination-item-ellipsis,
 .anticon-double-left,
-.anticon-double-right{
+.anticon-double-right,
+.anticon-down,
+.ant-select-item-option-content{
   color: $primary-color !important;
+}
+
+.ant-select-selector {
+  background-color: #272727 !important;
+  border-color: #272727 !important;
+  color: $primary-color;
+}
+
+.ant-select-dropdown, .ant-select-item{
+  background-color: #272727 !important;
+}
+
+.ant-select-item{
+  background-color: #272727 !important;
+  &:hover{
+    background-color: #181A20 !important; 
+  }
 }

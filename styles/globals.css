@@ -99,7 +99,27 @@ body {
 
 .ant-pagination-item-ellipsis,
 .anticon-double-left,
-.anticon-double-right {
+.anticon-double-right,
+.anticon-down,
+.ant-select-item-option-content {
   color: #f3ba2f !important;
+}
+
+.ant-select-selector {
+  background-color: #272727 !important;
+  border-color: #272727 !important;
+  color: #f3ba2f;
+}
+
+.ant-select-dropdown, .ant-select-item {
+  background-color: #272727 !important;
+}
+
+.ant-select-item {
+  background-color: #272727 !important;
+}
+
+.ant-select-item:hover {
+  background-color: #181A20 !important;
 }
 /*# sourceMappingURL=globals.css.map */
