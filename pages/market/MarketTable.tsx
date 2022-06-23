@@ -41,7 +41,7 @@ const MarketTable = () => {
   const dataSource = data
     ? data.data.map((coin: any) => ({
         key: `${coin.id}`,
-        name: `${coin.name}`,
+        name: `${coin.name} / ${coin.symbol}`,
         price: `${coin.quote.USD.price}`,
         changeOf24h: `${coin.quote.USD.percent_change_24h}`,
         volumeOf24h: `${coin.quote.USD.volume_24h}`,
