@@ -65,4 +65,13 @@
   border-color: #701b1b;
   background-color: #701b1b;
 }
+
+.table-coin-name {
+  display: inline;
+}
+
+.table-coin-symbol {
+  color: #999;
+  padding-left: 10px;
+}
 /*# sourceMappingURL=Styles.css.map */
