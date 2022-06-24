@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { Row, Col, Button } from 'antd'
 import { Stock } from '@ant-design/plots'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
+import { useGetCryptosInfoQuery } from '../../services/CryptoApi'
 
-const SingleCoin = () => {
+const SingleCoinPage = () => {
+  const router = useRouter()
+  const { SingleCoin } = router.query
+  const { data: infoData } = useGetCryptosInfoQuery(SingleCoin)
+  console.log('infoData', infoData)
+  const coinID = infoData ? Object.keys(infoData.data)[0] : 1
+
   const [data, setData] = useState([])
   const asyncFetch = () => {
     fetch(
@@ -28,39 +37,53 @@ const SingleCoin = () => {
 
   return (
     <Layout>
-      <TitleBanner lastTitle="Bitcoin" />
+      <TitleBanner
+        lastTitle={infoData ? infoData.data[coinID].name : 'Loading'}
+      />
       <Row justify="center">
-        <Col xs={20}>
-          <div>Bitcoin Price:</div>
-          <div>$ 30000.41</div>
-        </Col>
-        <Col xs={10}>
-          <Stock {...config} />
-        </Col>
-        <Col xs={6} className="detail-single-coin">
-          <h4>Bitcoin Price Calculater</h4>
-          <div>
-            <div>
-              <p>Inventory:</p>
-              <p>Amount:</p>
-              <p>Price:</p>
-            </div>
-            <div>
-              <p>55.2154</p>
-              <p>1.2548</p>
-              <p>30000.11</p>
-            </div>
-          </div>
-          <Button size="large" className="buy-button" block>
-            Buy
-          </Button>
-          <Button size="large" className="sell-button" block>
-            Sell
-          </Button>
-        </Col>
+        {infoData ? (
+          <>
+            <Col xs={20}>
+              {/* <Image
+                src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+                width={50}
+                height={50}
+                alt="coddm"
+              /> */}
+              <div>{infoData.data[coinID].name} Price:</div>
+              <div>$ 30000.41</div>
+            </Col>
+            <Col xs={10}>
+              <Stock {...config} />
+            </Col>
+            <Col xs={6} className="detail-single-coin">
+              <h4>Price Calculater</h4>
+              <div>
+                <div>
+                  <p>Inventory:</p>
+                  <p>Amount:</p>
+                  <p>Price:</p>
+                </div>
+                <div>
+                  <p>55.2154</p>
+                  <p>1.2548</p>
+                  <p>30000.11</p>
+                </div>
+              </div>
+              <Button size="large" className="buy-button" block>
+                Buy
+              </Button>
+              <Button size="large" className="sell-button" block>
+                Sell
+              </Button>
+            </Col>
+          </>
+        ) : (
+          'Loading...'
+        )}
       </Row>
     </Layout>
   )
 }
 
-export default SingleCoin
+export default SingleCoinPage

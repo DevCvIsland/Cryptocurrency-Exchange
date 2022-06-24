@@ -11,9 +11,9 @@ export const cryptoApi = createApi({
     getCryptos: builder.query({
       query: () => createRequest('/v1/cryptocurrency/listings/latest'),
     }),
-    // getCryptosInfo: builder.query({
-    //   query: () => createRequest('/v2/cryptocurrency/info?symbol=BTC'),
-    // }),
+    getCryptosInfo: builder.query({
+      query: (slug) => createRequest(`/v2/cryptocurrency/info?slug=${slug}`),
+    }),
     // getCryptos: builder.query({
     //   query: (count) => createRequest(`/coins?limit=${count}`),
     // }),
@@ -31,7 +31,7 @@ export const cryptoApi = createApi({
 })
 export const {
   useGetCryptosQuery,
-  // useGetCryptosInfoQuery,
+  useGetCryptosInfoQuery,
   // useGetCryptoDetailsQuery,
   // useGetExchangesQuery,
   // useGetCryptoHistoryQuery,
