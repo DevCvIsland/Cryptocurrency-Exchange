@@ -10,9 +10,9 @@ const columns = [
     key: 'name',
   },
   {
-    title: 'Last Price',
-    dataIndex: 'lastPrice',
-    key: 'lastPrice',
+    title: 'Price',
+    dataIndex: 'price',
+    key: 'price',
   },
   {
     title: '24h Change',
@@ -26,21 +26,31 @@ const columns = [
   },
 ]
 
-const dataSource = [
-  {
-    key: '1',
-    name: 'Bitcoin',
-    lastPrice: '$308',
-    changeOf24h: '+2.25%',
-    marketCap: '$50,404M',
-  },
-]
-
 const PopularCryptocurrencies = () => {
   const { data } = useGetCryptosQuery({})
-  // eslint-disable-next-line no-console
-  console.log('data', data)
-
+  const dataSource = data
+    ? data.data
+        .filter(
+          (coin: any) =>
+            coin.symbol === 'BTC' ||
+            coin.symbol === 'ETH' ||
+            coin.symbol === 'ADA' ||
+            coin.symbol === 'DOGE' ||
+            coin.symbol === 'SHIB'
+        )
+        .map((coin: any) => ({
+          key: `${coin.id}`,
+          name: (
+            <>
+              <p className="table-coin-name">{coin.name}</p>
+              <span className="table-coin-symbol">/ {coin.symbol}</span>
+            </>
+          ),
+          price: `$${coin.quote.USD.price.toFixed(5)}`,
+          changeOf24h: `${coin.quote.USD.percent_change_24h.toFixed(2)}`,
+          marketCap: `$${coin.quote.USD.market_cap.toFixed(0)}`,
+        }))
+    : null
   return (
     <Row justify="center" className="popular-cryptocurrencies-section">
       <Col xs={20} className="popular-cryptocurrencies-title-section">
@@ -53,12 +63,16 @@ const PopularCryptocurrencies = () => {
         </Link>
       </Col>
       <Col xs={20}>
-        <Table
-          dataSource={dataSource}
-          columns={columns}
-          pagination={false}
-          scroll={{ x: 'max-content' }}
-        />
+        {data ? (
+          <Table
+            dataSource={dataSource}
+            columns={columns}
+            pagination={false}
+            scroll={{ x: 'max-content' }}
+          />
+        ) : (
+          'Loading...'
+        )}
       </Col>
       <Col xs={20} className="popular-cryptocurrencies-footer-section">
         <p>Sign up now to build your own portfolio for free!</p>
