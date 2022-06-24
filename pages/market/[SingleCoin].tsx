@@ -11,6 +11,7 @@ const SingleCoinPage = () => {
   const router = useRouter()
   const { SingleCoin } = router.query
   const { data: infoData } = useGetCryptosInfoQuery(SingleCoin)
+  // eslint-disable-next-line no-console
   console.log('infoData', infoData)
   const coinID = infoData ? Object.keys(infoData.data)[0] : 1
 
