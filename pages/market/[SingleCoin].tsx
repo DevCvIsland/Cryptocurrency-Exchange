@@ -89,7 +89,7 @@ const SingleCoinPage = () => {
               <div>{infoData.data[coinID].name} Price:</div>
               <div>$ 30000.41</div>
             </Col>
-            <Col xs={10}>
+            <Col xs={12}>
               <Stock {...config} />
             </Col>
             <Col xs={6} className="detail-single-coin">
