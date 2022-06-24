@@ -14,6 +14,12 @@ const Market = () => {
             All
           </Button>{' '}
           <Button size="large" className="button-outline">
+            Cryptocurrencies
+          </Button>{' '}
+          <Button size="large" className="button-outline">
+            Exchanges
+          </Button>{' '}
+          <Button size="large" className="button-outline">
             Metaverse
           </Button>{' '}
           <Button size="large" className="button-outline">

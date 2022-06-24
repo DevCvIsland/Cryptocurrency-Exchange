@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Row, Col, Button } from 'antd'
 import { Stock } from '@ant-design/plots'
@@ -43,7 +43,42 @@ const SingleCoinPage = () => {
       <Row justify="center">
         {infoData ? (
           <>
-            <Col xs={20}>
+            <Col xs={18}>
+              <Button size="large" className="button">
+                Overview
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Market
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Historical Data
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Holders
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Project Info
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Wallets
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                News
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Socials
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Ratings
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Analysis
+              </Button>{' '}
+              <Button size="large" className="button-outline">
+                Price Estimates
+              </Button>
+            </Col>
+            <Col xs={18}>
               {/* <Image
                 src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
                 width={50}
