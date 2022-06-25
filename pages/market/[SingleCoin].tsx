@@ -97,8 +97,14 @@ const SingleCoinPage = () => {
                     alt={`${coinData.data[coinId].slug} logo`}
                   />
                   <h4>{coinData.data[coinId].name}</h4>
+                  <span>{coinData.data[coinId].symbol}</span>
                 </div>
-                <p>${moreCoinInfo[0].quote.USD.price}</p>
+                <p>
+                  $
+                  {moreCoinInfo[0].quote.USD.price > 1
+                    ? moreCoinInfo[0].quote.USD.price.toFixed(2)
+                    : moreCoinInfo[0].quote.USD.price.toFixed(5)}
+                </p>
               </div>
               <p>{coinData.data[coinId].description}</p>
             </Col>

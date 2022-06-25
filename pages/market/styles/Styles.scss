@@ -78,11 +78,23 @@ $primary-color: #f3ba2f;
 .info-header-single-coin{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
   margin-bottom: 20px;
   h4{
     color: #fff;
     font-size: 36px;
     margin-left: 20px;
+    margin-bottom: 0;
+  }
+  span{
+    color: #999;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 550;
+  }
+  p{
+    font-size: 30px;
+    margin-bottom: 0px;
   }
 }
