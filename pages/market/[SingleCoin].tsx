@@ -16,11 +16,12 @@ const SingleCoinPage = () => {
   const { data: coinData } = useGetCryptosInfoQuery(SingleCoin)
   const { data: moreData } = useGetCryptosQuery({})
   console.log('coinData', coinData)
-  const coinID = coinData ? Object.keys(coinData.data)[0] : 1
-  const moreCoinInfo = coinData
-    ? // eslint-disable-next-line eqeqeq
-      moreData.data.filter((coin: any) => coin.id == coinID)
-    : null
+  const coinId = coinData ? Object.keys(coinData.data)[0] : 1
+  const moreCoinInfo =
+    coinData && moreData
+      ? // eslint-disable-next-line eqeqeq
+        moreData.data.filter((coin: any) => coin.id == coinId)
+      : null
   console.log('moreCoinInfo', moreCoinInfo)
 
   const [data, setData] = useState([])
@@ -47,7 +48,7 @@ const SingleCoinPage = () => {
   return (
     <Layout>
       <TitleBanner
-        lastTitle={coinData ? coinData.data[coinID].name : 'Loading'}
+        lastTitle={coinData ? coinData.data[coinId].name : 'Loading'}
       />
       <Row justify="center">
         {coinData ? (
@@ -88,19 +89,18 @@ const SingleCoinPage = () => {
               </Button>
             </Col>
             <Col xs={18} className="">
-              {/* <Image
-                src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
-                width={50}
-                height={50}
-                alt="coddm"
-              /> */}
               <div>
-                <div>
-                  <h4>{coinData.data[coinID].name}</h4>
+                <div className="">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`https://s2.coinmarketcap.com/static/img/coins/64x64/${coinId}.png`}
+                    alt="sssssssss"
+                  />
+                  <h4>{coinData.data[coinId].name}</h4>
                 </div>
                 <p>${moreCoinInfo[0].quote.USD.price}</p>
               </div>
-              <p>{coinData.data[coinID].description}</p>
+              <p>{coinData.data[coinId].description}</p>
             </Col>
             <Col xs={12}>
               <Stock {...config} />
