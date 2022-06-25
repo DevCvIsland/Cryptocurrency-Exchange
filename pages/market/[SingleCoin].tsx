@@ -99,12 +99,23 @@ const SingleCoinPage = () => {
                   <h4>{coinData.data[coinId].name}</h4>
                   <span>{coinData.data[coinId].symbol}</span>
                 </div>
-                <p>
-                  $
-                  {moreCoinInfo[0].quote.USD.price > 1
-                    ? moreCoinInfo[0].quote.USD.price.toFixed(2)
-                    : moreCoinInfo[0].quote.USD.price.toFixed(5)}
-                </p>
+                <div className="price-info-single-coin">
+                  <p>
+                    $
+                    {moreCoinInfo[0].quote.USD.price > 1
+                      ? moreCoinInfo[0].quote.USD.price.toFixed(2)
+                      : moreCoinInfo[0].quote.USD.price.toFixed(5)}
+                  </p>
+                  <div
+                    className={`${
+                      moreCoinInfo[0].quote.USD.percent_change_24h > 1
+                        ? 'positive-background-color'
+                        : 'negative-background-color'
+                    }`}
+                  >
+                    {moreCoinInfo[0].quote.USD.percent_change_24h.toFixed(2)}
+                  </div>
+                </div>
               </div>
               <p>{coinData.data[coinId].description}</p>
             </Col>

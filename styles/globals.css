@@ -63,6 +63,14 @@ body {
   color: #f3ba2f;
 }
 
+.positive-background-color {
+  background-color: green;
+}
+
+.negative-background-color {
+  background-color: red;
+}
+
 .ant-table-thead > tr > th {
   background-color: #0b0e11;
   border-color: #282828;

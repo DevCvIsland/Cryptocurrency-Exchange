@@ -98,3 +98,13 @@ $primary-color: #f3ba2f;
     margin-bottom: 0px;
   }
 }
+.price-info-single-coin{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div{
+    display: inline;
+    padding: 5px;
+    margin-left: 20px;
+  }
+}
