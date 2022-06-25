@@ -33,14 +33,24 @@
 
 .detail-single-coin .buy-button.ant-btn:focus {
   color: #000;
-  border-color: #256127;
-  background-color: #256127;
+  border-color: green;
+  background-color: green;
 }
 
 .detail-single-coin .sell-button.ant-btn:focus {
   color: #000;
   border-color: #701b1b;
   background-color: #701b1b;
+}
+
+.detail-single-coin p {
+  margin-bottom: 22px;
+}
+
+.detail-single-coin input {
+  display: block;
+  width: 270px;
+  margin-bottom: 10px;
 }
 
 .buy-button {

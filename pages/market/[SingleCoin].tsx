@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { Row, Col, Button } from 'antd'
+import { Row, Col, Button, Input } from 'antd'
 import { Stock } from '@ant-design/plots'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
@@ -23,6 +23,7 @@ const SingleCoinPage = () => {
         moreData.data.filter((coin: any) => coin.id == coinId)
       : null
   console.log('moreCoinInfo', moreCoinInfo)
+  const amount = 100
   const config = {
     data,
     xField: 'trade_date',
@@ -32,7 +33,7 @@ const SingleCoinPage = () => {
   return (
     <Layout>
       <TitleBanner
-        lastTitle={coinData ? coinData.data[coinId].name : 'Loading'}
+        lastTitle={coinData ? coinData.data[coinId].name : 'Loading...'}
       />
       <Row justify="center">
         {coinData ? (
@@ -114,14 +115,24 @@ const SingleCoinPage = () => {
               <h4>Price Calculater</h4>
               <div>
                 <div>
-                  <p>Inventory:</p>
                   <p>Amount:</p>
                   <p>Price:</p>
+                  <p>Total:</p>
                 </div>
                 <div>
-                  <p>55.2154</p>
-                  <p>1.2548</p>
-                  <p>30000.11</p>
+                  <Input placeholder={`${amount}`} />
+                  <Input
+                    placeholder={
+                      moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
+                        ? `$ ${moreCoinInfo[0].quote.USD.price.toFixed(2)}`
+                        : `$ ${moreCoinInfo[0].quote.USD.price.toFixed(5)}`
+                    }
+                  />
+                  <Input
+                    placeholder={`$ ${
+                      amount * moreCoinInfo[0].quote.USD.price.toFixed(4)
+                    }`}
+                  />
                 </div>
               </div>
               <Button size="large" className="buy-button" block>
