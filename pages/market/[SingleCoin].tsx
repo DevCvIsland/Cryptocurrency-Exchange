@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
-// import Image from 'next/image'
+import React from 'react'
 import { useRouter } from 'next/router'
 import { Row, Col, Button } from 'antd'
 import { Stock } from '@ant-design/plots'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
+import data from './ChartData'
 import {
   useGetCryptosQuery,
   useGetCryptosInfoQuery,
@@ -23,22 +23,6 @@ const SingleCoinPage = () => {
         moreData.data.filter((coin: any) => coin.id == coinId)
       : null
   console.log('moreCoinInfo', moreCoinInfo)
-
-  const [data, setData] = useState([])
-  const asyncFetch = () => {
-    fetch(
-      'https://gw.alipayobjects.com/os/antfincdn/qtQ9nYfYJe/stock-data.json'
-    )
-      .then((response) => response.json())
-      .then((json) => setData(json))
-      .catch((error) => {
-        // eslint-disable-next-line no-console
-        console.log('fetch data failed', error)
-      })
-  }
-  useEffect(() => {
-    asyncFetch()
-  }, [])
   const config = {
     data,
     xField: 'trade_date',
@@ -102,7 +86,7 @@ const SingleCoinPage = () => {
                 <div className="price-info-single-coin">
                   <p>
                     $
-                    {moreCoinInfo[0].quote.USD.price > 1
+                    {moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
                       ? moreCoinInfo[0].quote.USD.price.toFixed(2)
                       : moreCoinInfo[0].quote.USD.price.toFixed(5)}
                   </p>
