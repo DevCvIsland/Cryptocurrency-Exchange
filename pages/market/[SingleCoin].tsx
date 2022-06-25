@@ -5,15 +5,23 @@ import { Row, Col, Button } from 'antd'
 import { Stock } from '@ant-design/plots'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
-import { useGetCryptosInfoQuery } from '../../services/CryptoApi'
+import {
+  useGetCryptosQuery,
+  useGetCryptosInfoQuery,
+} from '../../services/CryptoApi'
 
 const SingleCoinPage = () => {
   const router = useRouter()
   const { SingleCoin } = router.query
-  const { data: infoData } = useGetCryptosInfoQuery(SingleCoin)
-  // eslint-disable-next-line no-console
-  console.log('infoData', infoData)
-  const coinID = infoData ? Object.keys(infoData.data)[0] : 1
+  const { data: coinData } = useGetCryptosInfoQuery(SingleCoin)
+  const { data: moreData } = useGetCryptosQuery({})
+  console.log('coinData', coinData)
+  const coinID = coinData ? Object.keys(coinData.data)[0] : 1
+  const moreCoinInfo = coinData
+    ? // eslint-disable-next-line eqeqeq
+      moreData.data.filter((coin: any) => coin.id == coinID)
+    : null
+  console.log('moreCoinInfo', moreCoinInfo)
 
   const [data, setData] = useState([])
   const asyncFetch = () => {
@@ -39,12 +47,12 @@ const SingleCoinPage = () => {
   return (
     <Layout>
       <TitleBanner
-        lastTitle={infoData ? infoData.data[coinID].name : 'Loading'}
+        lastTitle={coinData ? coinData.data[coinID].name : 'Loading'}
       />
       <Row justify="center">
-        {infoData ? (
+        {coinData ? (
           <>
-            <Col xs={18}>
+            <Col xs={18} className="button-list-single-coin">
               <Button size="large" className="button">
                 Overview
               </Button>{' '}
@@ -79,15 +87,20 @@ const SingleCoinPage = () => {
                 Price Estimates
               </Button>
             </Col>
-            <Col xs={18}>
+            <Col xs={18} className="">
               {/* <Image
                 src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
                 width={50}
                 height={50}
                 alt="coddm"
               /> */}
-              <div>{infoData.data[coinID].name} Price:</div>
-              <div>$ 30000.41</div>
+              <div>
+                <div>
+                  <h4>{coinData.data[coinID].name}</h4>
+                </div>
+                <p>${moreCoinInfo[0].quote.USD.price}</p>
+              </div>
+              <p>{coinData.data[coinID].description}</p>
             </Col>
             <Col xs={12}>
               <Stock {...config} />
