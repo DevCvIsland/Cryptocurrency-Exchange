@@ -79,4 +79,28 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.info-section-single-coin > p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.info-header-single-coin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.info-header-single-coin h4 {
+  color: #fff;
+  font-size: 36px;
+  margin-left: 20px;
+}
 /*# sourceMappingURL=Styles.css.map */

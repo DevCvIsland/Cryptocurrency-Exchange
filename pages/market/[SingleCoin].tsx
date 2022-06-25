@@ -88,13 +88,13 @@ const SingleCoinPage = () => {
                 Price Estimates
               </Button>
             </Col>
-            <Col xs={18} className="">
-              <div>
-                <div className="">
+            <Col xs={18} className="info-section-single-coin">
+              <div className="info-header-single-coin">
+                <div className="flex-row">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={`https://s2.coinmarketcap.com/static/img/coins/64x64/${coinId}.png`}
-                    alt="sssssssss"
+                    alt={`${coinData.data[coinId].slug} logo`}
                   />
                   <h4>{coinData.data[coinId].name}</h4>
                 </div>
