@@ -108,12 +108,16 @@ const SingleCoinPage = () => {
                   </p>
                   <div
                     className={`${
-                      moreCoinInfo[0].quote.USD.percent_change_24h > 1
+                      moreCoinInfo[0].quote.USD.percent_change_24h >= 0
                         ? 'positive-background-color'
                         : 'negative-background-color'
                     }`}
                   >
-                    {moreCoinInfo[0].quote.USD.percent_change_24h.toFixed(2)}
+                    {moreCoinInfo[0].quote.USD.percent_change_24h >= 0
+                      ? `+${moreCoinInfo[0].quote.USD.percent_change_24h.toFixed(
+                          2
+                        )}`
+                      : moreCoinInfo[0].quote.USD.percent_change_24h.toFixed(2)}
                   </div>
                 </div>
               </div>
