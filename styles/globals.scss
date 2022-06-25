@@ -40,8 +40,12 @@ body {
 .theme-primary-color {
   color: $primary-color;
 }
-// .positive-color{}
-// .negative-color{}
+.positive-color{
+  color: green;
+}
+.negative-color{
+  color: red;
+}
 .positive-background-color{
   background-color: green;
 }

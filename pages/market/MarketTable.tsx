@@ -48,7 +48,17 @@ const MarketTable = () => {
           </>
         ),
         price: `$${coin.quote.USD.price.toFixed(5)}`,
-        changeOf24h: `${coin.quote.USD.percent_change_24h.toFixed(2)}`,
+        changeOf24h: (
+          <p
+            className={`${
+              coin.quote.USD.percent_change_24h > 1
+                ? 'positive-color'
+                : 'negative-color'
+            }`}
+          >
+            ${coin.quote.USD.percent_change_24h.toFixed(2)}
+          </p>
+        ),
         volumeOf24h: `$${coin.quote.USD.volume_24h.toFixed(0)}`,
         marketCap: `$${coin.quote.USD.market_cap.toFixed(0)}`,
         // volumeOf24h: `${`${coin.quote.USD.volume_24h}`.substring(0, 3)}M`,

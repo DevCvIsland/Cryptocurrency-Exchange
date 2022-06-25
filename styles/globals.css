@@ -63,6 +63,14 @@ body {
   color: #f3ba2f;
 }
 
+.positive-color {
+  color: green;
+}
+
+.negative-color {
+  color: red;
+}
+
 .positive-background-color {
   background-color: green;
 }
