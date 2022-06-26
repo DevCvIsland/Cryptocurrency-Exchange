@@ -163,12 +163,6 @@ body {
   background-color: #181A20 !important;
 }
 
-.ant-btn:focus {
-  color: #000 !important;
-  background-color: #f3ba2f !important;
-  border-color: #f3ba2f !important;
-}
-
 .ant-btn-primary:focus {
   color: #000 !important;
   background-color: #f3ba2f !important;
