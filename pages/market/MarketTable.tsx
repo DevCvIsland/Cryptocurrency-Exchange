@@ -43,14 +43,21 @@ const MarketTable = () => {
         key: `${coin.id}`,
         name: (
           <>
-            <p className="table-coin-name">{coin.name}</p>
-            <span className="table-coin-symbol">/ {coin.symbol}</span>
+            <p className="table-name-item">{coin.name}</p>
+            <span className="table-symbol-item">/ {coin.symbol}</span>
           </>
         ),
-        price: `$${coin.quote.USD.price.toFixed(5)}`,
+        price: (
+          <p className="table-number-item">
+            $
+            {coin.quote.USD.price > 1
+              ? coin.quote.USD.price.toFixed(2)
+              : coin.quote.USD.price.toFixed(5)}
+          </p>
+        ),
         changeOf24h: (
           <p
-            className={`${
+            className={`table-number-item ${
               coin.quote.USD.percent_change_24h >= 0
                 ? 'positive-color'
                 : 'negative-color'
@@ -61,8 +68,16 @@ const MarketTable = () => {
               : coin.quote.USD.percent_change_24h.toFixed(2)}
           </p>
         ),
-        volumeOf24h: `$${coin.quote.USD.volume_24h.toFixed(0)}`,
-        marketCap: `$${coin.quote.USD.market_cap.toFixed(0)}`,
+        volumeOf24h: (
+          <p className="table-number-item">
+            ${coin.quote.USD.volume_24h.toFixed(0)}
+          </p>
+        ),
+        marketCap: (
+          <p className="table-number-item">
+            ${coin.quote.USD.market_cap.toFixed(0)}
+          </p>
+        ),
         // volumeOf24h: `${`${coin.quote.USD.volume_24h}`.substring(0, 3)}M`,
         // marketCap: `${`${coin.quote.USD.market_cap}`.substring(0, 3)}M`,
         action: (
