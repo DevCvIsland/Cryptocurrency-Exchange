@@ -4,9 +4,11 @@ import Link from 'next/link'
 
 const SignIn = () => {
   const onFinish = (values: any) => {
+    // eslint-disable-next-line no-console
     console.log('Success:', values)
   }
   const onFinishFailed = (errorInfo: any) => {
+    // eslint-disable-next-line no-console
     console.log('Failed:', errorInfo)
   }
 
@@ -98,12 +100,14 @@ const SignIn = () => {
           <div className="flex-row sign-in-text-style">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             Don't have an account?
+            {/* eslint-disable-next-line @next/next/link-passhref */}
             <Link href="/sign-up">
               <p className="theme-primary-color">Sign Up</p>
             </Link>
           </div>
         </Form>
         <div className="flex-column back-home-section">
+          {/* eslint-disable-next-line @next/next/link-passhref */}
           <Link href="/">
             <Button
               size="large"

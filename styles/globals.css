@@ -162,4 +162,10 @@ body {
 .ant-select-item:hover {
   background-color: #181A20 !important;
 }
+
+.ant-btn-primary:focus {
+  color: #000 !important;
+  background-color: #f3ba2f !important;
+  border-color: #f3ba2f !important;
+}
 /*# sourceMappingURL=globals.css.map */
