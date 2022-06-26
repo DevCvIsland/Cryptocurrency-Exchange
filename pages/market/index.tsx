@@ -49,7 +49,14 @@ const Market = () => {
             </Form.Item>
           </Form>
         </Col>
-        <Col xs={22} sm={22} md={22} lg={20} xl={20}>
+        <Col
+          xs={22}
+          sm={22}
+          md={22}
+          lg={20}
+          xl={20}
+          className="market-table-container"
+        >
           <MarketTable />
         </Col>
       </Row>

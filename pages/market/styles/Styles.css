@@ -11,6 +11,10 @@
   padding-left: 0px;
 }
 
+.market-table-container {
+  text-align: center;
+}
+
 .detail-single-coin {
   margin-left: 20px;
   margin-bottom: 100px;
@@ -153,5 +157,13 @@
   margin-left: 20px;
   font-size: 16px;
   font-weight: 550;
+}
+
+.single-coin-loading-spinner {
+  margin: 150px;
+}
+
+.market-table-loading-spinner {
+  margin: 60px;
 }
 /*# sourceMappingURL=Styles.css.map */

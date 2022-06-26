@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { Row, Col, Button, Input } from 'antd'
+import { Row, Col, Button, Input, Spin } from 'antd'
+import { LoadingOutlined } from '@ant-design/icons'
 import { Stock } from '@ant-design/plots'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
@@ -9,6 +10,10 @@ import {
   useGetCryptosQuery,
   useGetCryptosInfoQuery,
 } from '../../services/CryptoApi'
+
+const antIcon = (
+  <LoadingOutlined spin style={{ fontSize: 75, color: '#f3ba2f' }} />
+)
 
 const SingleCoinPage = () => {
   const router = useRouter()
@@ -175,7 +180,11 @@ const SingleCoinPage = () => {
             </Col>
           </>
         ) : (
-          'Loading...'
+          <Spin
+            className="single-coin-loading-spinner"
+            size="large"
+            indicator={antIcon}
+          />
         )}
       </Row>
     </Layout>

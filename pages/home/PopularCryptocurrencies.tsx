@@ -1,5 +1,5 @@
-import { Row, Col, Button, Table } from 'antd'
-import { RightOutlined } from '@ant-design/icons'
+import { Row, Col, Button, Table, Spin } from 'antd'
+import { RightOutlined, LoadingOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 import { useGetCryptosQuery } from '../../services/CryptoApi'
 
@@ -25,6 +25,10 @@ const columns = [
     key: 'marketCap',
   },
 ]
+
+const antIcon = (
+  <LoadingOutlined spin style={{ fontSize: 75, color: '#f3ba2f' }} />
+)
 
 const PopularCryptocurrencies = () => {
   const { data } = useGetCryptosQuery({})
@@ -87,7 +91,7 @@ const PopularCryptocurrencies = () => {
           </Button>
         </Link>
       </Col>
-      <Col xs={20}>
+      <Col xs={20} className="popular-cryptocurrencies-table-section">
         {data ? (
           <Table
             dataSource={dataSource}
@@ -96,7 +100,11 @@ const PopularCryptocurrencies = () => {
             scroll={{ x: 'max-content' }}
           />
         ) : (
-          'Loading...'
+          <Spin
+            className="home-table-loading-spinner"
+            size="large"
+            indicator={antIcon}
+          />
         )}
       </Col>
       <Col xs={20} className="popular-cryptocurrencies-footer-section">

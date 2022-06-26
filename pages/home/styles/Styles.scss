@@ -64,6 +64,9 @@ $primary-color: #f3ba2f;
     color: rgb(132, 142, 156);
   }
 }
+.popular-cryptocurrencies-table-section{
+  text-align: center;
+}
 .popular-cryptocurrencies-footer-section{
   button{
     max-width: 320px;
@@ -193,6 +196,9 @@ $primary-color: #f3ba2f;
   color: $primary-color;
   padding-right: 10px;
   padding-top: 5px;
+}
+.home-table-loading-spinner{
+  margin: 75px;
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .get-started-landing{

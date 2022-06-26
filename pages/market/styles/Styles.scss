@@ -10,7 +10,9 @@ $primary-color: #f3ba2f;
   color: $primary-color;
   padding-left: 0px;
 }
-
+.market-table-container{
+  text-align: center;
+}
 .detail-single-coin{
   margin-left: 20px;
   margin-bottom: 100px;
@@ -53,7 +55,6 @@ $primary-color: #f3ba2f;
     margin-bottom: 0px !important;
   }
 }
-
 .buy-button{
   background-color: #009900;
   border-color: #009900;
@@ -120,4 +121,10 @@ $primary-color: #f3ba2f;
     font-size: 16px;
     font-weight: 550;
   }
+}
+.single-coin-loading-spinner{
+  margin: 150px;
+}
+.market-table-loading-spinner{
+  margin: 60px;
 }
