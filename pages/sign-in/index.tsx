@@ -1,11 +1,17 @@
+import React, { useState } from 'react'
+import { useRouter } from 'next/router'
 import { Row, Col, Form, Input, Button, Checkbox } from 'antd'
 import { HomeOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 
 const SignIn = () => {
+  const router = useRouter()
+  const [loading, setLoading] = useState(false)
   const onFinish = (values: any) => {
+    setLoading(true)
     // eslint-disable-next-line no-console
     console.log('Success:', values)
+    router.push('/dashboard')
   }
   const onFinishFailed = (errorInfo: any) => {
     // eslint-disable-next-line no-console
@@ -87,15 +93,26 @@ const SignIn = () => {
               span: 24,
             }}
           >
-            <Button
-              type="primary"
-              htmlType="submit"
-              size="large"
-              block
-              className="button"
-            >
-              Sign In
-            </Button>
+            {loading ? (
+              <Button
+                type="primary"
+                htmlType="submit"
+                size="large"
+                block
+                className="button"
+                loading
+              />
+            ) : (
+              <Button
+                type="primary"
+                htmlType="submit"
+                size="large"
+                block
+                className="button"
+              >
+                Sign In
+              </Button>
+            )}
           </Form.Item>
           <div className="flex-row sign-in-text-style">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
