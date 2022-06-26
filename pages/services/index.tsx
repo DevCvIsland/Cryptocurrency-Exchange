@@ -8,6 +8,7 @@ import BuySellBitcoins from '../../assets/icon/buy-sell-bitcoins.png'
 import HighLiquidity from '../../assets/icon/high-liquidity.png'
 import WorldCoverage from '../../assets/icon/world-coverage.png'
 import PaymentOptions from '../../assets/icon/payment-options.png'
+import Head from '../../containers/head/Head'
 
 type ServiceContainerProps = {
   icon: StaticImageData
@@ -32,20 +33,26 @@ const ServiceContainer = ({ icon, title }: ServiceContainerProps) => {
 
 const Services = () => {
   return (
-    <Layout>
-      <TitleBanner firstTitle="Our" lastTitle="Services" />
-      <Row justify="center" align="middle" className="service-section">
-        <ServiceContainer
-          icon={DownloadBitcoin}
-          title="Bitcoin Escrow Service"
-        />
-        <ServiceContainer icon={AddBitcoins} title="Bitcoin Mining" />
-        <ServiceContainer icon={BuySellBitcoins} title="Software Development" />
-        <ServiceContainer icon={HighLiquidity} title="Bitcoin Transaction" />
-        <ServiceContainer icon={WorldCoverage} title="Bitcoin Exchange" />
-        <ServiceContainer icon={PaymentOptions} title="Bitcoin Investment" />
-      </Row>
-    </Layout>
+    <>
+      <Head title="Services" />
+      <Layout>
+        <TitleBanner firstTitle="Our" lastTitle="Services" />
+        <Row justify="center" align="middle" className="service-section">
+          <ServiceContainer
+            icon={DownloadBitcoin}
+            title="Bitcoin Escrow Service"
+          />
+          <ServiceContainer icon={AddBitcoins} title="Bitcoin Mining" />
+          <ServiceContainer
+            icon={BuySellBitcoins}
+            title="Software Development"
+          />
+          <ServiceContainer icon={HighLiquidity} title="Bitcoin Transaction" />
+          <ServiceContainer icon={WorldCoverage} title="Bitcoin Exchange" />
+          <ServiceContainer icon={PaymentOptions} title="Bitcoin Investment" />
+        </Row>
+      </Layout>
+    </>
   )
 }
 
