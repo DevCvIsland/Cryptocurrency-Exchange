@@ -42,14 +42,21 @@ const PopularCryptocurrencies = () => {
           key: `${coin.id}`,
           name: (
             <>
-              <p className="table-coin-name">{coin.name}</p>
-              <span className="table-coin-symbol">/ {coin.symbol}</span>
+              <p className="table-name-item">{coin.name}</p>
+              <span className="table-symbol-item">/ {coin.symbol}</span>
             </>
           ),
-          price: `$${coin.quote.USD.price.toFixed(5)}`,
+          price: (
+            <p className="table-number-item">
+              $
+              {coin.quote.USD.price > 1
+                ? coin.quote.USD.price.toFixed(2)
+                : coin.quote.USD.price.toFixed(6)}
+            </p>
+          ),
           changeOf24h: (
             <p
-              className={`${
+              className={`table-number-item ${
                 coin.quote.USD.percent_change_24h >= 0
                   ? 'positive-color'
                   : 'negative-color'
@@ -60,9 +67,14 @@ const PopularCryptocurrencies = () => {
                 : coin.quote.USD.percent_change_24h.toFixed(2)}
             </p>
           ),
-          marketCap: `$${coin.quote.USD.market_cap.toFixed(0)}`,
+          marketCap: (
+            <p className="table-number-item">
+              ${coin.quote.USD.market_cap.toFixed(0)}
+            </p>
+          ),
         }))
     : null
+
   return (
     <Row justify="center" className="popular-cryptocurrencies-section">
       <Col xs={20} className="popular-cryptocurrencies-title-section">

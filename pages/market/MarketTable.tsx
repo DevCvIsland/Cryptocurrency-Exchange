@@ -52,7 +52,7 @@ const MarketTable = () => {
             $
             {coin.quote.USD.price > 1
               ? coin.quote.USD.price.toFixed(2)
-              : coin.quote.USD.price.toFixed(5)}
+              : coin.quote.USD.price.toFixed(6)}
           </p>
         ),
         changeOf24h: (
@@ -78,8 +78,6 @@ const MarketTable = () => {
             ${coin.quote.USD.market_cap.toFixed(0)}
           </p>
         ),
-        // volumeOf24h: `${`${coin.quote.USD.volume_24h}`.substring(0, 3)}M`,
-        // marketCap: `${`${coin.quote.USD.market_cap}`.substring(0, 3)}M`,
         action: (
           // eslint-disable-next-line @next/next/link-passhref
           <Link href={`/market/${coin.slug}`}>

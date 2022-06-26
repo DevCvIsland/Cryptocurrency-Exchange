@@ -42,11 +42,11 @@ body {
 }
 .positive-color{
   color: green;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .negative-color{
   color: red;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .positive-background-color{
   background-color: green;
@@ -55,20 +55,19 @@ body {
   background-color: red;
 }
 .table-name-item{
-  display: inline;
-  font-size: 20px;
-  font-weight: 550;
+  display: inline !important;
+  font-size: 20px !important;
+  font-weight: 550 !important;
+  margin-top: 0px !important;
 }
 .table-symbol-item{
-  color: #999;
-  font-weight: 550;
-  padding-left: 5px;
+  color: #999 !important;
+  font-weight: 550 !important;
+  padding-left: 5px !important;
 }
 .table-number-item{
-  font-size: 18px;
-  // font-weight: 550;
-  // padding-top: 15px;
-  margin: 0;
+  font-size: 18px !important;
+  margin: 0px !important;
 }
 .ant-table-thead > tr > th{
   background-color: rgb(11, 14, 17);
