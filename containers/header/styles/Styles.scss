@@ -15,30 +15,28 @@ $primary-color: #f3ba2f;
     padding: 10px 200px;
   }
 }
-
 .button-container {
   display: flex;
   justify-content: end;
   margin-right: 10px;
 }
-
 .button-style {
   margin: 0px 10px !important;
 }
-
 .menu {
   background-color: #1d1d1d !important;
   .menu-item {
     font-size: 18px;
-    color: #fff !important;
+    color: #fff;
     &:hover {
       color: $primary-color !important;
       background-color: #1d1d1d !important;
-      border-bottom: 1px solid $primary-color;
+      // border-bottom: 1px solid $primary-color;
     }
   }
 }
-
-.ant-menu-item-selected {
-  background-color: $primary-color !important;
+.active-menu-item{
+  color: $primary-color !important;
+  background-color: #1d1d1d !important;
+  border-bottom: 1px solid $primary-color !important;
 }

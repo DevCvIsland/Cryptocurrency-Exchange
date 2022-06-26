@@ -9,6 +9,32 @@ const Header = () => {
   const handleClick = (event: any) => {
     router.push(`/${event.key}`)
   }
+  const menuItems = [
+    {
+      title: 'Home',
+      key: '',
+    },
+    {
+      title: 'Markets',
+      key: 'market',
+    },
+    {
+      title: 'Services',
+      key: 'services',
+    },
+    {
+      title: 'Blog',
+      key: 'blog',
+    },
+    {
+      title: 'About',
+      key: 'about',
+    },
+    {
+      title: 'Contact',
+      key: 'contact',
+    },
+  ]
 
   return (
     <>
@@ -40,24 +66,16 @@ const Header = () => {
         theme="dark"
         className="menu flex-row"
       >
-        <Menu.Item className="menu-item" key="">
-          Home
-        </Menu.Item>
-        <Menu.Item className="menu-item" key="market">
-          Markets
-        </Menu.Item>
-        <Menu.Item className="menu-item" key="services">
-          Services
-        </Menu.Item>
-        <Menu.Item className="menu-item" key="blog">
-          Blog
-        </Menu.Item>
-        <Menu.Item className="menu-item" key="about">
-          About
-        </Menu.Item>
-        <Menu.Item className="menu-item" key="contact">
-          Contact
-        </Menu.Item>
+        {menuItems.map((item) => (
+          <Menu.Item
+            className={`menu-item ${
+              router.pathname === `/${item.key}` ? 'active-menu-item' : ''
+            }`}
+            key={item.key}
+          >
+            {item.title}
+          </Menu.Item>
+        ))}
       </Menu>
     </>
   )

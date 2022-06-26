@@ -99,6 +99,10 @@ body {
   margin: 0px !important;
 }
 
+.ant-menu-item-selected {
+  background-color: transparent !important;
+}
+
 .ant-table-thead > tr > th {
   background-color: #0b0e11;
   border-color: #282828;
