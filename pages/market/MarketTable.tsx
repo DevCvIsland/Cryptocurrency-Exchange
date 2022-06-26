@@ -66,6 +66,7 @@ const MarketTable = () => {
             {coin.quote.USD.percent_change_24h >= 0
               ? `+${coin.quote.USD.percent_change_24h.toFixed(2)}`
               : coin.quote.USD.percent_change_24h.toFixed(2)}
+            %
           </p>
         ),
         volumeOf24h: (

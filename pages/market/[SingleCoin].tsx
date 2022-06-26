@@ -15,6 +15,7 @@ const SingleCoinPage = () => {
   const { SingleCoin } = router.query
   const { data: coinData } = useGetCryptosInfoQuery(SingleCoin)
   const { data: moreData } = useGetCryptosQuery({})
+  // eslint-disable-next-line no-console
   console.log('coinData', coinData)
   const coinId = coinData ? Object.keys(coinData.data)[0] : 1
   const moreCoinInfo =
@@ -22,8 +23,9 @@ const SingleCoinPage = () => {
       ? // eslint-disable-next-line eqeqeq
         moreData.data.filter((coin: any) => coin.id == coinId)
       : null
+  // eslint-disable-next-line no-console
   console.log('moreCoinInfo', moreCoinInfo)
-  const amount = 100
+  const total = moreCoinInfo && 100 * moreCoinInfo[0].quote.USD.price
   const config = {
     data,
     xField: 'trade_date',
@@ -89,7 +91,7 @@ const SingleCoinPage = () => {
                     $
                     {moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
                       ? moreCoinInfo[0].quote.USD.price.toFixed(2)
-                      : moreCoinInfo[0].quote.USD.price.toFixed(5)}
+                      : moreCoinInfo[0].quote.USD.price.toFixed(6)}
                   </p>
                   <div
                     className={`${
@@ -103,6 +105,7 @@ const SingleCoinPage = () => {
                           2
                         )}`
                       : moreCoinInfo[0].quote.USD.percent_change_24h.toFixed(2)}
+                    %
                   </div>
                 </div>
               </div>
@@ -125,7 +128,7 @@ const SingleCoinPage = () => {
                     defaultValue={`${coinData.data[coinId].symbol} / USDT`}
                     readOnly
                   />
-                  <Input defaultValue={`${amount}`} />
+                  <Input defaultValue="100" />
                   <Input
                     defaultValue={
                       moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
@@ -135,7 +138,7 @@ const SingleCoinPage = () => {
                   />
                   <Input
                     defaultValue={`$ ${
-                      amount * moreCoinInfo[0].quote.USD.price.toFixed(4)
+                      total > 1 ? total.toFixed(2) : total.toFixed(6)
                     }`}
                   />
                 </div>
