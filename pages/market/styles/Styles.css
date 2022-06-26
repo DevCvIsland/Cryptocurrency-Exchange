@@ -74,6 +74,7 @@
   background-color: #009900;
   border-color: #009900;
   margin-bottom: 5px;
+  font-weight: 550;
 }
 
 .buy-button:hover {
@@ -85,6 +86,7 @@
 .sell-button {
   background-color: red;
   border-color: red;
+  font-weight: 550;
 }
 
 .sell-button:hover {

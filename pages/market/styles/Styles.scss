@@ -59,6 +59,7 @@ $primary-color: #f3ba2f;
   background-color: #009900;
   border-color: #009900;
   margin-bottom: 5px;
+  font-weight: 550;
   &:hover{
     color: #000;
     border-color: #256127;
@@ -68,6 +69,7 @@ $primary-color: #f3ba2f;
 .sell-button{
   background-color: red;
   border-color: red;
+  font-weight: 550;
   &:hover{
     color: #000;
     border-color: #701b1b;
