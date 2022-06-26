@@ -40,7 +40,14 @@ const SingleCoinPage = () => {
       <Row justify="center">
         {coinData ? (
           <>
-            <Col xs={18} className="button-list-single-coin">
+            <Col
+              xs={23}
+              sm={18}
+              md={18}
+              lg={18}
+              xl={18}
+              className="button-list-single-coin"
+            >
               <Button size="large" className="button">
                 Overview
               </Button>{' '}
@@ -75,7 +82,14 @@ const SingleCoinPage = () => {
                 Price Estimates
               </Button>
             </Col>
-            <Col xs={18} className="info-section-single-coin">
+            <Col
+              xs={23}
+              sm={18}
+              md={18}
+              lg={18}
+              xl={18}
+              className="info-section-single-coin"
+            >
               <div className="info-header-single-coin">
                 <div className="flex-row">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -111,14 +125,22 @@ const SingleCoinPage = () => {
               </div>
               <p>{coinData.data[coinId].description}</p>
             </Col>
-            <Col xs={12}>
+            <Col xs={24} sm={18} md={18} lg={18} xl={12}>
               <Stock {...config} />
             </Col>
-            <Col xs={6} className="detail-single-coin">
+            <Col
+              xs={24}
+              sm={18}
+              md={18}
+              lg={18}
+              xl={6}
+              className="detail-single-coin"
+            >
               <h4>Trade Calculater</h4>
               <div>
                 <div>
                   <p>{coinData.data[coinId].name}:</p>
+                  <p>Wallet:</p>
                   <p>Amount:</p>
                   <p>Price:</p>
                   <p>Total:</p>
@@ -128,6 +150,7 @@ const SingleCoinPage = () => {
                     defaultValue={`${coinData.data[coinId].symbol} / USDT`}
                     readOnly
                   />
+                  <Input defaultValue="Binance" />
                   <Input defaultValue="100" />
                   <Input
                     defaultValue={

@@ -11,6 +11,11 @@
   padding-left: 0px;
 }
 
+.detail-single-coin {
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
 .detail-single-coin h4 {
   color: #fff;
   font-weight: 600;
@@ -53,6 +58,14 @@
   margin-bottom: 10px;
 }
 
+.detail-single-coin input:nth-last-child(1) {
+  margin-bottom: 0px !important;
+}
+
+.detail-single-coin p:nth-last-child(1) {
+  margin-bottom: 0px !important;
+}
+
 .buy-button {
   background-color: #009900;
   border-color: #009900;
@@ -78,12 +91,13 @@
 
 .button-list-single-coin {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .info-section-single-coin > p {
   color: #fff;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .info-header-single-coin {

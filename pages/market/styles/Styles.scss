@@ -12,6 +12,8 @@ $primary-color: #f3ba2f;
 }
 
 .detail-single-coin{
+  margin-left: 20px;
+  margin-bottom: 100px;
   h4{
     color: #fff;
     font-weight: 600;
@@ -44,6 +46,12 @@ $primary-color: #f3ba2f;
     width: 270px;
     margin-bottom: 10px;
   }
+  input:nth-last-child(1) {
+    margin-bottom: 0px !important;
+  }
+  p:nth-last-child(1) {
+    margin-bottom: 0px !important;
+  }
 }
 
 .buy-button{
@@ -67,12 +75,13 @@ $primary-color: #f3ba2f;
 }
 .button-list-single-coin{
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .info-section-single-coin{
   &> p{
     color: #fff;
     font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 .info-header-single-coin{
