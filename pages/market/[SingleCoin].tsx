@@ -112,24 +112,29 @@ const SingleCoinPage = () => {
               <Stock {...config} />
             </Col>
             <Col xs={6} className="detail-single-coin">
-              <h4>Price Calculater</h4>
+              <h4>Trade Calculater</h4>
               <div>
                 <div>
+                  <p>{coinData.data[coinId].name}:</p>
                   <p>Amount:</p>
                   <p>Price:</p>
                   <p>Total:</p>
                 </div>
                 <div>
-                  <Input placeholder={`${amount}`} />
                   <Input
-                    placeholder={
+                    defaultValue={`${coinData.data[coinId].symbol} / USDT`}
+                    readOnly
+                  />
+                  <Input defaultValue={`${amount}`} />
+                  <Input
+                    defaultValue={
                       moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
                         ? `$ ${moreCoinInfo[0].quote.USD.price.toFixed(2)}`
                         : `$ ${moreCoinInfo[0].quote.USD.price.toFixed(5)}`
                     }
                   />
                   <Input
-                    placeholder={`$ ${
+                    defaultValue={`$ ${
                       amount * moreCoinInfo[0].quote.USD.price.toFixed(4)
                     }`}
                   />
