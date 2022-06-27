@@ -36,6 +36,8 @@ const SingleCoinPage = () => {
   const total = moreCoinInfo && 100 * moreCoinInfo[0].quote.USD.price
   const config = {
     data,
+    height: 400,
+    width: 400,
     xField: 'trade_date',
     yField: ['open', 'close', 'high', 'low'],
   }
