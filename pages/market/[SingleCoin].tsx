@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { Row, Col, Button, Input, Spin } from 'antd'
+import { Row, Col, Button, Input, Spin, Breadcrumb } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons'
 import { Stock } from '@ant-design/plots'
 import Layout from '../../containers/layout/Layout'
@@ -48,47 +48,19 @@ const SingleCoinPage = () => {
         <Row justify="center">
           {coinData ? (
             <>
-              <Col
-                xs={23}
-                sm={23}
-                md={23}
-                lg={23}
-                xl={19}
-                className="button-list-single-coin"
-              >
-                <Button size="large" className="button">
-                  Overview
-                </Button>
-                <Button size="large" className="button-outline">
-                  Market
-                </Button>
-                <Button size="large" className="button-outline">
-                  Historical Data
-                </Button>
-                <Button size="large" className="button-outline">
-                  Holders
-                </Button>
-                <Button size="large" className="button-outline">
-                  Project Information
-                </Button>
-                <Button size="large" className="button-outline">
-                  Wallets
-                </Button>
-                <Button size="large" className="button-outline">
-                  News
-                </Button>
-                <Button size="large" className="button-outline">
-                  Social Media
-                </Button>
-                <Button size="large" className="button-outline">
-                  Ratings
-                </Button>
-                <Button size="large" className="button-outline">
-                  Analysis
-                </Button>
-                <Button size="large" className="button-outline">
-                  Price Estimates
-                </Button>
+              <Col xs={19}>
+                <Breadcrumb>
+                  <Breadcrumb.Item>Home</Breadcrumb.Item>
+                  <Breadcrumb.Item>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a href="">Application Center</a>
+                  </Breadcrumb.Item>
+                  <Breadcrumb.Item>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a href="">Application List</a>
+                  </Breadcrumb.Item>
+                  <Breadcrumb.Item>An Application</Breadcrumb.Item>
+                </Breadcrumb>
               </Col>
               <Col
                 xs={23}

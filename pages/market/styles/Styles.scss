@@ -76,12 +76,13 @@ $primary-color: #f3ba2f;
     background-color: #701b1b;
   }
 }
-.button-list-single-coin{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
+// .button-list-single-coin{
+//   margin-top: 20px;
+//   margin-bottom: 30px;
+//   button{
+//     margin: 2px;
+//   }
+// }
 .info-section-single-coin{
   &> p{
     color: #fff;
@@ -131,4 +132,22 @@ $primary-color: #f3ba2f;
 }
 .market-table-loading-spinner{
   margin: 60px;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+@media screen and (min-width: 769px) and (max-width: 900px) {
+
+}
+@media screen and (min-width: 901px) and (max-width: 1199px) {
+
+}
+@media screen and (min-width: 1200px){
+  // .button-list-single-coin{
+  //   display: flex;
+  //   justify-content: space-around;
+  // }
 }
