@@ -50,52 +50,52 @@ const SingleCoinPage = () => {
             <>
               <Col
                 xs={23}
-                sm={18}
-                md={18}
-                lg={18}
-                xl={18}
+                sm={23}
+                md={23}
+                lg={23}
+                xl={19}
                 className="button-list-single-coin"
               >
                 <Button size="large" className="button">
                   Overview
-                </Button>{' '}
+                </Button>
                 <Button size="large" className="button-outline">
                   Market
-                </Button>{' '}
+                </Button>
                 <Button size="large" className="button-outline">
                   Historical Data
-                </Button>{' '}
+                </Button>
                 <Button size="large" className="button-outline">
                   Holders
-                </Button>{' '}
+                </Button>
                 <Button size="large" className="button-outline">
-                  Project Info
-                </Button>{' '}
+                  Project Information
+                </Button>
                 <Button size="large" className="button-outline">
                   Wallets
-                </Button>{' '}
+                </Button>
                 <Button size="large" className="button-outline">
                   News
-                </Button>{' '}
+                </Button>
                 <Button size="large" className="button-outline">
-                  Socials
-                </Button>{' '}
+                  Social Media
+                </Button>
                 <Button size="large" className="button-outline">
                   Ratings
-                </Button>{' '}
+                </Button>
                 <Button size="large" className="button-outline">
                   Analysis
-                </Button>{' '}
+                </Button>
                 <Button size="large" className="button-outline">
                   Price Estimates
                 </Button>
               </Col>
               <Col
                 xs={23}
-                sm={18}
-                md={18}
-                lg={18}
-                xl={18}
+                sm={23}
+                md={23}
+                lg={23}
+                xl={19}
                 className="info-section-single-coin"
               >
                 <div className="info-header-single-coin">
@@ -135,15 +135,15 @@ const SingleCoinPage = () => {
                 </div>
                 <p>{coinData.data[coinId].description}</p>
               </Col>
-              <Col xs={24} sm={18} md={18} lg={18} xl={12}>
+              <Col xs={24} sm={23} md={23} lg={14} xl={12}>
                 <Stock {...config} />
               </Col>
               <Col
-                xs={24}
-                sm={18}
-                md={18}
-                lg={18}
-                xl={6}
+                xs={23}
+                sm={23}
+                md={15}
+                lg={9}
+                xl={7}
                 className="detail-single-coin"
               >
                 <h4>Trade Calculater</h4>

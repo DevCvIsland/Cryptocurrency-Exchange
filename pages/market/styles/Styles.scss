@@ -77,6 +77,8 @@ $primary-color: #f3ba2f;
   }
 }
 .button-list-single-coin{
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 30px;
 }
