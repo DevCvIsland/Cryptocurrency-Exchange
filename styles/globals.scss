@@ -139,3 +139,10 @@ body {
   background-color: $primary-color !important;
   border-color: $primary-color !important; 
 }
+.ant-breadcrumb,
+.ant-breadcrumb a,
+.ant-breadcrumb > span:last-child,
+.ant-breadcrumb-separator{
+  color: #999;
+  font-weight: 550;
+}

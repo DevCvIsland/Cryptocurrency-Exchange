@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Row, Col, Button, Input, Spin, Breadcrumb } from 'antd'
+import { Row, Col, Button, Input, Spin, Breadcrumb, Divider } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons'
 import { Stock } from '@ant-design/plots'
 import Layout from '../../containers/layout/Layout'
@@ -48,19 +49,19 @@ const SingleCoinPage = () => {
         <Row justify="center">
           {coinData ? (
             <>
-              <Col xs={19}>
+              <Col xs={19} className="single-coin-breadcrumb">
                 <Breadcrumb>
-                  <Breadcrumb.Item>Home</Breadcrumb.Item>
                   <Breadcrumb.Item>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a href="">Application Center</a>
+                    <Link href="/market">Market</Link>
                   </Breadcrumb.Item>
                   <Breadcrumb.Item>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a href="">Application List</a>
+                    <Link href="/market">Cryptocurrencies</Link>
                   </Breadcrumb.Item>
-                  <Breadcrumb.Item>An Application</Breadcrumb.Item>
+                  <Breadcrumb.Item>
+                    {coinData.data[coinId].name}
+                  </Breadcrumb.Item>
                 </Breadcrumb>
+                <Divider />
               </Col>
               <Col
                 xs={23}

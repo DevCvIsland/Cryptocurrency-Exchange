@@ -179,4 +179,12 @@ body {
   background-color: #f3ba2f !important;
   border-color: #f3ba2f !important;
 }
+
+.ant-breadcrumb,
+.ant-breadcrumb a,
+.ant-breadcrumb > span:last-child,
+.ant-breadcrumb-separator {
+  color: #999;
+  font-weight: 550;
+}
 /*# sourceMappingURL=globals.css.map */

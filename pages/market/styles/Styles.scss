@@ -76,13 +76,9 @@ $primary-color: #f3ba2f;
     background-color: #701b1b;
   }
 }
-// .button-list-single-coin{
-//   margin-top: 20px;
-//   margin-bottom: 30px;
-//   button{
-//     margin: 2px;
-//   }
-// }
+.single-coin-breadcrumb{
+    margin-top: 20px;
+}
 .info-section-single-coin{
   &> p{
     color: #fff;
@@ -146,8 +142,5 @@ $primary-color: #f3ba2f;
 
 }
 @media screen and (min-width: 1200px){
-  // .button-list-single-coin{
-  //   display: flex;
-  //   justify-content: space-around;
-  // }
+
 }

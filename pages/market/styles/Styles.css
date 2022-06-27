@@ -95,6 +95,10 @@
   background-color: #701b1b;
 }
 
+.single-coin-breadcrumb {
+  margin-top: 20px;
+}
+
 .info-section-single-coin > p {
   color: #fff;
   font-size: 16px;
