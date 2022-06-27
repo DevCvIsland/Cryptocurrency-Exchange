@@ -30,11 +30,18 @@
   transform: rotate(0deg);
 }
 
+.title-banner-container {
+  width: 360px !important;
+  text-align: center !important;
+}
+
 @media screen and (min-width: 0px) and (max-width: 576px) {
-  .title-banner-text {
+  .title-banner-container {
     position: absolute;
     top: 185px;
-    left: 15%;
+    left: 0%;
+  }
+  .title-banner-text {
     color: #fff;
     font-size: 50px;
     font-weight: 600;
@@ -45,10 +52,12 @@
 }
 
 @media screen and (min-width: 577px) and (max-width: 900px) {
-  .title-banner-text {
+  .title-banner-container {
     position: absolute;
     top: 185px;
     left: 32%;
+  }
+  .title-banner-text {
     color: #fff;
     font-size: 50px;
     font-weight: 600;
@@ -59,10 +68,12 @@
 }
 
 @media screen and (min-width: 901px) {
-  .title-banner-text {
+  .title-banner-container {
     position: absolute;
     top: 185px;
-    left: 41%;
+    left: 38%;
+  }
+  .title-banner-text {
     color: #fff;
     font-size: 50px;
     font-weight: 600;

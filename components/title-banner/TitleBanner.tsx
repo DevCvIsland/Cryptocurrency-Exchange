@@ -8,10 +8,12 @@ const TitleBanner = ({ firstTitle, lastTitle }: TitleBannerProps) => {
   return (
     <>
       <div className="flex-row title-banner-section" />
-      <h2 className="title-banner-text">
-        {firstTitle}
-        <span className="theme-primary-color">{lastTitle}</span>
-      </h2>
+      <div className="title-banner-container">
+        <h2 className="title-banner-text">
+          {firstTitle}
+          <span className="theme-primary-color">{lastTitle}</span>
+        </h2>
+      </div>
     </>
   )
 }
