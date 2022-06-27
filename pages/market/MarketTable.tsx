@@ -48,6 +48,12 @@ const MarketTable = () => {
         key: `${coin.id}`,
         name: (
           <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="table-logo-item"
+              src={`https://s2.coinmarketcap.com/static/img/coins/32x32/${coin.id}.png`}
+              alt="logo"
+            />
             <p className="table-name-item">{coin.name}</p>
             <span className="table-symbol-item">/ {coin.symbol}</span>
           </>
