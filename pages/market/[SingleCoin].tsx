@@ -12,6 +12,7 @@ import {
   useGetCryptosInfoQuery,
 } from '../../services/CryptoApi'
 import Head from '../../containers/head/Head'
+import numberWithCommas from '../../utils/Utils'
 
 const antIcon = (
   <LoadingOutlined spin style={{ fontSize: 75, color: '#f3ba2f' }} />
@@ -39,11 +40,7 @@ const SingleCoinPage = () => {
     yField: ['open', 'close', 'high', 'low'],
   }
 
-  const numberWithCommas = (x: number) => {
-    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')
-  }
-
-  console.log('numberWithCommas', numberWithCommas(21548))
+  // console.log('numberWithCommas', numberWithCommas(21548))
 
   return (
     <>
@@ -91,8 +88,12 @@ const SingleCoinPage = () => {
                     <p>
                       $
                       {moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
-                        ? moreCoinInfo[0].quote.USD.price.toFixed(2)
-                        : moreCoinInfo[0].quote.USD.price.toFixed(6)}
+                        ? numberWithCommas(
+                            moreCoinInfo[0].quote.USD.price.toFixed(2)
+                          )
+                        : numberWithCommas(
+                            moreCoinInfo[0].quote.USD.price.toFixed(6)
+                          )}
                     </p>
                     <div
                       className={`${
@@ -144,13 +145,19 @@ const SingleCoinPage = () => {
                     <Input
                       defaultValue={
                         moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
-                          ? `$ ${moreCoinInfo[0].quote.USD.price.toFixed(2)}`
-                          : `$ ${moreCoinInfo[0].quote.USD.price.toFixed(5)}`
+                          ? `$ ${numberWithCommas(
+                              moreCoinInfo[0].quote.USD.price.toFixed(2)
+                            )}`
+                          : `$ ${numberWithCommas(
+                              moreCoinInfo[0].quote.USD.price.toFixed(5)
+                            )}`
                       }
                     />
                     <Input
                       defaultValue={`$ ${
-                        total > 1 ? total.toFixed(2) : total.toFixed(6)
+                        total > 1
+                          ? numberWithCommas(total.toFixed(2))
+                          : numberWithCommas(total.toFixed(6))
                       }`}
                     />
                   </div>
