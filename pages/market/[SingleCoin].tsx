@@ -39,6 +39,12 @@ const SingleCoinPage = () => {
     yField: ['open', 'close', 'high', 'low'],
   }
 
+  const numberWithCommas = (x: number) => {
+    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')
+  }
+
+  console.log('numberWithCommas', numberWithCommas(21548))
+
   return (
     <>
       <Head title={coinData ? coinData.data[coinId].name : 'Loading...'} />
