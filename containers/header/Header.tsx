@@ -70,6 +70,10 @@ const Header = () => {
           <Menu.Item
             className={`menu-item ${
               router.pathname === `/${item.key}` ? 'active-menu-item' : ''
+            } ${
+              item.key !== '' && router.pathname.includes(`${item.key}`)
+                ? 'active-menu-item'
+                : ''
             }`}
             key={item.key}
           >

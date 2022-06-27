@@ -91,9 +91,7 @@ const SingleCoinPage = () => {
                         ? numberWithCommas(
                             moreCoinInfo[0].quote.USD.price.toFixed(2)
                           )
-                        : numberWithCommas(
-                            moreCoinInfo[0].quote.USD.price.toFixed(6)
-                          )}
+                        : moreCoinInfo[0].quote.USD.price.toFixed(6)}
                     </p>
                     <div
                       className={`${
@@ -148,16 +146,14 @@ const SingleCoinPage = () => {
                           ? `$ ${numberWithCommas(
                               moreCoinInfo[0].quote.USD.price.toFixed(2)
                             )}`
-                          : `$ ${numberWithCommas(
-                              moreCoinInfo[0].quote.USD.price.toFixed(5)
-                            )}`
+                          : `$ ${moreCoinInfo[0].quote.USD.price.toFixed(5)}`
                       }
                     />
                     <Input
                       defaultValue={`$ ${
                         total > 1
                           ? numberWithCommas(total.toFixed(2))
-                          : numberWithCommas(total.toFixed(6))
+                          : total.toFixed(6)
                       }`}
                     />
                   </div>

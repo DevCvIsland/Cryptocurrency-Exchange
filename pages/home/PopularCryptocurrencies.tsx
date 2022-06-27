@@ -2,6 +2,7 @@ import { Row, Col, Button, Table, Spin } from 'antd'
 import { RightOutlined, LoadingOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 import { useGetCryptosQuery } from '../../services/CryptoApi'
+import numberWithCommas from '../../utils/Utils'
 
 const columns = [
   {
@@ -46,6 +47,12 @@ const PopularCryptocurrencies = () => {
           key: `${coin.id}`,
           name: (
             <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="table-logo-item"
+                src={`https://s2.coinmarketcap.com/static/img/coins/32x32/${coin.id}.png`}
+                alt="logo"
+              />
               <p className="table-name-item">{coin.name}</p>
               <span className="table-symbol-item">/ {coin.symbol}</span>
             </>
@@ -54,7 +61,7 @@ const PopularCryptocurrencies = () => {
             <p className="table-number-item">
               $
               {coin.quote.USD.price > 1
-                ? coin.quote.USD.price.toFixed(2)
+                ? numberWithCommas(coin.quote.USD.price.toFixed(2))
                 : coin.quote.USD.price.toFixed(6)}
             </p>
           ),
@@ -74,7 +81,7 @@ const PopularCryptocurrencies = () => {
           ),
           marketCap: (
             <p className="table-number-item">
-              ${coin.quote.USD.market_cap.toFixed(0)}
+              ${numberWithCommas(coin.quote.USD.market_cap.toFixed(0))}
             </p>
           ),
         }))
@@ -87,7 +94,7 @@ const PopularCryptocurrencies = () => {
         {/* eslint-disable-next-line @next/next/link-passhref */}
         <Link href="./market">
           <Button type="link">
-            View more markets <RightOutlined />
+            View Market <RightOutlined />
           </Button>
         </Link>
       </Col>
