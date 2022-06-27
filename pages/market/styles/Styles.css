@@ -167,4 +167,33 @@
 .market-table-loading-spinner {
   margin: 60px;
 }
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .info-header-single-coin {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .info-header-single-coin .price-info-single-coin {
+    margin-top: 20px;
+  }
+  .detail-single-coin {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .detail-single-coin {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
 /*# sourceMappingURL=Styles.css.map */

@@ -40,8 +40,6 @@ const SingleCoinPage = () => {
     yField: ['open', 'close', 'high', 'low'],
   }
 
-  // console.log('numberWithCommas', numberWithCommas(21548))
-
   return (
     <>
       <Head title={coinData ? coinData.data[coinId].name : 'Loading...'} />
@@ -52,7 +50,14 @@ const SingleCoinPage = () => {
         <Row justify="center">
           {coinData ? (
             <>
-              <Col xs={19} className="single-coin-breadcrumb">
+              <Col
+                xs={23}
+                sm={23}
+                md={23}
+                lg={23}
+                xl={19}
+                className="single-coin-breadcrumb"
+              >
                 <Breadcrumb>
                   <Breadcrumb.Item>
                     <Link href="/market">Market</Link>

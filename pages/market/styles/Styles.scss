@@ -129,18 +129,23 @@ $primary-color: #f3ba2f;
 .market-table-loading-spinner{
   margin: 60px;
 }
-@media screen and (min-width: 0px) and (max-width: 480px) {
-
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .info-header-single-coin{
+    width: max-content;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    .price-info-single-coin{
+      margin-top: 20px;
+    }
+  }
+  .detail-single-coin{
+    margin-top: 50px;
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 900px) {
-
-}
-@media screen and (min-width: 901px) and (max-width: 1199px) {
-
-}
-@media screen and (min-width: 1200px){
-
+  .detail-single-coin{
+    margin-top: 50px;
+    margin-left: 0;
+  }
 }
