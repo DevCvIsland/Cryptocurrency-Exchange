@@ -1,4 +1,4 @@
-// import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Table, Button } from 'antd'
 import Link from 'next/link'
 import { useGetCryptosQuery } from '../../services/CryptoApi'
@@ -39,14 +39,15 @@ const columns = [
 ]
 
 const MarketTable = () => {
-  // const [apiData, setApiData] = useState()
-  const { data } = useGetCryptosQuery({})
-  // const { data } = useGetCryptosQuery('', { pollingInterval: 3000 })
-  // eslint-disable-next-line no-console
-  console.log(data, 'data')
+  const { data } = useGetCryptosQuery({}, { pollingInterval: 5000 })
+  const [apiData, setApiData] = useState(data)
+  useEffect(() => {
+    setApiData(data)
+  }, [data])
+  console.log('apiData', apiData)
 
-  const dataSource = data
-    ? data.data.map((coin: any) => ({
+  const dataSource = apiData
+    ? apiData.data.map((coin: any) => ({
         key: `${coin.id}`,
         name: (
           <>
