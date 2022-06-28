@@ -172,10 +172,6 @@
   margin: 150px;
 }
 
-.market-table-loading-spinner {
-  margin: 60px;
-}
-
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .info-header-single-coin {
     width: -webkit-max-content;
