@@ -38,9 +38,7 @@ const HomeTableSkeleton = () => {
     <Table
       dataSource={dataSource}
       columns={columns}
-      pagination={{
-        position: ['bottomCenter'],
-      }}
+      pagination={false}
       scroll={{ x: 'max-content' }}
     />
   )
