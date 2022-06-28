@@ -11,23 +11,30 @@ const Market = () => {
       <Head title="Market" />
       <Layout>
         <TitleBanner firstTitle="Market" lastTitle="Crypto" />
-        <Row justify="space-around" className="Markets-section">
-          <Col xs={22} sm={13} md={10} lg={10} xl={11}>
+        <Row justify="space-around" className="market-section">
+          <Col
+            xs={22}
+            sm={13}
+            md={10}
+            lg={10}
+            xl={11}
+            className="market-button-list"
+          >
             <Button size="large" className="button">
               All
-            </Button>{' '}
+            </Button>
             <Button size="large" className="button-outline">
               Cryptocurrencies
-            </Button>{' '}
+            </Button>
             <Button size="large" className="button-outline">
               Exchanges
-            </Button>{' '}
+            </Button>
             <Button size="large" className="button-outline">
               Metaverse
-            </Button>{' '}
+            </Button>
             <Button size="large" className="button-outline">
               NFT
-            </Button>{' '}
+            </Button>
             <Button size="large" className="button-outline">
               Gaming
             </Button>

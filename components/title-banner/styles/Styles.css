@@ -48,11 +48,8 @@
 
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .title-banner-container {
-    width: 320px;
-    left: 12%;
-  }
-  .title-banner-text {
-    font-size: 44px !important;
+    width: 300px;
+    left: 9%;
   }
 }
 
@@ -63,14 +60,28 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 900px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .title-banner-container {
     width: 320px;
     left: 25%;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .title-banner-container {
+    width: 320px;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .title-banner-container {
+    width: 320px;
+    left: 33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .title-banner-container {
     width: 360px !important;
     left: 38%;

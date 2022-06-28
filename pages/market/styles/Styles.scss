@@ -1,9 +1,15 @@
 $primary-color: #f3ba2f;
 
-.Markets-section{
+.market-section{
   margin: 50px 0px;
   h2{
     color: #fff;
+  }
+}
+.market-button-list{
+  margin-bottom: 20px;
+  button{
+    margin: 2px;
   }
 }
 .market-table-button{

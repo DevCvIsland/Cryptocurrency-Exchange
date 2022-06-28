@@ -1,9 +1,17 @@
-.Markets-section {
+.market-section {
   margin: 50px 0px;
 }
 
-.Markets-section h2 {
+.market-section h2 {
   color: #fff;
+}
+
+.market-button-list {
+  margin-bottom: 20px;
+}
+
+.market-button-list button {
+  margin: 2px;
 }
 
 .market-table-button {
