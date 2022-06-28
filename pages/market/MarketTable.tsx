@@ -1,8 +1,8 @@
-import { Table, Button, Spin } from 'antd'
-import { LoadingOutlined } from '@ant-design/icons'
+import { Table, Button } from 'antd'
 import Link from 'next/link'
 import { useGetCryptosQuery } from '../../services/CryptoApi'
 import numberWithCommas from '../../utils/Utils'
+import SkeletonTable from './MarketTableSkeleton'
 
 const columns = [
   {
@@ -36,10 +36,6 @@ const columns = [
     key: 'action',
   },
 ]
-
-const antIcon = (
-  <LoadingOutlined spin style={{ fontSize: 75, color: '#f3ba2f' }} />
-)
 
 const MarketTable = () => {
   const { data } = useGetCryptosQuery({})
@@ -115,11 +111,7 @@ const MarketTable = () => {
           scroll={{ x: 'max-content' }}
         />
       ) : (
-        <Spin
-          className="market-table-loading-spinner"
-          size="large"
-          indicator={antIcon}
-        />
+        <SkeletonTable />
       )}
     </>
   )

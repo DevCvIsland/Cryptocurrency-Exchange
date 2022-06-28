@@ -1,8 +1,9 @@
-import { Row, Col, Button, Table, Spin } from 'antd'
-import { RightOutlined, LoadingOutlined } from '@ant-design/icons'
+import { Row, Col, Button, Table } from 'antd'
+import { RightOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 import { useGetCryptosQuery } from '../../services/CryptoApi'
 import numberWithCommas from '../../utils/Utils'
+import SkeletonTable from './HomeTableSkeleton'
 
 const columns = [
   {
@@ -26,10 +27,6 @@ const columns = [
     key: 'marketCap',
   },
 ]
-
-const antIcon = (
-  <LoadingOutlined spin style={{ fontSize: 75, color: '#f3ba2f' }} />
-)
 
 const PopularCryptocurrencies = () => {
   const { data } = useGetCryptosQuery({})
@@ -107,11 +104,7 @@ const PopularCryptocurrencies = () => {
             scroll={{ x: 'max-content' }}
           />
         ) : (
-          <Spin
-            className="home-table-loading-spinner"
-            size="large"
-            indicator={antIcon}
-          />
+          <SkeletonTable />
         )}
       </Col>
       <Col xs={20} className="popular-cryptocurrencies-footer-section">
