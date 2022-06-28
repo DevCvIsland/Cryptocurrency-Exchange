@@ -39,12 +39,11 @@ const columns = [
 ]
 
 const MarketTable = () => {
-  const { data } = useGetCryptosQuery({}, { pollingInterval: 5000 })
+  const { data } = useGetCryptosQuery({}, { pollingInterval: 30000 })
   const [apiData, setApiData] = useState(data)
   useEffect(() => {
     setApiData(data)
   }, [data])
-  console.log('apiData', apiData)
 
   const dataSource = apiData
     ? apiData.data.map((coin: any) => ({
