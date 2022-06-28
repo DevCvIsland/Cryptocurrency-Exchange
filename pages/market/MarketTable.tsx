@@ -42,7 +42,7 @@ const MarketTable = () => {
   // const [apiData, setApiData] = useState()
   const { data } = useGetCryptosQuery({})
   // const { data } = useGetCryptosQuery('', { pollingInterval: 3000 })
-
+  // eslint-disable-next-line no-console
   console.log(data, 'data')
 
   const dataSource = data
