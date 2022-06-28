@@ -44,14 +44,12 @@ const SingleCoinPage = () => {
 
   return (
     <>
-      <Head title={coinData ? coinData.data[coinId].name : 'Loading...'} />
+      <Head title={coinData ? coinData.data[coinId].name : 'Market'} />
       <Layout>
-        <TitleBanner
-          lastTitle={coinData ? coinData.data[coinId].name : 'Loading...'}
-        />
-        <Row justify="center">
-          {coinData ? (
-            <>
+        {coinData ? (
+          <>
+            <TitleBanner lastTitle={coinData.data[coinId].name} />
+            <Row justify="center">
               <Col
                 xs={23}
                 sm={23}
@@ -172,15 +170,17 @@ const SingleCoinPage = () => {
                   Sell
                 </Button>
               </Col>
-            </>
-          ) : (
+            </Row>
+          </>
+        ) : (
+          <Row justify="center">
             <Spin
               className="single-coin-loading-spinner"
               size="large"
               indicator={antIcon}
             />
-          )}
-        </Row>
+          </Row>
+        )}
       </Layout>
     </>
   )
