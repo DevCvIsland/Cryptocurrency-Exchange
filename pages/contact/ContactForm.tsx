@@ -27,9 +27,11 @@ const FormItem = ({ type, children }: FormItemProps) => {
 
 const ContactForm = () => {
   const onFinish = (values: any) => {
+    // eslint-disable-next-line no-console
     console.log('Success:', values)
   }
   const onFinishFailed = (errorInfo: any) => {
+    // eslint-disable-next-line no-console
     console.log('Failed:', errorInfo)
   }
 
