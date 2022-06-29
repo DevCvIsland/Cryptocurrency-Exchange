@@ -47,10 +47,6 @@ const MarketTable = () => {
   useEffect(() => {
     setApiData(data)
   }, [data])
-  // const isFetching = true
-  console.log('fetching', isFetching)
-  console.log('apiData', apiData)
-
   const dataSource = apiData
     ? apiData.data.map((coin: any) => ({
         key: `${coin.id}`,

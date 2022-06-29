@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Row, Col, Button, Table } from 'antd'
 import { RightOutlined } from '@ant-design/icons'
 import Link from 'next/link'
@@ -29,9 +30,16 @@ const columns = [
 ]
 
 const PopularCryptocurrencies = () => {
-  const { data } = useGetCryptosQuery({})
-  const dataSource = data
-    ? data.data
+  const { data, isFetching } = useGetCryptosQuery(
+    {},
+    { pollingInterval: 60000 }
+  )
+  const [apiData, setApiData] = useState(data)
+  useEffect(() => {
+    setApiData(data)
+  }, [data])
+  const dataSource = apiData
+    ? apiData.data
         .filter(
           (coin: any) =>
             coin.symbol === 'BTC' ||
@@ -55,7 +63,11 @@ const PopularCryptocurrencies = () => {
             </>
           ),
           price: (
-            <p className="table-number-item">
+            <p
+              className={`table-number-item ${
+                isFetching ? 'table-fetching-item' : ''
+              }`}
+            >
               $
               {coin.quote.USD.price > 1
                 ? numberWithCommas(coin.quote.USD.price.toFixed(2))
@@ -68,7 +80,7 @@ const PopularCryptocurrencies = () => {
                 coin.quote.USD.percent_change_24h >= 0
                   ? 'positive-color'
                   : 'negative-color'
-              }`}
+              } ${isFetching ? 'table-fetching-item' : ''}`}
             >
               {coin.quote.USD.percent_change_24h >= 0
                 ? `+${coin.quote.USD.percent_change_24h.toFixed(2)}`
@@ -77,7 +89,11 @@ const PopularCryptocurrencies = () => {
             </p>
           ),
           marketCap: (
-            <p className="table-number-item">
+            <p
+              className={`table-number-item ${
+                isFetching ? 'table-fetching-item' : ''
+              }`}
+            >
               ${numberWithCommas(coin.quote.USD.market_cap.toFixed(0))}
             </p>
           ),
