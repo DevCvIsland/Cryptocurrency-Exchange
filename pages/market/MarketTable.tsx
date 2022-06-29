@@ -39,11 +39,17 @@ const columns = [
 ]
 
 const MarketTable = () => {
-  const { data } = useGetCryptosQuery({}, { pollingInterval: 30000 })
+  const { data, isFetching } = useGetCryptosQuery(
+    {},
+    { pollingInterval: 60000 }
+  )
   const [apiData, setApiData] = useState(data)
   useEffect(() => {
     setApiData(data)
   }, [data])
+  // const isFetching = true
+  console.log('fetching', isFetching)
+  console.log('apiData', apiData)
 
   const dataSource = apiData
     ? apiData.data.map((coin: any) => ({
@@ -61,7 +67,11 @@ const MarketTable = () => {
           </>
         ),
         price: (
-          <p className="table-number-item">
+          <p
+            className={`table-number-item ${
+              isFetching ? 'table-fetching-item' : ''
+            }`}
+          >
             $
             {coin.quote.USD.price > 1
               ? numberWithCommas(coin.quote.USD.price.toFixed(2))
@@ -74,7 +84,7 @@ const MarketTable = () => {
               coin.quote.USD.percent_change_24h >= 0
                 ? 'positive-color'
                 : 'negative-color'
-            }`}
+            } ${isFetching ? 'table-fetching-item' : ''}`}
           >
             {coin.quote.USD.percent_change_24h >= 0
               ? `+${coin.quote.USD.percent_change_24h.toFixed(2)}`
@@ -83,12 +93,20 @@ const MarketTable = () => {
           </p>
         ),
         volumeOf24h: (
-          <p className="table-number-item">
+          <p
+            className={`table-number-item ${
+              isFetching ? 'table-fetching-item' : ''
+            }`}
+          >
             ${numberWithCommas(coin.quote.USD.volume_24h.toFixed(0))}
           </p>
         ),
         marketCap: (
-          <p className="table-number-item">
+          <p
+            className={`table-number-item ${
+              isFetching ? 'table-fetching-item' : ''
+            }`}
+          >
             ${numberWithCommas(coin.quote.USD.market_cap.toFixed(0))}
           </p>
         ),

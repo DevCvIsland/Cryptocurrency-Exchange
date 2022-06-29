@@ -58,12 +58,14 @@ body {
   width: 32px !important;
   height: 32px !important;
   margin-right: 7px;
+  margin-bottom: 7px;
 }
 .table-name-item{
   display: inline !important;
   font-size: 20px !important;
   font-weight: 550 !important;
   margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 .table-symbol-item{
   color: #999 !important;
@@ -73,6 +75,9 @@ body {
 .table-number-item{
   font-size: 18px !important;
   margin: 0px !important;
+}
+.table-fetching-item{
+  background-color: #999 !important;
 }
 .ant-menu-item-selected {
   background-color: transparent !important;
