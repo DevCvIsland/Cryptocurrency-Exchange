@@ -22,7 +22,7 @@ const PersonContainer = ({ image, name, direction }: PersonContainerProps) => {
       <Image src={image} alt="Bitcoin Image" width={265} height={330} />
       <h3>{name}</h3>
       <p>{direction}</p>
-      <div>
+      <div className="social-icon-hover">
         <LinkedinOutlined />
         <FacebookOutlined />
         <TwitterOutlined />

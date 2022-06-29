@@ -140,6 +140,7 @@
   max-width: 265px !important;
   background-color: #1d1d1d;
   margin: 20px 20px;
+  position: relative;
 }
 
 .person-container h3 {
@@ -164,5 +165,28 @@
 
 .person-container:hover p {
   color: #000;
+}
+
+.person-container:hover .social-icon-hover {
+  display: block;
+}
+
+.social-icon-hover {
+  position: absolute;
+  top: 40%;
+  display: none;
+}
+
+.social-icon-hover span svg {
+  padding: 0px !important;
+  font-size: 35px;
+  margin: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f3ba2f;
+}
+
+.social-icon-hover span svg:hover {
+  background-color: #fff !important;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Styles.css.map */
