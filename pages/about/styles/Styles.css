@@ -151,4 +151,18 @@
 .person-container p {
   color: #999;
 }
+
+.person-container:hover {
+  background-color: #f3ba2f;
+  cursor: pointer;
+}
+
+.person-container:hover h3 {
+  color: #000;
+  font-weight: 600;
+}
+
+.person-container:hover p {
+  color: #000;
+}
 /*# sourceMappingURL=Styles.css.map */

@@ -1,4 +1,9 @@
 import { Row, Col } from 'antd'
+import {
+  LinkedinOutlined,
+  FacebookOutlined,
+  TwitterOutlined,
+} from '@ant-design/icons'
 import Image from 'next/image'
 import MemberOne from '../../assets/person/member1.jpg'
 import MemberTwo from '../../assets/person/member2.jpg'
@@ -17,6 +22,11 @@ const PersonContainer = ({ image, name, direction }: PersonContainerProps) => {
       <Image src={image} alt="Bitcoin Image" width={265} height={330} />
       <h3>{name}</h3>
       <p>{direction}</p>
+      <div>
+        <LinkedinOutlined />
+        <FacebookOutlined />
+        <TwitterOutlined />
+      </div>
     </Col>
   )
 }

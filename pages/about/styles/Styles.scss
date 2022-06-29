@@ -138,4 +138,15 @@ $primary-color: #f3ba2f;
   p {
     color: #999;
   }
+  &:hover{
+    background-color: $primary-color;
+    cursor: pointer;
+    h3{
+      color: #000;
+      font-weight: 600;
+    }
+    p{
+      color: #000;
+    }
+  }
 }
