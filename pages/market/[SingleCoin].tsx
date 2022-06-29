@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Row, Col, Button, Input, Spin, Breadcrumb, Divider } from 'antd'
@@ -22,14 +22,21 @@ const SingleCoinPage = () => {
   const router = useRouter()
   const { SingleCoin } = router.query
   const { data: coinData } = useGetCryptosInfoQuery(SingleCoin)
-  const { data: moreData } = useGetCryptosQuery({})
+  const { data: moreData, isFetching } = useGetCryptosQuery(
+    {},
+    { pollingInterval: 60000 }
+  )
+  const [apiData, setApiData] = useState(moreData)
+  useEffect(() => {
+    setApiData(moreData)
+  }, [moreData])
   // eslint-disable-next-line no-console
   console.log('coinData', coinData)
   const coinId = coinData ? Object.keys(coinData.data)[0] : 1
   const moreCoinInfo =
-    coinData && moreData
+    coinData && apiData
       ? // eslint-disable-next-line eqeqeq
-        moreData.data.filter((coin: any) => coin.id == coinId)
+        apiData.data.filter((coin: any) => coin.id == coinId)
       : null
   // eslint-disable-next-line no-console
   console.log('moreCoinInfo', moreCoinInfo)
@@ -90,7 +97,7 @@ const SingleCoinPage = () => {
                     <span>{coinData.data[coinId].symbol}</span>
                   </div>
                   <div className="price-info-single-coin">
-                    <p>
+                    <p className={isFetching ? 'table-fetching-item' : ''}>
                       $
                       {moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
                         ? numberWithCommas(
@@ -103,7 +110,7 @@ const SingleCoinPage = () => {
                         moreCoinInfo[0].quote.USD.percent_change_24h >= 0
                           ? 'positive-background-color'
                           : 'negative-background-color'
-                      }`}
+                      } ${isFetching ? 'table-fetching-item' : ''}`}
                     >
                       {moreCoinInfo[0].quote.USD.percent_change_24h >= 0
                         ? `+${moreCoinInfo[0].quote.USD.percent_change_24h.toFixed(
