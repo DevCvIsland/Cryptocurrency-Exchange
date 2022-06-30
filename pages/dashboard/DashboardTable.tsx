@@ -59,7 +59,7 @@ const dataSource = [
     ),
     amount: <p className="table-number-item">10.581</p>,
     price: <p className="table-number-item">$1,094.94</p>,
-    date: <p className="table-number-item">2022/06/10 - 13:55</p>,
+    date: <p className="table-number-item">2022/05/24 - 13:55</p>,
   },
   {
     key: '3',
@@ -77,7 +77,7 @@ const dataSource = [
     ),
     amount: <p className="table-number-item">46.512</p>,
     price: <p className="table-number-item">$0.064566</p>,
-    date: <p className="table-number-item">2022/06/10 - 13:55</p>,
+    date: <p className="table-number-item">2022/04/08 - 13:55</p>,
   },
 ]
 
