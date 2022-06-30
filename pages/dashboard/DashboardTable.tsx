@@ -36,12 +36,12 @@ const dataSource = [
           className="table-logo-item"
         />
         <p className="table-name-item">Bitcoin</p>
-        <span className="table-symbol-item">BTC</span>
+        <span className="table-symbol-item">/ BTC</span>
       </>
     ),
-    amount: '2.844',
-    price: '$30000.49',
-    date: '2022/06/10 - 13:55',
+    amount: <p className="table-number-item">8.619</p>,
+    price: <p className="table-number-item">$20,049.97</p>,
+    date: <p className="table-number-item">2022/06/10 - 13:55</p>,
   },
   {
     key: '2',
@@ -49,17 +49,17 @@ const dataSource = [
       <>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://s2.coinmarketcap.com/static/img/coins/32x32/2.png"
+          src="https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png"
           alt="logo"
           className="table-logo-item"
         />
-        <p className="table-name-item">Etherium</p>
+        <p className="table-name-item">Ethereum</p>
         <span className="table-symbol-item">/ ETH</span>
       </>
     ),
-    amount: '7.214',
-    price: '$1800.37',
-    date: '2022/05/18 - 17:38',
+    amount: <p className="table-number-item">10.581</p>,
+    price: <p className="table-number-item">$1,094.94</p>,
+    date: <p className="table-number-item">2022/06/10 - 13:55</p>,
   },
   {
     key: '3',
@@ -67,17 +67,17 @@ const dataSource = [
       <>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://s2.coinmarketcap.com/static/img/coins/32x32/5.png"
+          src="https://s2.coinmarketcap.com/static/img/coins/32x32/1958.png"
           alt="logo"
           className="table-logo-item"
         />
-        <p className="table-name-item">Cardano</p>
-        <span className="table-symbol-item">/ ADA</span>
+        <p className="table-name-item">Tron</p>
+        <span className="table-symbol-item">/ TRX</span>
       </>
     ),
-    amount: '10.670',
-    price: '$0.750',
-    date: '2022/04/15 - 21:46',
+    amount: <p className="table-number-item">46.512</p>,
+    price: <p className="table-number-item">$0.064566</p>,
+    date: <p className="table-number-item">2022/06/10 - 13:55</p>,
   },
 ]
 
@@ -88,9 +88,7 @@ const DashboardTable = () => {
       <Table
         dataSource={dataSource}
         columns={columns}
-        pagination={{
-          position: ['bottomCenter'],
-        }}
+        pagination={false}
         scroll={{ x: 'max-content' }}
       />
     </div>

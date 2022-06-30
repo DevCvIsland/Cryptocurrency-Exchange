@@ -17,17 +17,17 @@
   margin-right: 5px;
 }
 
-.ring-progress-section, .gauge-progress-section, .dashboard-table-section {
+.ring-progress-section, .gauge-progress-section {
   padding: 20px;
 }
 
-.ring-progress-section h3, .gauge-progress-section h3, .dashboard-table-section h3 {
+.ring-progress-section h3, .gauge-progress-section h3 {
   color: #fff;
   font-size: 18px;
   font-weight: 550;
 }
 
-.ring-progress-section p, .gauge-progress-section p, .dashboard-table-section p {
+.ring-progress-section p, .gauge-progress-section p {
   color: #999;
   font-weight: 550;
 }
