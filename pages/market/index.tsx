@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Row, Col, Button, Form, Input } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import Layout from '../../containers/layout/Layout'
@@ -6,6 +7,10 @@ import MarketTable from './MarketTable'
 import Head from '../../containers/head/Head'
 
 const Market = () => {
+  const [searchWord, setSearchWord] = useState()
+  const handleFilter = (event: any) => {
+    setSearchWord(event.target.value)
+  }
   return (
     <>
       <Head title="Market" />
@@ -55,6 +60,7 @@ const Market = () => {
                   prefix={<SearchOutlined />}
                   placeholder="Search Coin Name"
                   size="large"
+                  onChange={handleFilter}
                 />
               </Form.Item>
             </Form>
@@ -67,7 +73,7 @@ const Market = () => {
             xl={20}
             className="market-table-container"
           >
-            <MarketTable />
+            <MarketTable searchWord={searchWord} />
           </Col>
         </Row>
       </Layout>
