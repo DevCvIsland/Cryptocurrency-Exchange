@@ -204,6 +204,11 @@ body {
   border-color: #f3ba2f !important;
 }
 
+.ant-btn-loading-icon svg {
+  font-size: 30px;
+  color: blue !important;
+}
+
 .ant-breadcrumb,
 .ant-breadcrumb a,
 .ant-breadcrumb > span:last-child,

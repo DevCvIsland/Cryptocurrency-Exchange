@@ -158,6 +158,12 @@ body {
   background-color: $primary-color !important;
   border-color: $primary-color !important; 
 }
+.ant-btn-loading-icon{
+  svg{
+    font-size: 30px;
+      color: blue !important;
+  }
+}  
 .ant-breadcrumb,
 .ant-breadcrumb a,
 .ant-breadcrumb > span:last-child,
