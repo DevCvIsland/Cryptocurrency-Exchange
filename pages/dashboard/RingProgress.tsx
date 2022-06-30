@@ -7,7 +7,7 @@ const RingProgressComponent = () => {
     height: 140,
     width: 140,
     autoFit: false,
-    percent: 0.3,
+    percent: 0.8,
     color: ['#f3ba2f', '#fff'],
     innerRadius: 0.85,
     radius: 0.98,
@@ -26,7 +26,7 @@ const RingProgressComponent = () => {
     height: 140,
     width: 140,
     autoFit: false,
-    percent: 0.2,
+    percent: 0.6,
     color: ['#f3ba2f', '#fff'],
     innerRadius: 0.85,
     radius: 0.98,
@@ -45,7 +45,7 @@ const RingProgressComponent = () => {
     height: 140,
     width: 140,
     autoFit: false,
-    percent: 0.1,
+    percent: 0.75,
     color: ['#f3ba2f', '#fff'],
     innerRadius: 0.85,
     radius: 0.98,
@@ -64,7 +64,7 @@ const RingProgressComponent = () => {
     height: 140,
     width: 140,
     autoFit: false,
-    percent: 0.4,
+    percent: 0.45,
     color: ['#f3ba2f', '#fff'],
     innerRadius: 0.85,
     radius: 0.98,
@@ -79,6 +79,7 @@ const RingProgressComponent = () => {
       },
     },
   }
+
   return (
     <div className="ring-progress-section">
       <h3>Final Report</h3>
