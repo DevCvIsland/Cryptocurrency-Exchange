@@ -79,6 +79,20 @@ body {
 .table-fetching-item{
   background-color: #999 !important;
 }
+.table-empty-item{
+  margin: 50px;
+  span svg{
+    font-size: 75px;
+  }
+  p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+.ant-table-expanded-row-fixed:hover , .ant-table-cell:hover{
+  background-color: rgb(11, 14, 17) !important;
+}
 .ant-menu-item-selected {
   background-color: transparent !important;
 }

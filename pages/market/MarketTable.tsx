@@ -198,10 +198,10 @@ const MarketTable = ({ searchWord }: MarketTableProps) => {
     : null
   const locale = {
     emptyText: (
-      <>
+      <div className="table-empty-item">
         <ExclamationCircleOutlined />
-        <p>ssss</p>
-      </>
+        <p>Could not find coin</p>
+      </div>
     ),
   }
 

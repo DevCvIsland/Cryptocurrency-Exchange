@@ -111,6 +111,24 @@ body {
   background-color: #999 !important;
 }
 
+.table-empty-item {
+  margin: 50px;
+}
+
+.table-empty-item span svg {
+  font-size: 75px;
+}
+
+.table-empty-item p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.ant-table-expanded-row-fixed:hover, .ant-table-cell:hover {
+  background-color: #0b0e11 !important;
+}
+
 .ant-menu-item-selected {
   background-color: transparent !important;
 }
