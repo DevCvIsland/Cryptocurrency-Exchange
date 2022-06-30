@@ -24,62 +24,50 @@ const columns = [
   },
 ]
 
-const dataSource = [
+const LastTradesInfo = [
   {
-    key: '1',
-    coin: (
-      <>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://s2.coinmarketcap.com/static/img/coins/32x32/1.png"
-          alt="logo"
-          className="table-logo-item"
-        />
-        <p className="table-name-item">Bitcoin</p>
-        <span className="table-symbol-item">/ BTC</span>
-      </>
-    ),
-    amount: <p className="table-number-item">8.619</p>,
-    price: <p className="table-number-item">$20,049.97</p>,
-    date: <p className="table-number-item">2022/06/10 - 22:53</p>,
+    id: '1',
+    logo: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1.png',
+    name: 'Bitcoin',
+    symbol: 'BTC',
+    amount: '8.619',
+    price: '20,049.97',
+    date: '2022/06/10 - 22:53',
   },
   {
-    key: '2',
-    coin: (
-      <>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png"
-          alt="logo"
-          className="table-logo-item"
-        />
-        <p className="table-name-item">Ethereum</p>
-        <span className="table-symbol-item">/ ETH</span>
-      </>
-    ),
-    amount: <p className="table-number-item">10.581</p>,
-    price: <p className="table-number-item">$1,094.94</p>,
-    date: <p className="table-number-item">2022/05/24 - 09:12</p>,
+    id: '2',
+    logo: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png',
+    name: 'Ethereum',
+    symbol: 'ETH',
+    amount: '10.581',
+    price: '1,094.94',
+    date: '2022/05/24 - 09:12',
   },
   {
-    key: '3',
-    coin: (
-      <>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://s2.coinmarketcap.com/static/img/coins/32x32/1958.png"
-          alt="logo"
-          className="table-logo-item"
-        />
-        <p className="table-name-item">Tron</p>
-        <span className="table-symbol-item">/ TRX</span>
-      </>
-    ),
-    amount: <p className="table-number-item">46.512</p>,
-    price: <p className="table-number-item">$0.064566</p>,
-    date: <p className="table-number-item">2022/04/08 - 13:55</p>,
+    id: '3',
+    logo: 'https://s2.coinmarketcap.com/static/img/coins/32x32/1958.png',
+    name: 'Tron',
+    symbol: 'TRX',
+    amount: '46.512',
+    price: '0.064566',
+    date: '2022/04/08 - 13:55',
   },
 ]
+
+const dataSource = LastTradesInfo.map((coin: any) => ({
+  key: coin.id,
+  coin: (
+    <>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={coin.logo} alt="logo" className="table-logo-item" />
+      <p className="table-name-item">{coin.name}</p>
+      <span className="table-symbol-item">{`/ ${coin.symbol}`}</span>
+    </>
+  ),
+  amount: <p className="table-number-item">{coin.amount}</p>,
+  price: <p className="table-number-item">{coin.price}</p>,
+  date: <p className="table-number-item">{coin.date}</p>,
+}))
 
 const DashboardTable = () => {
   return (
