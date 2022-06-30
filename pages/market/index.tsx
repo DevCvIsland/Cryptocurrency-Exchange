@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Row, Col, Button, Form, Input } from 'antd'
-import { SearchOutlined } from '@ant-design/icons'
+import { SearchOutlined, CloseOutlined } from '@ant-design/icons'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import MarketTable from './MarketTable'
@@ -11,6 +11,7 @@ const Market = () => {
   const handleFilter = (event: any) => {
     setSearchWord(event.target.value)
   }
+
   return (
     <>
       <Head title="Market" />
@@ -45,11 +46,7 @@ const Market = () => {
             </Button>
           </Col>
           <Col xs={22} sm={10} md={10} lg={6} xl={5}>
-            <Form
-              name="search"
-              // form={form}
-              // onFinish={onFinish}
-            >
+            <Form name="search">
               <Form.Item
                 name="search"
                 rules={[
@@ -57,7 +54,7 @@ const Market = () => {
                 ]}
               >
                 <Input
-                  prefix={<SearchOutlined />}
+                  prefix={searchWord ? <CloseOutlined /> : <SearchOutlined />}
                   placeholder="Search Coin Name"
                   size="large"
                   onChange={handleFilter}
