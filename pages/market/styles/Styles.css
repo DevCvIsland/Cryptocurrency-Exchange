@@ -31,8 +31,9 @@
 .detail-single-coin h4 {
   color: #fff;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 48px;
+  margin-bottom: 0px;
 }
 
 .detail-single-coin > div {
@@ -61,13 +62,15 @@
 }
 
 .detail-single-coin p {
-  margin-bottom: 22px;
+  margin-bottom: 13.5px;
+  font-size: 18px;
 }
 
 .detail-single-coin input {
   display: block;
   width: 270px;
   margin-bottom: 10px;
+  font-weight: 550;
 }
 
 .detail-single-coin input:nth-last-child(1) {
@@ -79,26 +82,32 @@
 }
 
 .buy-button {
-  background-color: #009900;
-  border-color: #009900;
+  background-color: #006600;
+  border-color: #006600;
+  color: #fff;
   margin-bottom: 5px;
+  padding-bottom: 35px;
+  font-size: 19px;
   font-weight: 550;
 }
 
 .buy-button:hover {
-  color: #000;
+  color: #fff;
   border-color: #256127;
   background-color: #256127;
 }
 
 .sell-button {
-  background-color: red;
-  border-color: red;
+  background-color: #cc0000;
+  border-color: #cc0000;
+  color: #fff;
+  padding-bottom: 35px;
+  font-size: 19px;
   font-weight: 550;
 }
 
 .sell-button:hover {
-  color: #000;
+  color: #fff;
   border-color: #701b1b;
   background-color: #701b1b;
 }
