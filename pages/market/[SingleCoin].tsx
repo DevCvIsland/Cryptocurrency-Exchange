@@ -4,15 +4,15 @@ import { useRouter } from 'next/router'
 import { Row, Col, Button, Input, Spin, Breadcrumb, Divider } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons'
 import { Stock } from '@ant-design/plots'
+import Head from '../../containers/head/Head'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
+import numberWithCommas from '../../utils/Utils'
 import data from './ChartData'
 import {
   useGetCryptosQuery,
   useGetCryptosInfoQuery,
 } from '../../services/CryptoApi'
-import Head from '../../containers/head/Head'
-import numberWithCommas from '../../utils/Utils'
 
 const antIcon = (
   <LoadingOutlined spin style={{ fontSize: 75, color: '#f3ba2f' }} />
@@ -30,16 +30,13 @@ const SingleCoinPage = () => {
   useEffect(() => {
     setApiData(moreData)
   }, [moreData])
-  // eslint-disable-next-line no-console
-  console.log('coinData', coinData)
+
   const coinId = coinData ? Object.keys(coinData.data)[0] : 1
   const moreCoinInfo =
     coinData && apiData
       ? // eslint-disable-next-line eqeqeq
         apiData.data.filter((coin: any) => coin.id == coinId)
       : null
-  // eslint-disable-next-line no-console
-  console.log('moreCoinInfo', moreCoinInfo)
   const total = moreCoinInfo && 100 * moreCoinInfo[0].quote.USD.price
   const config = {
     data,

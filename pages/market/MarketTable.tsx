@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { Table, Button } from 'antd'
 import { ExclamationCircleOutlined } from '@ant-design/icons'
-import Link from 'next/link'
-import { useGetCryptosQuery } from '../../services/CryptoApi'
-import numberWithCommas from '../../utils/Utils'
 import SkeletonTable from './MarketTableSkeleton'
+import numberWithCommas from '../../utils/Utils'
+import { useGetCryptosQuery } from '../../services/CryptoApi'
 
 const columns = [
   {

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Row, Col, Button, Form, Input } from 'antd'
 import { SearchOutlined, CloseOutlined } from '@ant-design/icons'
+import Head from '../../containers/head/Head'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import MarketTable from './MarketTable'
-import Head from '../../containers/head/Head'
 
 const Market = () => {
   const [searchWord, setSearchWord] = useState()
