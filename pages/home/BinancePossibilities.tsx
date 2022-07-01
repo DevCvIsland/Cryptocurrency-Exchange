@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import { Row, Col, Button } from 'antd'
 import { RightOutlined } from '@ant-design/icons'
-import Image from 'next/image'
 import Card1 from '../../assets/possibility-card/possibility-card-1.png'
 import Card2 from '../../assets/possibility-card/possibility-card-2.png'
 import Card3 from '../../assets/possibility-card/possibility-card-3.png'

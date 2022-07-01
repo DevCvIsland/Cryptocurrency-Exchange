@@ -1,10 +1,10 @@
+import Image from 'next/image'
 import { Row, Col, Button } from 'antd'
 import {
   UserOutlined,
   SecurityScanOutlined,
   LineChartOutlined,
 } from '@ant-design/icons'
-import Image from 'next/image'
 import Mobile from '../../assets/root/crypto-portfolio.png'
 
 type CryptoPortfolioItemProps = {

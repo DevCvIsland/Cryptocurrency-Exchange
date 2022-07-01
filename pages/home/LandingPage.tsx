@@ -1,5 +1,5 @@
-import { Row, Col, Form, Input, Button } from 'antd'
 import Image from 'next/image'
+import { Row, Col, Form, Input, Button } from 'antd'
 import Landing from '../../assets/root/landing.png'
 
 type InfoItemProps = {
