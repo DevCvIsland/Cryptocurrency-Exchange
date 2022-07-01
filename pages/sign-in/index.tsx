@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Row, Col, Form, Input, Button, Checkbox } from 'antd'
 import { HomeOutlined } from '@ant-design/icons'
-import Link from 'next/link'
 import Head from '../../containers/head/Head'
 
 const SignIn = () => {
