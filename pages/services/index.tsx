@@ -1,5 +1,6 @@
 import { Row, Col } from 'antd'
 import Image from 'next/image'
+import Head from '../../containers/head/Head'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import DownloadBitcoin from '../../assets/icon/download-bitcoin.png'
@@ -8,7 +9,6 @@ import BuySellBitcoins from '../../assets/icon/buy-sell-bitcoins.png'
 import HighLiquidity from '../../assets/icon/high-liquidity.png'
 import WorldCoverage from '../../assets/icon/world-coverage.png'
 import PaymentOptions from '../../assets/icon/payment-options.png'
-import Head from '../../containers/head/Head'
 
 type ServiceContainerProps = {
   icon: StaticImageData
