@@ -1,6 +1,7 @@
-import { Row, Col } from 'antd'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import { Row, Col } from 'antd'
+import Head from '../../containers/head/Head'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import Posts from './BlogPostsData'
@@ -8,7 +9,6 @@ import BlogPostFooter from '../../components/blog-post/BlogPostFooter'
 import PostComments from './PostComments'
 import AddComment from './AddComment'
 import BlogSidebar from './BlogSidebar'
-import Head from '../../containers/head/Head'
 
 const SinglePost = () => {
   const router = useRouter()

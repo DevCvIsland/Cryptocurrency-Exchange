@@ -1,5 +1,5 @@
-import { Row, Col, Button } from 'antd'
 import Image from 'next/image'
+import { Row, Col, Button } from 'antd'
 import user1 from '../../assets/person/user1.jpg'
 import user2 from '../../assets/person/user2.jpg'
 import admin from '../../assets/person/user-admin.jpg'

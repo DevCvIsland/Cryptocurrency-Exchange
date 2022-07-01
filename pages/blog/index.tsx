@@ -1,10 +1,10 @@
 import { Row, Col, Pagination } from 'antd'
+import Head from '../../containers/head/Head'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
-import BlogPost from '../../components/blog-post/BlogPost'
 import Post from './BlogPostsData'
+import BlogPost from '../../components/blog-post/BlogPost'
 import BlogSidebar from './BlogSidebar'
-import Head from '../../containers/head/Head'
 
 const Blog = () => {
   return (

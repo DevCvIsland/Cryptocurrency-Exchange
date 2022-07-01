@@ -1,5 +1,5 @@
-import { Row, Col, Divider, Button } from 'antd'
 import Image from 'next/image'
+import { Row, Col, Divider, Button } from 'antd'
 import RecentPost1 from '../../assets/blog/blog-post-small-1.jpg'
 import RecentPost2 from '../../assets/blog/blog-post-small-2.jpg'
 import RecentPost3 from '../../assets/blog/blog-post-small-3.jpg'
