@@ -155,14 +155,14 @@ const SingleCoinPage = () => {
                     <Input
                       defaultValue={
                         moreCoinInfo && moreCoinInfo[0].quote.USD.price > 1
-                          ? `$ ${numberWithCommas(
+                          ? `$${numberWithCommas(
                               moreCoinInfo[0].quote.USD.price.toFixed(2)
                             )}`
-                          : `$ ${moreCoinInfo[0].quote.USD.price.toFixed(5)}`
+                          : `$${moreCoinInfo[0].quote.USD.price.toFixed(5)}`
                       }
                     />
                     <Input
-                      defaultValue={`$ ${
+                      defaultValue={`$${
                         total > 1
                           ? numberWithCommas(total.toFixed(2))
                           : total.toFixed(6)
