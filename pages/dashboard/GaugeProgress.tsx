@@ -1,4 +1,3 @@
-import React from 'react'
 import { Gauge } from '@ant-design/plots'
 
 const GaugeProgress = () => {
@@ -31,6 +30,7 @@ const GaugeProgress = () => {
       },
     },
   }
+
   return (
     <div className="gauge-progress-section">
       <h3>Technicals</h3>

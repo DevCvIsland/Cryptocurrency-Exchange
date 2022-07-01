@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { Layout, Menu, Row, Col, Divider } from 'antd'
 import {
@@ -17,11 +17,11 @@ import {
   InfoCircleOutlined,
   LoadingOutlined,
 } from '@ant-design/icons'
-import RingProgress from './RingProgress'
+import Head from '../../containers/head/Head'
 import GaugeProgress from './GaugeProgress'
+import RingProgress from './RingProgress'
 import DashboardChart from './DashboardChart'
 import DashboardTable from './DashboardTable'
-import Head from '../../containers/head/Head'
 
 const { Sider } = Layout
 
@@ -32,6 +32,7 @@ const Dashboard = ({ data }: any) => {
     setLoading(true)
     router.push('/')
   }
+
   return (
     <>
       <Head title="Dashboard" />
