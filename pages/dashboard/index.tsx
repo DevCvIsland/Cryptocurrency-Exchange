@@ -25,7 +25,8 @@ import Head from '../../containers/head/Head'
 
 const { Sider } = Layout
 
-const Dashboard = () => {
+const Dashboard = ({ data }: any) => {
+  console.log('data', data)
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const signout = () => {
@@ -128,7 +129,7 @@ const Dashboard = () => {
               <RingProgress />
             </Col>
             <Col xs={24} sm={24} md={24} lg={11} xl={11}>
-              <DashboardChart />
+              <DashboardChart data={data} />
             </Col>
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>
               <DashboardTable />
@@ -138,6 +139,17 @@ const Dashboard = () => {
       </Row>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(
+    `https://gw.alipayobjects.com/os/bmw-prod/1d565782-dde4-4bb6-8946-ea6a38ccf184.json`
+  )
+  const data = await res.json()
+  // const data = 'Hello World!'
+  // Pass data to the page via props
+  return { props: { data } }
 }
 
 export default Dashboard

@@ -1,7 +1,6 @@
 import { Line } from '@ant-design/plots'
-import data from './ChartData'
 
-const DashboardChart = () => {
+const DashboardChart = ({ data }: any) => {
   const config = {
     data,
     height: 275,
