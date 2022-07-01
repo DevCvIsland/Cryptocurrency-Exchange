@@ -1,4 +1,3 @@
-import React from 'react'
 import { Line } from '@ant-design/plots'
 import data from './ChartData'
 
