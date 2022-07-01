@@ -16,7 +16,7 @@ const Market = () => {
     <>
       <Head title="Market" />
       <Layout>
-        <TitleBanner firstTitle="Market" lastTitle="Crypto" />
+        <TitleBanner firstTitle="Binance" lastTitle="Markets" />
         <Row justify="space-around" className="market-section">
           <Col
             xs={22}
