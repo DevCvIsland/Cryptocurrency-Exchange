@@ -8,10 +8,10 @@ import {
   TwitterSquareFilled,
   GooglePlusSquareFilled,
 } from '@ant-design/icons'
+import Head from '../../containers/head/Head'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import ContactForm from './ContactForm'
-import Head from '../../containers/head/Head'
 
 type ContactInfoItemProps = {
   children: React.ReactNode
