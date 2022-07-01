@@ -1,5 +1,5 @@
-import { Row, Col, Button } from 'antd'
 import Image from 'next/image'
+import { Row, Col, Button } from 'antd'
 import Bitcoin from '../../assets/root/about-us.png'
 
 const DescriptionSection = () => {

@@ -1,9 +1,9 @@
+import Head from '../../containers/head/Head'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import DescriptionSection from './DescriptionSection'
 import StatusSection from './StatusSection'
 import PersonsSection from './PersonsSection'
-import Head from '../../containers/head/Head'
 
 const About = () => {
   return (

@@ -1,10 +1,10 @@
+import Image from 'next/image'
 import { Row, Col } from 'antd'
 import {
   LinkedinOutlined,
   FacebookOutlined,
   TwitterOutlined,
 } from '@ant-design/icons'
-import Image from 'next/image'
 import MemberOne from '../../assets/person/member1.jpg'
 import MemberTwo from '../../assets/person/member2.jpg'
 import MemberThree from '../../assets/person/member3.jpg'
