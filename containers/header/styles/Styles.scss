@@ -1,20 +1,5 @@
 @import './../../../styles/globals.scss';
 
-@media screen and (min-width: 0px) and (max-width: 576px) {
-  .logo-section {
-    padding: 10px 0px;
-  }
-}
-@media screen and (min-width: 577px) and (max-width: 900px) {
-  .logo-section {
-    padding: 10px 100px;
-  }
-}
-@media screen and (min-width: 901px) {
-  .logo-section {
-    padding: 10px 200px;
-  }
-}
 .button-container {
   display: flex;
   justify-content: end;
@@ -31,7 +16,6 @@
     &:hover {
       color: $primary-color !important;
       background-color: #1d1d1d !important;
-      // border-bottom: 1px solid $primary-color;
     }
   }
 }
@@ -39,4 +23,19 @@
   color: $primary-color !important;
   background-color: #1d1d1d !important;
   border-bottom: 1px solid $primary-color !important;
+}
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .logo-section {
+    padding: 10px 0px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 900px) {
+  .logo-section {
+    padding: 10px 100px;
+  }
+}
+@media screen and (min-width: 901px) {
+  .logo-section {
+    padding: 10px 200px;
+  }
 }

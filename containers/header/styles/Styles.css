@@ -221,24 +221,6 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 576px) {
-  .logo-section {
-    padding: 10px 0px;
-  }
-}
-
-@media screen and (min-width: 577px) and (max-width: 900px) {
-  .logo-section {
-    padding: 10px 100px;
-  }
-}
-
-@media screen and (min-width: 901px) {
-  .logo-section {
-    padding: 10px 200px;
-  }
-}
-
 .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,5 +253,23 @@ body {
   color: #f3ba2f !important;
   background-color: #1d1d1d !important;
   border-bottom: 1px solid #f3ba2f !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .logo-section {
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 900px) {
+  .logo-section {
+    padding: 10px 100px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .logo-section {
+    padding: 10px 200px;
+  }
 }
 /*# sourceMappingURL=Styles.css.map */
