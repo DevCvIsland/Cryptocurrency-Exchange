@@ -1,3 +1,226 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button {
+  color: #000;
+  background-color: #f3ba2f;
+  border-color: #f3ba2f;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #9b5501;
+  border-color: #9b5501;
+}
+
+.button-outline {
+  color: #f3ba2f;
+  border-color: #f3ba2f;
+  background: inherit;
+}
+
+.button-outline:hover {
+  color: #000;
+  background-color: #f3ba2f;
+  border-color: #f3ba2f;
+}
+
+.theme-primary-color {
+  color: #f3ba2f;
+}
+
+.positive-color {
+  color: #16c784;
+  font-weight: 600 !important;
+}
+
+.negative-color {
+  color: #ea3943;
+  font-weight: 600 !important;
+}
+
+.positive-background-color {
+  background-color: #16c784;
+}
+
+.negative-background-color {
+  background-color: #ea3943;
+}
+
+.table-logo-item {
+  width: 32px !important;
+  height: 32px !important;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+
+.table-name-item {
+  display: inline !important;
+  font-size: 20px !important;
+  font-weight: 550 !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.table-symbol-item {
+  color: #999 !important;
+  font-weight: 550 !important;
+  padding-left: 5px !important;
+}
+
+.table-number-item {
+  font-size: 18px !important;
+  margin: 0px !important;
+}
+
+.table-fetching-item {
+  background-color: #999 !important;
+}
+
+.table-empty-item {
+  margin: 50px;
+}
+
+.table-empty-item span svg {
+  font-size: 75px;
+}
+
+.table-empty-item p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.ant-table-expanded-row-fixed:hover, .ant-table-cell:hover {
+  background-color: #0b0e11 !important;
+}
+
+.ant-menu-item-selected {
+  background-color: transparent !important;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #0b0e11;
+  border-color: #282828;
+  color: #999;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.ant-table-tbody > tr > td {
+  background-color: #181A20;
+  border-color: #282828;
+  color: #fff;
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td {
+  background-color: #0b0e11;
+}
+
+.ant-menu-dark .ant-menu-sub {
+  background-color: #272727;
+}
+
+.ant-menu.ant-menu-dark {
+  background-color: #282828;
+}
+
+.ant-divider-horizontal.ant-divider-with-text::after, .ant-divider-horizontal.ant-divider-with-text::before {
+  border-color: #fff !important;
+}
+
+.ant-divider-horizontal.ant-divider-with-text {
+  color: #fff;
+}
+
+.ant-divider {
+  color: #fff !important;
+  border-color: #353535 !important;
+}
+
+.ant-pagination-item-ellipsis,
+.anticon-double-left,
+.anticon-double-right,
+.anticon-down,
+.ant-select-item-option-content {
+  color: #f3ba2f !important;
+}
+
+.ant-select-selector {
+  background-color: #272727 !important;
+  border-color: #272727 !important;
+  color: #f3ba2f;
+}
+
+.ant-select-dropdown, .ant-select-item {
+  background-color: #272727 !important;
+}
+
+.ant-select-item {
+  background-color: #272727 !important;
+}
+
+.ant-select-item:hover {
+  background-color: #181A20 !important;
+}
+
+.ant-btn-primary:focus {
+  color: #000 !important;
+  background-color: #f3ba2f !important;
+  border-color: #f3ba2f !important;
+}
+
+.ant-btn-loading-icon svg {
+  font-size: 30px;
+  color: blue !important;
+}
+
+.ant-breadcrumb,
+.ant-breadcrumb a,
+.ant-breadcrumb > span:last-child,
+.ant-breadcrumb-separator {
+  color: #999;
+  font-weight: 550;
+}
+
+.ant-input-prefix {
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 992px) {
   .blog-sidebar {
     margin-left: 50px;

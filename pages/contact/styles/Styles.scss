@@ -1,9 +1,8 @@
-$primary-color: #f3ba2f;
+@import './../../../styles/globals.scss';
 
 .contact-section {
   margin: 75px 0px;
 }
-
 //Contact Form Section
 .contact-form-title {
   h3 {
@@ -17,14 +16,12 @@ $primary-color: #f3ba2f;
     margin-bottom: 30px;
   }
 }
-
 //Contact Info Section
 @media screen and (min-width: 992px) {
   .contact-info {
     margin-left: 50px;
   }
 }
-
 .contact-info {
   background-color: #1d1d1d;
   padding: 0px 30px;
@@ -32,12 +29,10 @@ $primary-color: #f3ba2f;
     margin: 30px 0px;
   }
 }
-
 .contact-info-icon {
   font-size: 35px;
   color: $primary-color;
 }
-
 .social-profiles-icon {
   span svg {
     font-size: 30px;
@@ -60,7 +55,6 @@ $primary-color: #f3ba2f;
     color: #dd4b39;
   }
 }
-
 .contact-info-text {
   & p:first-child {
     font-size: 18px;

@@ -1,10 +1,9 @@
-$primary-color: #f3ba2f;
+@import './../../../styles/globals.scss';
 
 //Description Section
 .description-about-section {
   margin: 75px 0px;
 }
-
 .description-about-text {
   margin: 20px 0px;
   padding: 0px 15px;
@@ -26,7 +25,6 @@ $primary-color: #f3ba2f;
 .status-section{
   position: relative;
 }
-
 @media screen and (min-width: 0px) and (max-width: 576px) {
   .status-title h2 {
     padding: 20px 0px;
@@ -70,12 +68,10 @@ $primary-color: #f3ba2f;
     background: #444;
   }
 }
-
 .status {
   background-color: #1d1d1d;
   margin-bottom: 75px;
 }
-
 .status-title {
   text-align: center;
   h2 {
@@ -89,13 +85,11 @@ $primary-color: #f3ba2f;
     color: #999;
   }
 }
-
 .status-items {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-
 .status-item {
   text-align: center;
   padding: 20px 20px !important;
@@ -121,11 +115,9 @@ $primary-color: #f3ba2f;
     font-size: 20px;
   }
 }
-
 .person-section {
   margin-bottom: 100px;
 }
-
 .person-container {
   max-width: 265px !important;
   background-color: #1d1d1d;
