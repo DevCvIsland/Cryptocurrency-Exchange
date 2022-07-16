@@ -129,7 +129,7 @@
     display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: start;
+            justify-content: flex-start;
   }
 }
 
@@ -140,7 +140,7 @@
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
   }
   .dashboard-container > div {
     margin: 6px;
@@ -154,7 +154,7 @@
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
   }
   .dashboard-container > div {
     margin: 6px;

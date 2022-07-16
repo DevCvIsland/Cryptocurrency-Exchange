@@ -89,14 +89,14 @@
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .dashboard-container{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1335px) {
   .dashboard-container{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     &> div{
       margin: 6px;
     }
@@ -106,7 +106,7 @@
 @media screen and (min-width: 1336px){
   .dashboard-container{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     &> div{
       margin: 6px;
     }
