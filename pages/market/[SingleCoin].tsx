@@ -3,12 +3,11 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Row, Col, Button, Input, Spin, Breadcrumb, Divider } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons'
-import { Stock } from '@ant-design/plots'
+import { Line } from '@ant-design/plots'
 import Head from '../../containers/head/Head'
 import Layout from '../../containers/layout/Layout'
 import TitleBanner from '../../components/title-banner/TitleBanner'
 import numberWithCommas from '../../utils/Utils'
-import data from './ChartData'
 import {
   useGetCryptosQuery,
   useGetCryptosInfoQuery,
@@ -18,7 +17,7 @@ const antIcon = (
   <LoadingOutlined spin style={{ fontSize: 75, color: '#f3ba2f' }} />
 )
 
-const SingleCoinPage = () => {
+const SingleCoinPage = ({ data }: any) => {
   const router = useRouter()
   const { SingleCoin } = router.query
   const { data: coinData } = useGetCryptosInfoQuery(SingleCoin)
@@ -42,8 +41,12 @@ const SingleCoinPage = () => {
     data,
     height: 400,
     width: 400,
-    xField: 'trade_date',
-    yField: ['open', 'close', 'high', 'low'],
+    xField: 'Date',
+    yField: 'scales',
+    xAxis: {
+      tickCount: 5,
+    },
+    smooth: true,
   }
 
   return (
@@ -123,7 +126,7 @@ const SingleCoinPage = () => {
                 <p>{coinData.data[coinId].description}</p>
               </Col>
               <Col xs={24} sm={23} md={23} lg={14} xl={12}>
-                <Stock {...config} />
+                <Line {...config} />
               </Col>
               <Col
                 xs={23}
@@ -188,6 +191,15 @@ const SingleCoinPage = () => {
       </Layout>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const res = await fetch(
+    `https://gw.alipayobjects.com/os/bmw-prod/1d565782-dde4-4bb6-8946-ea6a38ccf184.json`
+  )
+  const data = await res.json()
+
+  return { props: { data } }
 }
 
 export default SingleCoinPage
